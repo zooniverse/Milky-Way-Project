@@ -1,5 +1,4 @@
 Controller = require 'zooniverse/controllers/base-controller'
-$ = window.jQuery
 
 class Stack extends Controller
   defaultHash: '#/'

@@ -1,3 +1,6 @@
+$ = window.jQuery
+$.noConflict()
+
 Api = require 'zooniverse/lib/api'
 api = new Api project: 'worms' # TODO
 

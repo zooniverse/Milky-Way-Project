@@ -1,5 +1,6 @@
 Controller = require 'zooniverse/controllers/base-controller'
 T7eMenu = require 't7e/menu'
+$ = window.jQuery
 
 class Navigation extends Controller
   defaultHash: '#/'

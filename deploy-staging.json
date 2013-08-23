@@ -1,5 +1,5 @@
 {
   "local": "build",
-  "bucket": "demo.zooniverse.org",
+  "bucket": "zooniverse-demo",
   "prefix": "milky-way-project"
 }

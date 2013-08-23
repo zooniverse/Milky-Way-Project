@@ -1,0 +1,17 @@
+<% translate = require 't7e' %>
+
+<div class="tools">
+  <label>
+    <input type="radio" name="tool" value="EllipseTool" checked="checked" />
+    <%- translate 'span', 'classify.tools.ellipse' %>
+  </label>
+
+  <label>
+    <input type="radio" name="tool" value="RectangleTool" />
+    <%- translate 'span', 'classify.tools.rectangle' %>
+  </label>
+</div>
+
+<div class="subject">
+  <!--Marking surface goes here-->
+</div>

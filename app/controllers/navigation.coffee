@@ -12,13 +12,13 @@ class Navigation extends Controller
   constructor: (params = {}) ->
     super
 
-    t7eMenu = new T7eMenu
+    @t7eMenu = new T7eMenu
       languages:
         'en-US':
           label: 'U.S. English',
           value: require '../lib/en-us'
 
-    @languageMenuContainer.append t7eMenu.select
+    @languageMenuContainer.append @t7eMenu.select
     t7e.refresh @el.get 0
 
     addEventListener 'hashchange', @onHashChange

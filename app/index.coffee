@@ -1,13 +1,13 @@
 Navigation = require './controllers/navigation'
 nav = new Navigation
+
+Stack = require './controllers/stack'
+stack = new Stack
+  routes:
+    '#/': require './controllers/home'
+    '#/classify': require './controllers/classify'
+
 nav.el.appendTo document.body
+stack.el.appendTo document.body
 
-Home = require './controllers/home'
-home = new Home
-home.el.appendTo document.body
-
-Classify = require './controllers/classify'
-classify = new Classify
-classify.el.appendTo document.body
-
-window.app = module.exports = {nav, home, classify}
+window.app = module.exports = {nav, stack}

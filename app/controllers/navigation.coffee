@@ -2,6 +2,8 @@ Controller = require 'zooniverse/controllers/base-controller'
 T7eMenu = require 't7e/menu'
 
 class Navigation extends Controller
+  defaultHash: '#/'
+
   tagName: 'nav'
   className: 'main-nav'
   template: require '../views/navigation'
@@ -25,7 +27,8 @@ class Navigation extends Controller
     @onHashChange()
 
   onHashChange: =>
+    currentHash = location.hash || @defaultHash
     for a in @el.find 'a'
-      $(a).toggleClass 'active', a.hash is location.hash
+      $(a).toggleClass 'active', a.hash is currentHash
 
 module.exports = Navigation

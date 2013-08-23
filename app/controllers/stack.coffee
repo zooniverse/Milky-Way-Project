@@ -2,9 +2,10 @@ Controller = require 'zooniverse/controllers/base-controller'
 $ = window.jQuery
 
 class Stack extends Controller
-  className: 'stack'
-
+  defaultHash: '#/'
   routes: null
+
+  className: 'stack'
 
   constructor: ->
     super
@@ -18,7 +19,8 @@ class Stack extends Controller
     @onHashChange()
 
   onHashChange: =>
+    currentHash = location.hash || @defaultHash
     for hash, controller of @routes
-      controller.el.toggle hash is location.hash
+      controller.el.toggle hash is currentHash
 
 module.exports = Stack

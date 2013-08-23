@@ -13,6 +13,9 @@ stack = new Stack
     '#/': require './controllers/home'
     '#/classify': require './controllers/classify'
 
+User = require 'zooniverse/models/user'
+User.fetch()
+
 topBar.el.appendTo document.body
 nav.el.appendTo document.body
 stack.el.appendTo document.body

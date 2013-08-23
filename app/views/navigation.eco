@@ -1,0 +1,8 @@
+<% translate = require 't7e' %>
+
+<%- translate 'a', 'navigation.home', href: '#/' %>
+<%- translate 'a', 'navigation.classify', href: '#/classify' %>
+
+<span class="language-menu">
+  <!--Language menu goes here-->
+</span>

@@ -1,11 +1,6 @@
-T7eMenu = require 't7e/menu'
-t7eMenu = new T7eMenu
-  languages:
-    'en-US':
-      label: 'U.S. English',
-      value: require './lib/en-us'
-
-document.body.appendChild t7eMenu.select
+Navigation = require './controllers/navigation'
+nav = new Navigation
+nav.el.appendTo document.body
 
 Home = require './controllers/home'
 home = new Home
@@ -15,4 +10,4 @@ Classify = require './controllers/classify'
 classify = new Classify
 classify.el.appendTo document.body
 
-window.app = module.exports = {t7eMenu, home, classify}
+window.app = module.exports = {nav, home, classify}

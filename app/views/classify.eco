@@ -15,3 +15,8 @@
 <div class="subject">
   <!--Marking surface goes here-->
 </div>
+
+<div class="action">
+  <%- translate 'button.show-during', 'classify.finish', name: 'finish' %>
+  <%- translate 'button.show-after', 'classify.next', name: 'next' %>
+</div>

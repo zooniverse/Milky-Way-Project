@@ -12,3 +12,6 @@ module.exports =
     tools:
       ellipse: 'Ellipse'
       rectangle: 'Rectangle'
+
+    finish: 'Finish'
+    next: 'Next'

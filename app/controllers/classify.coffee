@@ -56,7 +56,7 @@ class Classify extends Controller
 
   onUserChange: (e, user) =>
     @el.toggleClass 'signed-in', user?
-    Subject.next()
+    Subject.next() if not @classification?
 
   onSubjectGettingNext: ->
     @el.addClass 'loading'

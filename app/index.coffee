@@ -15,6 +15,8 @@ stack = new Stack
   routes:
     '#/': require './controllers/home'
     '#/classify': require './controllers/classify'
+    '#/subject/:id': require './controllers/subject'
+    notFound: require './controllers/not-found'
 
 User = require 'zooniverse/models/user'
 User.fetch()

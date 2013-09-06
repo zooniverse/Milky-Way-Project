@@ -10,19 +10,19 @@ topBar = new TopBar
 Navigation = require './controllers/navigation'
 nav = new Navigation
 
-Stack = require './controllers/stack'
-stack = new Stack
-  routes:
+StackOfPages = require 'stack-of-pages'
+stack = new StackOfPages
+  hashes:
     '#/': require './controllers/home'
     '#/classify': require './controllers/classify'
     '#/subject/:id': require './controllers/subject'
-    notFound: require './controllers/not-found'
+    NOT_FOUND: require './controllers/not-found'
 
 User = require 'zooniverse/models/user'
 User.fetch()
 
 topBar.el.appendTo document.body
 nav.el.appendTo document.body
-stack.el.appendTo document.body
+document.body.appendChild stack.el
 
 window.app = module.exports = {api, topBar, nav, stack}

@@ -2,15 +2,15 @@
   "name": "milky-way-project",
   "version": "0.0.1",
   "dependencies": {
-    "haw": "beta",
-    "marking-surface": "~0.1.3",
-    "publisssh": "~0.1.3",
-    "stack-of-pages": "~0.0.1",
+    "haw": "~0.2.9",
+    "marking-surface": "~0.2.0",
+    "publisssh": "~0.2.1",
+    "stack-of-pages": "~0.0.5",
     "t7e": "~0.2.3",
-    "zooniverse": "git+ssh://git@github.com:zooniverse/Zooniverse.git#18f9aa"
+    "zooniverse": "zooniverse/Zooniverse.git#18f9aa"
   },
   "scripts": {
-    "start": "haw serve",
-    "deploy-to-staging": "haw build && publisssh --config deploy-staging && trash ./build"
+    "start": "haw serve --port 6414",
+    "deploy-to-staging": "haw build ./build && publisssh ./build zooniverse-demo/milky-way-project && trash ./build"
   }
 }

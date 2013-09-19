@@ -12,11 +12,10 @@ nav = new Navigation
 
 StackOfPages = require 'stack-of-pages'
 stack = new StackOfPages
-  hashes:
-    '#/': require './controllers/home'
-    '#/classify': require './controllers/classify'
-    '#/subject/:id': require './controllers/subject'
-    NOT_FOUND: require './controllers/not-found'
+  '#/': require './controllers/home'
+  '#/classify': require './controllers/classify'
+  '#/subject/:id': require './controllers/subject'
+  NOT_FOUND: require './controllers/not-found'
 
 User = require 'zooniverse/models/user'
 User.fetch()

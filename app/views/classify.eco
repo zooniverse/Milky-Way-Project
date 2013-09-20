@@ -3,12 +3,17 @@
 <div class="tools">
   <label>
     <input type="radio" name="tool" value="EllipseTool" checked="checked" />
-    <%- translate 'span', 'classify.tools.ellipse' %>
+    <%- translate 'span', 'classify.tools.bubble' %>
   </label>
 
   <label>
-    <input type="radio" name="tool" value="RectangleTool" />
-    <%- translate 'span', 'classify.tools.rectangle' %>
+    <input type="radio" name="tool" value="CircleTool" />
+    <%- translate 'span', 'classify.tools.cluster' %>
+  </label>
+
+  <label>
+    <input type="radio" name="tool" value="ObjectTool" />
+    <%- translate 'span', 'classify.tools.object' %>
   </label>
 </div>
 

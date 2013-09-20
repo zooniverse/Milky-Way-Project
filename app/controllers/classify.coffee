@@ -1,7 +1,8 @@
 Controller = require 'zooniverse/controllers/base-controller'
 MarkingSurface = require 'marking-surface'
 EllipseTool = require 'marking-surface/lib/tools/ellipse'
-RectangleTool = require 'marking-surface/lib/tools/rectangle'
+CircleTool = require './circle-tool'
+ObjectTool = require './object-tool'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
@@ -38,6 +39,8 @@ class Classify extends Controller
   constructor: ->
     super
 
+    window.classifer = @
+
     @surface = new MarkingSurface
       tool: EllipseTool
       width: 320
@@ -63,7 +66,7 @@ class Classify extends Controller
 
   onSubjectSelect: (e, subject) =>
     console?.log 'Subject', subject.location.standard
-    mark.destroy() for mark in @surface.marks
+    @surface.marks[0].destroy() until @surface.marks.length==0
 
     @classification = new Classification {subject}
 

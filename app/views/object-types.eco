@@ -1,0 +1,5 @@
+<% translate = require 't7e' %>
+
+<label><input type="radio" name="object-type" value="dark-nebula"><%- translate 'span', 'classify.objectTypes.darkNebula' %></label>
+<label><input type="radio" name="object-type" value="star"><%- translate 'span', 'classify.objectTypes.star' %></label>
+<label><input type="radio" name="object-type" value="other"><%- translate 'span', 'classify.objectTypes.other' %></label>

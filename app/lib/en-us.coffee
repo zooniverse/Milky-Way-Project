@@ -14,8 +14,12 @@ module.exports =
 
   classify:
     tools:
-      ellipse: 'Bubble'
-      rectangle: 'Rectangle'
-
+      bubble: 'Bubble'
+      cluster: 'Star Cluster'
+      object: 'Object'
+    objectTypes:
+      darkNebula: 'Dark Nebula'
+      star: 'Star'
+      other: 'Other'
     finish: 'Finish'
     next: 'Next'

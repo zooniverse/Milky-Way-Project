@@ -2,10 +2,13 @@ $ = window.jQuery
 $.noConflict()
 
 Api = require 'zooniverse/lib/api'
-api = new Api project: 'worms' # TODO
+api = new Api project: 'milky_way' # TODO
 
 TopBar = require 'zooniverse/controllers/top-bar'
 topBar = new TopBar
+
+Subject = require 'zooniverse/models/subject'
+Subject.group = true
 
 Navigation = require './controllers/navigation'
 nav = new Navigation

@@ -1,12 +1,13 @@
 $=window.jQuery
+DefaultControls = require 'marking-surface/lib/tools/default-controls'
 RectangleTool = require 'marking-surface/lib/tools/rectangle'
 {ToolControls} = window?.MarkingSurface || require 'marking-surface'
 
-class ObjectControls extends ToolControls
+class ObjectControls extends DefaultControls
   constructor: ->
     super
 
-    @el.innerHTML = require('../views/object-types')()
+    $(@el).append(require('../views/object-types')())
     $(@el).on('change', 'input[name="object-type"]', @onChangeRadioButtons)
 
   onChangeRadioButtons: (e) =>

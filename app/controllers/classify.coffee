@@ -1,12 +1,16 @@
 Controller = require 'zooniverse/controllers/base-controller'
 MarkingSurface = require 'marking-surface'
 EllipseTool = require 'marking-surface/lib/tools/ellipse'
+DefaultControls = require 'marking-surface/lib/tools/default-controls'
 CircleTool = require './circle-tool'
 ObjectTool = require './object-tool'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
 Classification = require 'zooniverse/models/classification'
+
+EllipseTool.Controls = DefaultControls
+CircleTool.Controls = DefaultControls
 
 loadImage = (src, callback) ->
   img = new Image

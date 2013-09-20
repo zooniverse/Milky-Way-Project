@@ -1,0 +1,4 @@
+<% translate = require 't7e' %>
+
+<%- translate 'h1', 'projectName' %>
+<%- translate 'p', 'team.content' %>

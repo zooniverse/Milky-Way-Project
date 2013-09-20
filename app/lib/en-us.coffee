@@ -5,12 +5,16 @@ module.exports =
     home: 'Home'
     classify: 'Classify'
     science: 'Science'
+    team: 'Team'
 
   home:
     content: 'This is the home page'
 
   science:
     content: 'SCIENCE!'
+
+  team:
+    content: 'There are so many people invovled. These are some of them.'
 
   classify:
     tools:

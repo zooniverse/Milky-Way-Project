@@ -4,13 +4,17 @@ module.exports =
   navigation:
     home: 'Home'
     classify: 'Classify'
+    science: 'Science'
 
   home:
     content: 'This is the home page'
 
+  science:
+    content: 'SCIENCE!'
+
   classify:
     tools:
-      ellipse: 'Ellipse'
+      ellipse: 'Bubble'
       rectangle: 'Rectangle'
 
     finish: 'Finish'

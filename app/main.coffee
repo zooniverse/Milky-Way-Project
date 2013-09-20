@@ -15,6 +15,7 @@ stack = new StackOfPages
   '#/': require './controllers/home'
   '#/classify': require './controllers/classify'
   '#/subject/:id': require './controllers/subject'
+  '#/science': require './controllers/science'
   NOT_FOUND: require './controllers/not-found'
 
 User = require 'zooniverse/models/user'

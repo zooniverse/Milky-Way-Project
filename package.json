@@ -7,7 +7,7 @@
     "publisssh": "~0.2.1",
     "stack-of-pages": "~0.0.5",
     "t7e": "~0.2.3",
-    "zooniverse": "zooniverse/Zooniverse.git#18f9aa"
+    "zooniverse": "zooniverse/Zooniverse.git#959f413dd2493a9a3cdb6bcdc4e9e184aad123a2"
   },
   "scripts": {
     "start": "haw serve --port 6414",

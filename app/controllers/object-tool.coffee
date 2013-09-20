@@ -12,16 +12,14 @@ class ObjectControls extends ToolControls
   onChangeRadioButtons: (e) =>
     setTimeout =>
       @tool.mark.set 'content', $(@el).find("input[name='object-type']:checked").val()
-      console.log($(@el).find("input[name='object-type']:checked").val())
 
-  # onToolSelect: ->
-  #   super
-  #   @textarea.style.display = ''
-  #   setTimeout => @textarea.focus()
+  onToolSelect: ->
+    super
+    @el.style.display=''
 
-  # onToolDeselect: ->
-  #   super
-  #   @textarea.style.display = 'none'
+  onToolDeselect: ->
+    super
+    @el.style.display='none'
 
 class ObjectTool extends RectangleTool
   @Controls: ObjectControls

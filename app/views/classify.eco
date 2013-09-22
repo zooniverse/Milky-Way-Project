@@ -12,6 +12,16 @@
   </label>
 
   <label>
+    <input type="radio" name="tool" value="CircleTool" />
+    <%- translate 'span', 'classify.tools.ego' %>
+  </label>
+
+  <label>
+    <input type="radio" name="tool" value="CircleTool" />
+    <%- translate 'span', 'classify.tools.galaxy' %>
+  </label>
+
+  <label>
     <input type="radio" name="tool" value="ObjectTool" />
     <%- translate 'span', 'classify.tools.object' %>
   </label>

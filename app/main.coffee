@@ -20,6 +20,7 @@ stack = new StackOfPages
   '#/subject/:id': require './controllers/subject'
   '#/science': require './controllers/science'
   '#/team': require './controllers/team'
+  '#/data': require './controllers/data'
   NOT_FOUND: require './controllers/not-found'
 
 User = require 'zooniverse/models/user'

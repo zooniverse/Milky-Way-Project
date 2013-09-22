@@ -4,6 +4,7 @@
 <%- translate 'a', 'navigation.classify', href: '#/classify' %>
 <%- translate 'a', 'navigation.science', href: '#/science' %>
 <%- translate 'a', 'navigation.team', href: '#/team' %>
+<%- translate 'a', 'navigation.data', href: '#/data' %>
 
 <span class="language-menu">
   <!--Language menu goes here-->

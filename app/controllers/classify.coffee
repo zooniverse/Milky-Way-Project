@@ -8,6 +8,7 @@ $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
 Classification = require 'zooniverse/models/classification'
+Footer = require 'zooniverse/controllers/footer'
 
 EllipseTool.Controls = DefaultControls
 CircleTool.Controls = DefaultControls
@@ -53,6 +54,9 @@ class Classify extends Controller
     @subjectImage = @surface.addShape 'image'
 
     @subjectContainer.append @surface.el
+
+    @footer = new Footer
+    @footer.el.appendTo @el
 
     User.on 'change', @onUserChange
     Subject.on 'getNext', @onSubjectGettingNext

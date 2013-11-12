@@ -1,37 +1,46 @@
 <% translate = require 't7e' %>
 
-<div class="tools">
-  <label>
-    <input type="radio" name="tool" value="EllipseTool" checked="checked" />
-    <%- translate 'span', 'classify.tools.bubble' %>
-  </label>
+<div id="interface">
+  <div class="subject-options">
+    <%- translate 'button', 'classify.options.discuss', name: 'discuss' %>
+    <%- translate 'button', 'classify.options.favourite', name: 'favourite' %>
+    <%- translate 'button', 'classify.options.help', name: 'help' %>
+  </div>
 
-  <label>
-    <input type="radio" name="tool" value="CircleTool" />
-    <%- translate 'span', 'classify.tools.cluster' %>
-  </label>
+  <div class="subject">
+    <!--Marking surface goes here-->
+  </div>
+  <div clas="question"><%- translate 'span', 'classify.question' %></div>
 
-  <label>
-    <input type="radio" name="tool" value="CircleTool" />
-    <%- translate 'span', 'classify.tools.ego' %>
-  </label>
+  <div class="tools">
+    <label>
+      <input type="radio" name="tool" value="EllipseTool" checked="checked" />
+      <%- translate 'span', 'classify.tools.bubble' %>
+    </label>
 
-  <label>
-    <input type="radio" name="tool" value="CircleTool" />
-    <%- translate 'span', 'classify.tools.galaxy' %>
-  </label>
+    <label>
+      <input type="radio" name="tool" value="CircleTool" />
+      <%- translate 'span', 'classify.tools.cluster' %>
+    </label>
 
-  <label>
-    <input type="radio" name="tool" value="ObjectTool" />
-    <%- translate 'span', 'classify.tools.object' %>
-  </label>
-</div>
+    <label>
+      <input type="radio" name="tool" value="CircleTool" />
+      <%- translate 'span', 'classify.tools.ego' %>
+    </label>
 
-<div class="subject">
-  <!--Marking surface goes here-->
-</div>
+    <label>
+      <input type="radio" name="tool" value="CircleTool" />
+      <%- translate 'span', 'classify.tools.galaxy' %>
+    </label>
 
-<div class="action">
-  <%- translate 'button.show-during', 'classify.finish', name: 'finish' %>
-  <%- translate 'button.show-after', 'classify.next', name: 'next' %>
+    <label>
+      <input type="radio" name="tool" value="ObjectTool" />
+      <%- translate 'span', 'classify.tools.object' %>
+    </label>
+  </div>
+
+  <div class="action">
+    <%- translate 'button.show-during', 'classify.finish', name: 'finish' %>
+    <%- translate 'button.show-after', 'classify.next', name: 'next' %>
+  </div>
 </div>

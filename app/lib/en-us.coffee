@@ -1,5 +1,5 @@
 module.exports =
-  projectName: 'The Milky Way Project'
+  projectName: 'Milky Way Project'
 
   navigation:
     label: 'Menu'

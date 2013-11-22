@@ -1,5 +1,11 @@
 <% translate = require 't7e' %>
 
-<%- translate 'header', 'projectName' %>
+<div class="content">
+  <div class="constant">
+    <%- translate 'a.logo', 'projectName', href: '#/' %>
 
-<div class="navigation-container"></div>
+    <div class="trailing">
+      <div class="navigation-container"></div>
+    </div>
+  </div>
+</div>

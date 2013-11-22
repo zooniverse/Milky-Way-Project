@@ -1,0 +1,5 @@
+<% translate = require 't7e' %>
+
+<%- translate 'header', 'projectName' %>
+
+<div class="navigation-container"></div>

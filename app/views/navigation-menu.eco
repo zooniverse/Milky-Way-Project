@@ -1,0 +1,17 @@
+<% translate = require 't7e' %>
+
+<div class="links">
+  <div class="pages">
+    <div><%- translate 'a', 'navigation.home', href: '#/' %></div>
+    <div><%- translate 'a', 'navigation.classify', href: '#/classify' %></div>
+    <div><%- translate 'a', 'navigation.science', href: '#/science' %></div>
+    <div><%- translate 'a', 'navigation.team', href: '#/team' %></div>
+    <div><%- translate 'a', 'navigation.data', href: '#/data' %></div>
+  </div>
+
+  <div class="social">
+    <a href="#TODO_TWITTER">(t)</a>
+    <a href="#TODO_FACEBOOK">(f)</a>
+    <a href="#TODO_PINTEREST">(p)</a>
+  </div>
+</div>

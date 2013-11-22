@@ -2,6 +2,7 @@ module.exports =
   projectName: 'The Milky Way Project'
 
   navigation:
+    label: 'Menu'
     home: 'Home'
     classify: 'Classify'
     science: 'Science'

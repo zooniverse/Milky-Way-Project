@@ -2,7 +2,7 @@ $ = window.jQuery
 $.noConflict()
 
 Api = require 'zooniverse/lib/api'
-api = new Api project: 'milky_way' # TODO
+api = new Api project: 'milky_way'
 
 TopBar = require 'zooniverse/controllers/top-bar'
 topBar = new TopBar
@@ -15,6 +15,7 @@ nav = new Navigation
 
 StackOfPages = require 'stack-of-pages'
 stack = new StackOfPages
+  DEFAULT: '#/classify'
   '#/': require './controllers/home'
   '#/classify': require './controllers/classify'
   '#/subject/:id': require './controllers/subject'

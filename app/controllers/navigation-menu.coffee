@@ -9,6 +9,11 @@ class NavigationMenu extends Controller
 
   hidden: true
 
+  clickedVeryRecently: false
+
+  events:
+    click: 'onClick'
+
   constructor: ->
     super
 
@@ -17,10 +22,17 @@ class NavigationMenu extends Controller
     addEventListener 'hashchange', @onHashChange
     @onHashChange()
 
+  onClick: ->
+    @clickedVeryRecently = true
+    setTimeout (=> @clickedVeryRecently = false), 50
+
   onHashChange: =>
     currentHash = location.hash || @defaultHash
     for a in @el.find 'a'
       $(a).toggleClass 'active', a.hash is currentHash
+
+    if @clickedVeryRecently
+      setTimeout (=> @hide()), 250
 
   show: ->
     @el.toggleClass 'hidden', false

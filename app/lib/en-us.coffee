@@ -37,5 +37,5 @@ module.exports =
       darkNebula: 'Dark Nebula'
       artefact: 'Artefact'
       other: 'Other'
-    finish: 'Finish'
+    finish: 'I\'m done!'
     next: 'Next'

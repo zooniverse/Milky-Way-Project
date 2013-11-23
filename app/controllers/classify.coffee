@@ -1,4 +1,5 @@
 Controller = require 'zooniverse/controllers/base-controller'
+Overlay = require './overlay'
 MarkingSurface = require 'marking-surface'
 EllipseTool = require 'marking-surface/lib/tools/ellipse'
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
@@ -32,11 +33,13 @@ class Classify extends Controller
   template: require '../views/classify'
 
   events:
+    'click button[name="help"]': 'onClickHelp'
     'change input[name="tool"]': 'onChangeTool'
     'click button[name="finish"]': 'onClickFinish'
     'click button[name="next"]': 'onClickNext'
 
   elements:
+    'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
     '.show-during': 'showDuring'
     '.show-after': 'showAfter'
@@ -45,6 +48,10 @@ class Classify extends Controller
     super
 
     window.classifer = @
+
+    @helpOverlay = new Overlay
+      content: '<p>TODO</p><p>Lorem ipsum dolor sit amet</p>'
+      associated: @helpButton
 
     @surface = new MarkingSurface
       tool: EllipseTool
@@ -61,6 +68,9 @@ class Classify extends Controller
     User.on 'change', @onUserChange
     Subject.on 'getNext', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
+
+  onClickHelp: ->
+    @helpOverlay.toggle()
 
   onChangeTool: (e) ->
     @surface.tool = MarkingSurface[e.currentTarget.value]

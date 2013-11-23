@@ -1,5 +1,5 @@
 Controller = require 'zooniverse/controllers/base-controller'
-NavigationMenu = require './navigation-menu'
+NavigationOverlay = require './navigation-overlay'
 
 class NavigationButton extends Controller
   className: 'navigation-button'
@@ -11,11 +11,10 @@ class NavigationButton extends Controller
   constructor: ->
     super
 
-    @navigationMenu = new NavigationMenu
-    @navigationMenu.el.appendTo document.body
+    @navigationOverlay = new NavigationOverlay
 
   events:
     'click button[name="toggle-menu"]': ->
-      @navigationMenu.toggle()
+      @navigationOverlay.toggle()
 
 module.exports = NavigationButton

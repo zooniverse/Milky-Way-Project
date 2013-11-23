@@ -1,0 +1,21 @@
+.overlay
+
+  background: rgba(DARK_BLUEISH, 0.9)
+  bottom: 0
+  color: white
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  transition:
+    opacity 0.5s,
+    transform 0.5s
+  z-index: 1
+
+  &.hidden
+    opacity: 0
+    transform: translateY(-100%)
+
+  .content
+    margin: 80px auto 40px
+    width: 800px - 40px

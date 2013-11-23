@@ -1,3 +1,6 @@
 <% translate = require 't7e' %>
 
-<%- translate 'button', 'navigation.label' %>
+<button name="toggle-menu">
+  <i class="fa fa-bars"></i>
+  <%- translate 'span', 'navigation.label' %>
+</button>

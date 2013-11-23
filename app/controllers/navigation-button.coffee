@@ -15,7 +15,7 @@ class NavigationButton extends Controller
     @navigationMenu.el.appendTo document.body
 
   events:
-    click: ->
+    'click button[name="toggle-menu"]': ->
       @navigationMenu.toggle()
 
 module.exports = NavigationButton

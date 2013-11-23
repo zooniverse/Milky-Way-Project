@@ -1,5 +1,4 @@
 .overlay
-
   background: rgba(DARK_BLUEISH, 0.9)
   bottom: 0
   color: white
@@ -19,3 +18,17 @@
   .content
     margin: 80px auto 40px
     width: 800px - 40px
+
+.show-inline-with-overlay,
+.show-block-with-overlay
+  display: none
+
+.showing-overlay
+  .show-inline-with-overlay
+    display: inline
+
+  .show-block-with-overlay
+    display: block
+
+  .hide-with-overlay
+    display: none

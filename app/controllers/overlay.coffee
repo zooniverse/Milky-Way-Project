@@ -1,4 +1,5 @@
 Controller = require 'zooniverse/controllers/base-controller'
+$ = window.jQuery
 
 ESC = 27
 
@@ -13,6 +14,7 @@ class Overlay extends Controller
 
   constructor: ->
     super
+    @associated = $(@associated)
 
     @hide() if @hidden
     @el.prependTo document.body
@@ -26,13 +28,13 @@ class Overlay extends Controller
 
   show: ->
     @el.toggleClass 'hidden', false
-    @associated?.toggleClass 'showing-overlay', true
+    $(@associated)?.toggleClass 'showing-overlay', true
     @hidden = false
     addEventListener 'keydown', @onKeyDown, false
 
   hide: ->
     @el.toggleClass 'hidden', true
-    @associated?.toggleClass 'showing-overlay', false
+    $(@associated)?.toggleClass 'showing-overlay', false
     @hidden = true
     removeEventListener 'keydown', @onKeyDown, false
 

@@ -9,5 +9,6 @@ class SiteHeader extends BaseController
     super
     @navigationButton = new NavigationButton
     @navigationButton.el.appendTo @el.find '.navigation-container'
+    @navigationButton.navigationOverlay.associated.push @el.find('.constant')...
 
 module.exports = SiteHeader

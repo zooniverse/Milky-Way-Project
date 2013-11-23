@@ -1,6 +1,7 @@
 <% translate = require 't7e' %>
 
 <button name="toggle-menu">
-  <i class="fa fa-bars"></i>
+  <i class="fa fa-bars hide-with-overlay"></i>
+  <span class="show-inline-with-overlay">&times;</span>
   <%- translate 'span', 'navigation.label' %>
 </button>

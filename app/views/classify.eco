@@ -4,7 +4,9 @@
   <div class="subject-options">
     <div><%- translate 'button', '<i class="fa fa-comments"></i>', name: 'discuss', title: 'classify.options.discuss' %></div>
     <div><%- translate 'button', '<i class="fa fa-star"></i>', name: 'favourite', title: 'classify.options.favourite' %></div>
-    <div><%- translate 'button', '<i class="fa fa-question"></i>', name: 'help', title: 'classify.options.help' %></div>
+    <% helpButtonContent = '<i class="fa fa-question hide-with-overlay"></i>' %>
+    <% helpButtonContent += '<span class="show-inline-with-overlay">&times;</span>' %>
+    <div><%- translate 'button', helpButtonContent, name: 'help', title: 'classify.options.help' %></div>
   </div>
 
   <div class="subject">

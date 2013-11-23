@@ -17,9 +17,11 @@
     <div class="tool">
       <label>
         <input type="radio" name="tool" value="EllipseTool" checked="checked" />
-        <div class="inner-label">
-          <div class="icon"><i class="fa fa-ban"></i></div>
-          <%- translate 'div.actual-label', 'classify.tools.bubble' %>
+        <div class="outer-label">
+          <div class="inner-label">
+            <div class="icon"><i class="fa fa-ban"></i></div>
+            <%- translate 'div.actual-label', 'classify.tools.bubble' %>
+          </div>
         </div>
       </label>
     </div>
@@ -27,9 +29,11 @@
     <div class="tool">
       <label>
         <input type="radio" name="tool" value="CircleTool" />
-        <div class="inner-label">
-          <div class="icon"><i class="fa fa-ban"></i></div>
-          <%- translate 'div.actual-label', 'classify.tools.cluster' %>
+        <div class="outer-label">
+          <div class="inner-label">
+            <div class="icon"><i class="fa fa-ban"></i></div>
+            <%- translate 'div.actual-label', 'classify.tools.cluster' %>
+          </div>
         </div>
       </label>
     </div>
@@ -37,9 +41,11 @@
     <div class="tool">
       <label>
         <input type="radio" name="tool" value="CircleTool" />
-        <div class="inner-label">
-          <div class="icon"><i class="fa fa-ban"></i></div>
-          <%- translate 'div.actual-label', 'classify.tools.ego' %>
+        <div class="outer-label">
+          <div class="inner-label">
+            <div class="icon"><i class="fa fa-ban"></i></div>
+            <%- translate 'div.actual-label', 'classify.tools.ego' %>
+          </div>
         </div>
       </label>
     </div>
@@ -47,9 +53,11 @@
     <div class="tool">
       <label>
         <input type="radio" name="tool" value="CircleTool" />
-        <div class="inner-label">
-          <div class="icon"><i class="fa fa-ban"></i></div>
-          <%- translate 'div.actual-label', 'classify.tools.galaxy' %>
+        <div class="outer-label">
+          <div class="inner-label">
+            <div class="icon"><i class="fa fa-ban"></i></div>
+            <%- translate 'div.actual-label', 'classify.tools.galaxy' %>
+          </div>
         </div>
       </label>
     </div>
@@ -57,9 +65,11 @@
     <div class="tool">
       <label>
         <input type="radio" name="tool" value="ObjectTool" />
-        <div class="inner-label">
-          <div class="icon"><i class="fa fa-ban"></i></div>
-          <%- translate 'div.actual-label', 'classify.tools.object' %>
+        <div class="outer-label">
+          <div class="inner-label">
+            <div class="icon"><i class="fa fa-ban"></i></div>
+            <%- translate 'div.actual-label', 'classify.tools.object' %>
+          </div>
         </div>
       </label>
     </div>

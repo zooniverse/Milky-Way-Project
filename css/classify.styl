@@ -56,6 +56,18 @@
       white-space: nowrap
 
     label
+      cursor: pointer
+      display: block
+      height: 100%
+      width: 100%
+
+    input
+      bottom: 0
+      position: absolute
+      right: 0
+      visibility: hidden
+
+    .outer-label
       border: 2px solid
       border-radius: 5px
       box-sizing: border-box
@@ -65,11 +77,10 @@
       position: relative
       width: 100%
 
-    input
-      bottom: 0
-      position: absolute
-      right: 0
-      visibility: 0
+    :checked + .outer-label
+      background: black // TODO
+      border-color: black // TODO
+      color: white
 
     .inner-label
       left: 50%

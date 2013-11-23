@@ -41,19 +41,24 @@
   .question
     font-size: 18px
     line-height: 1
-    margin: 30px
+    margin: 30px 0
     text-align: center
 
   .tools
     border-spacing: 10px 0
+    margin: 0 -10px
     display: table
+    margin: 30px 0
     text-align: center
     width: 100%
+    width: calc(unquote("100% + 20px"))
 
     .tool
       display: table-cell
       height: 100px
+      vertical-align: middle
       white-space: nowrap
+      width: 5% // Eh
 
     label
       cursor: pointer
@@ -67,7 +72,8 @@
       right: 0
       visibility: hidden
 
-    .outer-label
+    .outer-label,
+    button
       border: 2px solid
       border-radius: 5px
       box-sizing: border-box
@@ -78,8 +84,8 @@
       width: 100%
 
     :checked + .outer-label
-      background: black // TODO
-      border-color: black // TODO
+      background: BLUEISH
+      border-color: BLUEISH
       color: white
 
     .inner-label

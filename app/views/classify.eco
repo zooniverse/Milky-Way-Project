@@ -73,10 +73,13 @@
         </div>
       </label>
     </div>
+
+    <div class="tool">
+      <%- translate 'button', 'classify.finish', name: 'finish' %>
+    </div>
   </div>
 
-  <div class="action">
-    <%- translate 'button.show-during', 'classify.finish', name: 'finish' %>
+  <!--<div class="action">
     <%- translate 'button.show-after', 'classify.next', name: 'next' %>
-  </div>
+  </div>-->
 </div>

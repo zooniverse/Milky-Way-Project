@@ -48,15 +48,15 @@ class Classify extends Controller
 
     @surface = new MarkingSurface
       tool: EllipseTool
-      width: 320
-      height: 240
+      width: 800
+      height: 400
 
     @subjectImage = @surface.addShape 'image'
 
     @subjectContainer.append @surface.el
 
-    @footer = new Footer
-    @footer.el.appendTo @el
+    # @footer = new Footer
+    # @footer.el.appendTo @el
 
     User.on 'change', @onUserChange
     Subject.on 'getNext', @onSubjectGettingNext

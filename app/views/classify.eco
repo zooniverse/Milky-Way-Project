@@ -1,42 +1,68 @@
 <% translate = require 't7e' %>
 
-<div id="interface">
+<div class="interface">
   <div class="subject-options">
-    <%- translate 'button', 'classify.options.discuss', name: 'discuss' %>
-    <%- translate 'button', 'classify.options.favourite', name: 'favourite' %>
-    <%- translate 'button', 'classify.options.help', name: 'help' %>
+    <div><%- translate 'button', '<i class="fa fa-comments"></i>', name: 'discuss', title: 'classify.options.discuss' %></div>
+    <div><%- translate 'button', '<i class="fa fa-star"></i>', name: 'favourite', title: 'classify.options.favourite' %></div>
+    <div><%- translate 'button', '<i class="fa fa-question"></i>', name: 'help', title: 'classify.options.help' %></div>
   </div>
 
   <div class="subject">
     <!--Marking surface goes here-->
   </div>
-  <div clas="question"><%- translate 'span', 'classify.question' %></div>
+
+  <div class="question"><%- translate 'span', 'classify.question' %></div>
 
   <div class="tools">
-    <label>
-      <input type="radio" name="tool" value="EllipseTool" checked="checked" />
-      <%- translate 'span', 'classify.tools.bubble' %>
-    </label>
+    <div class="tool">
+      <label>
+        <input type="radio" name="tool" value="EllipseTool" checked="checked" />
+        <div class="inner-label">
+          <div class="icon"><i class="fa fa-ban"></i></div>
+          <%- translate 'div.actual-label', 'classify.tools.bubble' %>
+        </div>
+      </label>
+    </div>
 
-    <label>
-      <input type="radio" name="tool" value="CircleTool" />
-      <%- translate 'span', 'classify.tools.cluster' %>
-    </label>
+    <div class="tool">
+      <label>
+        <input type="radio" name="tool" value="CircleTool" />
+        <div class="inner-label">
+          <div class="icon"><i class="fa fa-ban"></i></div>
+          <%- translate 'div.actual-label', 'classify.tools.cluster' %>
+        </div>
+      </label>
+    </div>
 
-    <label>
-      <input type="radio" name="tool" value="CircleTool" />
-      <%- translate 'span', 'classify.tools.ego' %>
-    </label>
+    <div class="tool">
+      <label>
+        <input type="radio" name="tool" value="CircleTool" />
+        <div class="inner-label">
+          <div class="icon"><i class="fa fa-ban"></i></div>
+          <%- translate 'div.actual-label', 'classify.tools.ego' %>
+        </div>
+      </label>
+    </div>
 
-    <label>
-      <input type="radio" name="tool" value="CircleTool" />
-      <%- translate 'span', 'classify.tools.galaxy' %>
-    </label>
+    <div class="tool">
+      <label>
+        <input type="radio" name="tool" value="CircleTool" />
+        <div class="inner-label">
+          <div class="icon"><i class="fa fa-ban"></i></div>
+          <%- translate 'div.actual-label', 'classify.tools.galaxy' %>
+        </div>
+      </label>
+    </div>
 
-    <label>
-      <input type="radio" name="tool" value="ObjectTool" />
-      <%- translate 'span', 'classify.tools.object' %>
-    </label>
+    <div class="tool">
+      <label>
+        <input type="radio" name="tool" value="ObjectTool" />
+        <div class="inner-label">
+          <div class="icon"><i class="fa fa-ban"></i></div>
+          <%- translate 'div.actual-label', 'classify.tools.object' %>
+        </div>
+      </label>
+    </div>
   </div>
 
   <div class="action">

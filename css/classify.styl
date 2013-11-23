@@ -1,15 +1,84 @@
+[data-location-hash="#/classify"] .site-header
+  height: 370px
+
 .classify
-  .marking-surface
-    border: 1px solid gray
+  margin-top: -290px
+
+  .interface
+    margin: 0 auto
     position: relative
+    width: 800px
 
-    .marking-tool-controls
-    	width: 120px
+  .subject-options
+    color: white
+    position: absolute
+    right: 100%
+    top: 0
 
-	    button
-	    	display: block
+    button
+      border: 2px solid
+      border-radius: 50%
+      font-size: 20px
+      height: 1.75em
+      line-height: 1em
+      margin: 5px 10px
+      width: 1.75em
 
-	  	label
-	  		display: inline-block
-	  		width: 120px
-	  		text-align: left
+  .marking-surface
+    background: rgba(gray, 0.25)
+
+  .marking-tool-controls
+    width: 120px
+
+    button
+      display: block
+
+    label
+      display: inline-block
+      width: 120px
+      text-align: left
+
+  .question
+    font-size: 18px
+    line-height: 1
+    margin: 30px
+    text-align: center
+
+  .tools
+    border-spacing: 10px 0
+    display: table
+    text-align: center
+    width: 100%
+
+    .tool
+      display: table-cell
+      height: 100px
+      white-space: nowrap
+
+    label
+      border: 2px solid
+      border-radius: 5px
+      box-sizing: border-box
+      cursor: pointer
+      display: block
+      height: 100%
+      position: relative
+      width: 100%
+
+    input
+      bottom: 0
+      position: absolute
+      right: 0
+      visibility: 0
+
+    .inner-label
+      left: 50%
+      position: absolute
+      top: 50%
+      transform: translate(-50%, -50%)
+
+    .icon
+      font-size: 30px
+
+    .actual-label
+      font-weight: bold

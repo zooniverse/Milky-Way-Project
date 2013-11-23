@@ -1,6 +1,7 @@
 .navigation-menu
   BACKGROUND = #04181c
   FOREGROUND = white
+  ACTIVE = #3c8999
 
   background: rgba(BACKGROUND, 0.9)
   bottom: 0
@@ -26,15 +27,32 @@
     transform: translate(-50%, -50%)
     width: 800px
 
+  a
+    color: inherit
+    text-decoration: none
+
+    &.active
+      color: ACTIVE
+
+
   .pages
     font-size: 36px
     line-height: 1
 
-  a
-    color: inherit
-    display: inline-block
-    padding: 10px 0
-    text-decoration: none
+    a
+      display: inline-block
+      padding: 10px 0
 
-    &.active
-      color: #3c8999
+  .social
+    margin-top: 60px
+
+    a
+      border: 2px solid
+      border-radius: 50%
+      display: inline-block
+      font-size: 20px
+      height: 1.25em
+      line-height: 1.25em
+      margin: 0 10px
+      padding: 3px
+      width: 1.25em

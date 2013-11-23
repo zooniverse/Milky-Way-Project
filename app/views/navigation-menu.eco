@@ -10,8 +10,14 @@
   </div>
 
   <div class="social">
-    <a href="#TODO_TWITTER">(t)</a>
-    <a href="#TODO_FACEBOOK">(f)</a>
-    <a href="#TODO_PINTEREST">(p)</a>
+    <a href="#TODO_TWITTER">
+      <i class="fa fa-twitter"></i>
+    </a><!--
+    --><a href="#TODO_FACEBOOK">
+      <i class="fa fa-facebook-square"></i>
+    </a><!--
+    --><a href="#TODO_PINTEREST">
+      <i class="fa fa-pinterest"></i>
+    </a>
   </div>
 </div>

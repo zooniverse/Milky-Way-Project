@@ -53,6 +53,7 @@ class Classify extends Controller
     window.classifer = @
 
     @helpOverlay = new Overlay
+      from: 'left'
       content: '<p>TODO</p><p>Lorem ipsum dolor sit amet</p>'
       associated: @helpButton
 

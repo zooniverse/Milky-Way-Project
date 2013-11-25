@@ -13,7 +13,12 @@
 
   &.hidden
     opacity: 0
-    transform: translateY(-100%)
+
+    &.from-top
+      transform: translateY(-100%)
+
+    &.from-left
+      transform: translateX(-100%)
 
   .content
     left: 50%

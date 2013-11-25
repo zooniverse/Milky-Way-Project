@@ -4,6 +4,7 @@ $ = window.jQuery
 ESC = 27
 
 class Overlay extends Controller
+  from: 'top'
   content: ''
   associated: null
 
@@ -14,6 +15,7 @@ class Overlay extends Controller
 
   constructor: ->
     super
+    @el.addClass "from-#{@from}"
     @associated = $(@associated)
 
     @hide() if @hidden

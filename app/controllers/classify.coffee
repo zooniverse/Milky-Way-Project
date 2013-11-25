@@ -14,18 +14,22 @@ Footer = require 'zooniverse/controllers/footer'
 EllipseTool.Controls = DefaultControls
 CircleTool.Controls = DefaultControls
 
+SUBJECT_WIDTH = 800
+SUBJECT_HEIGHT = 400
+
 loadImage = (src, callback) ->
   img = new Image
-  img.onload = -> callback img.width, img.height
+  img.onload = -> callback img
   img.src = src
   null
 
-animation = (duration = 500) ->
+animate = ([duration]..., step) ->
   deferred = new $.Deferred
   $('<span></span>').animate {opacity: 0},
-    duration: duration
+    duration: duration || 500
     progress: (promise, step) -> deferred.notify step
     done: -> deferred.resolve()
+  deferred.progress step if step?
   deferred.promise()
 
 class Classify extends Controller
@@ -55,8 +59,8 @@ class Classify extends Controller
 
     @surface = new MarkingSurface
       tool: EllipseTool
-      width: 800
-      height: 400
+      width: SUBJECT_WIDTH
+      height: SUBJECT_HEIGHT
 
     @subjectImage = @surface.addShape 'image'
 
@@ -88,20 +92,17 @@ class Classify extends Controller
 
     @classification = new Classification {subject}
 
-    loadImage subject.location.standard, (width, height) =>
-      @surface.resize width, height
-
-      slideOut = animation()
-
-      slideOut.progress (step) =>
+    loadImage subject.location.standard, ({width, height}) =>
+      slideOut = animate (step) =>
         @subjectImage.attr 'y', -1 * @surface.height * step
 
       slideOut.then =>
-        @subjectImage.attr {'xlink:href': subject.location.standard, width, height}
+        @subjectImage.attr
+          'xlink:href': subject.location.standard
+          width: SUBJECT_WIDTH
+          height: SUBJECT_HEIGHT
 
-        slideIn = animation()
-
-        slideIn.progress (step) =>
+        slideIn = animate (step) =>
           @subjectImage.attr 'y', @surface.height + (-1 * @surface.height * step)
 
         slideIn.then =>

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "dependencies": {
     "haw": "~0.2.9",
-    "marking-surface": "~0.2.0",
+    "marking-surface": "~0.4.6",
     "publisssh": "~0.2.1",
     "stack-of-pages": "~0.0.5",
     "t7e": "~0.2.3",

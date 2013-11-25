@@ -40,7 +40,6 @@ class Classify extends Controller
     'click button[name="help"]': 'onClickHelp'
     'change input[name="tool"]': 'onChangeTool'
     'click button[name="finish"]': 'onClickFinish'
-    'click button[name="next"]': 'onClickNext'
 
   elements:
     'button[name="help"]': 'helpButton'
@@ -90,6 +89,7 @@ class Classify extends Controller
     console?.log 'Subject', subject.location.standard
     @surface.marks[0].destroy() until @surface.marks.length==0
 
+    @classification?.destroy()
     @classification = new Classification {subject}
 
     loadImage subject.location.standard, ({width, height}) =>
@@ -115,8 +115,8 @@ class Classify extends Controller
 
     @classification.annotate mark for mark in @surface.marks
     console?.log JSON.stringify @classification
+    # @classification.send()
 
-  onClickNext: ->
     Subject.next()
 
 module.exports = Classify

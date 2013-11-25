@@ -28,8 +28,26 @@
       &.showing-overlay
         z-index: 1
 
-  .marking-surface
+  .subject
     background: rgba(black, 0.9)
+    border-radius: 5px
+    position: relative
+
+  .loading-indicator
+    color: rgba(white, 0.5)
+    display: none
+    font-size: 200px
+    left: 50%
+    position: absolute
+    top: 50%
+    transform: translate(-50%, -50%)
+    z-index: 1
+
+  &.loading .loading-indicator
+    display: block
+
+  .marking-surface
+    display: block
     height: 400px
     width: 100%
 
@@ -38,6 +56,15 @@
 
     button
       display: block
+
+      &[name="destroy"]
+        background: red
+        border-radius: 50%
+        color: white
+        font-weight: bold
+        height: 1.25em
+        line-height: 1.25em
+        width: 1.25em
 
     label
       display: inline-block

@@ -11,6 +11,7 @@
 
   <div class="subject">
     <!--Marking surface goes here-->
+    <div class="loading-indicator"><i class="fa fa-refresh fa-spin"></i></div>
   </div>
 
   <div class="question"><%- translate 'span', 'classify.question' %></div>

@@ -23,10 +23,10 @@ loadImage = (src, callback) ->
   img.src = src
   null
 
-animate = ([duration]..., step) ->
+animate = (duration, step) ->
   deferred = new $.Deferred
   $('<span></span>').animate {opacity: 0},
-    duration: duration || 500
+    duration: duration
     progress: (promise, step) -> deferred.notify step
     done: -> deferred.resolve()
   deferred.progress step if step?
@@ -70,7 +70,7 @@ class Classify extends Controller
     # @footer.el.appendTo @el
 
     User.on 'change', @onUserChange
-    Subject.on 'getNext', @onSubjectGettingNext
+    Subject.on 'get-next', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
 
   onClickHelp: ->
@@ -83,7 +83,7 @@ class Classify extends Controller
     @el.toggleClass 'signed-in', user?
     Subject.next() if not @classification?
 
-  onSubjectGettingNext: ->
+  onSubjectGettingNext: =>
     @el.addClass 'loading'
 
   onSubjectSelect: (e, subject) =>
@@ -94,7 +94,7 @@ class Classify extends Controller
     @classification = new Classification {subject}
 
     loadImage subject.location.standard, ({width, height}) =>
-      slideOut = animate (step) =>
+      slideOut = animate 500, (step) =>
         @subjectImage.attr 'y', -1 * @surface.height * step
 
       slideOut.then =>
@@ -103,12 +103,13 @@ class Classify extends Controller
           width: SUBJECT_WIDTH
           height: SUBJECT_HEIGHT
 
-        slideIn = animate (step) =>
+        slideIn = animate 500, (step) =>
           @subjectImage.attr 'y', @surface.height + (-1 * @surface.height * step)
 
         slideIn.then =>
           @showDuring.show()
           @showAfter.hide()
+          @el.removeClass 'loading'
 
   onClickFinish: ->
     @showDuring.hide()

@@ -32,6 +32,10 @@ stack = new StackOfPages
 
 document.body.appendChild stack.el
 
+Footer = require 'zooniverse/controllers/footer'
+footer = new Footer
+footer.el.appendTo document.body
+
 User = require 'zooniverse/models/user'
 User.fetch()
 

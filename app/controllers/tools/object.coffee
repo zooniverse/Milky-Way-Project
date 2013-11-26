@@ -1,14 +1,14 @@
-$=window.jQuery
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
-RectangleTool = require 'marking-surface/lib/tools/rectangle'
-{ToolControls} = window?.MarkingSurface || require 'marking-surface'
+RectangleTool = require './rectangle'
+$ = window.jQuery
+MarkingSurface = require 'marking-surface'
 
 class ObjectControls extends DefaultControls
   constructor: ->
     super
 
-    $(@el).append(require('../../views/object-types')())
-    $(@el).on('change', 'input[name="object-type"]', @onChangeRadioButtons)
+    $(@el).append require('../../views/object-types')()
+    $(@el).on 'change', 'input[name="object-type"]', @onChangeRadioButtons
 
   onChangeRadioButtons: (e) =>
     setTimeout =>
@@ -16,11 +16,11 @@ class ObjectControls extends DefaultControls
 
   onToolSelect: ->
     super
-    @el.style.display=''
+    @el.style.display = ''
 
   onToolDeselect: ->
     super
-    @el.style.display='none'
+    @el.style.display = 'none'
 
 class ObjectTool extends RectangleTool
   @Controls: ObjectControls
@@ -32,5 +32,5 @@ class ObjectTool extends RectangleTool
   # positionControls: ->
   #   @controls.moveTo @mark.left,  @mark.top + @mark.height, true
 
-window?.MarkingSurface.ObjectTool = ObjectTool
-module?.exports = ObjectTool
+MarkingSurface.ObjectTool = ObjectTool
+module.exports = ObjectTool

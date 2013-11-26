@@ -1,10 +1,10 @@
 [{
+  "id": "OFFLINE_ID_0",
+  "zooniverse_id": "OFFLINE_ZOONIVERSE_ID_0",
   "location": {
-    "id": "OFFLINE_ID_0",
-    "zoniverse_id": "OFFLINE_ZOONIVERSE_ID_0",
-    "standard": "http://rack.0.mshcdn.com/media/ZgkyMDEzLzA1LzAxL2NlL3NuaWNrZXJzLjA0YzQxLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/7ebd701a/2b1/snickers.jpg",
-    "metadata": {
-      "offline": true
-    }
+    "standard": "http://rack.0.mshcdn.com/media/ZgkyMDEzLzA1LzAxL2NlL3NuaWNrZXJzLjA0YzQxLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/7ebd701a/2b1/snickers.jpg"
+  },
+  "metadata": {
+    "offline": true
   }
 }]

@@ -7,7 +7,7 @@ class ObjectControls extends DefaultControls
   constructor: ->
     super
 
-    $(@el).append(require('../views/object-types')())
+    $(@el).append(require('../../views/object-types')())
     $(@el).on('change', 'input[name="object-type"]', @onChangeRadioButtons)
 
   onChangeRadioButtons: (e) =>

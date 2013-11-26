@@ -44,6 +44,7 @@ class Classify extends Controller
     'click button[name="finish"]': 'onClickFinish'
 
   elements:
+    '.discuss': 'talkLink'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
     '.show-during': 'showDuring'
@@ -94,6 +95,8 @@ class Classify extends Controller
 
     @classification?.destroy()
     @classification = new Classification {subject}
+
+    @talkLink.attr 'href', subject.talkHref()
 
     loadImage subject.location.standard, ({width, height}) =>
       slideOut = animate 500, (step) =>

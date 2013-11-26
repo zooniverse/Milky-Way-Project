@@ -2,7 +2,7 @@
 
 <div class="interface">
   <div class="subject-options">
-    <div><%- translate 'a.discuss', '<i class="fa fa-comments"></i>', href: '#TALK', title: 'classify.options.discuss' %></div>
+    <div><%- translate 'a.discuss', '<i class="fa fa-comments"></i>', title: 'classify.options.discuss' %></div>
     <div><%- translate 'button', '<i class="fa fa-star"></i>', name: 'favourite', title: 'classify.options.favourite' %></div>
     <% helpButtonContent = '<i class="fa fa-question hide-with-overlay"></i>' %>
     <% helpButtonContent += '<span class="show-inline-with-overlay">&times;</span>' %>

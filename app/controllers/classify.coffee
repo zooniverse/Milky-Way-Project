@@ -1,18 +1,20 @@
 Controller = require 'zooniverse/controllers/base-controller'
 Overlay = require './overlay'
 MarkingSurface = require 'marking-surface'
-EllipseTool = require './tools/ellipse'
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
-CircleTool = require './tools/circle'
-ObjectTool = require './tools/object'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
 Classification = require 'zooniverse/models/classification'
 Footer = require 'zooniverse/controllers/footer'
 
-EllipseTool.Controls = DefaultControls
-CircleTool.Controls = DefaultControls
+tools =
+  EllipseTool: require './tools/ellipse'
+  CircleTool: require './tools/circle'
+  ObjectTool: require './tools/object'
+
+tools.EllipseTool.Controls = DefaultControls
+tools.CircleTool.Controls = DefaultControls
 
 SUBJECT_WIDTH = 800
 SUBJECT_HEIGHT = 400
@@ -58,7 +60,7 @@ class Classify extends Controller
       associated: @helpButton
 
     @surface = new MarkingSurface
-      tool: EllipseTool
+      tool: tools.EllipseTool
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT
 
@@ -77,7 +79,7 @@ class Classify extends Controller
     @helpOverlay.toggle()
 
   onChangeTool: (e) ->
-    @surface.tool = MarkingSurface[e.currentTarget.value]
+    @surface.tool = tools[e.currentTarget.value]
 
   onUserChange: (e, user) =>
     @el.toggleClass 'signed-in', user?

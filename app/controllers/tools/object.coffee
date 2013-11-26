@@ -29,8 +29,5 @@ class ObjectTool extends RectangleTool
     super
     @mark.set 'content', ''
 
-  # positionControls: ->
-  #   @controls.moveTo @mark.left,  @mark.top + @mark.height, true
-
 MarkingSurface.ObjectTool = ObjectTool
 module.exports = ObjectTool

@@ -31,6 +31,7 @@
   .subject
     background: rgba(black, 0.9)
     border-radius: 5px
+    color: white
     position: relative
 
   .loading-indicator
@@ -52,11 +53,12 @@
     width: 100%
 
   .marking-tool-controls
-    width: 120px
+    text-shadow:
+      0 0 1px black,
+      0 1px 2px black,
+      0 2px 3px black
 
     button
-      display: block
-
       &[name="destroy"]
         background: red
         border-radius: 50%

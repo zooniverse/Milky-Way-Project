@@ -22,7 +22,14 @@
         <input type="radio" name="tool" value="EllipseTool" checked="checked" />
         <div class="outer-label">
           <div class="inner-label">
-            <div class="icon"><i class="fa fa-ban"></i></div>
+            <div class="icon">
+              <svg width="2em" height="1.5em" viewbox="0 0 100 100">
+                <g fill="transparent" stroke="currentColor" stroke-width="5" transform="translate(50, 50)">
+                  <ellipse rx="50" ry="40" transform="rotate(45)"></ellipse>
+                  <path d="M 30 -30 L 0 0 L -35 -35" stroke-width="2.5"></path>
+                </g>
+              </svg>
+            </div>
             <%- translate 'div.actual-label', 'classify.tools.bubble' %>
           </div>
         </div>
@@ -34,7 +41,14 @@
         <input type="radio" name="tool" value="CircleTool" />
         <div class="outer-label">
           <div class="inner-label">
-            <div class="icon"><i class="fa fa-ban"></i></div>
+            <div class="icon">
+              <svg width="2em" height="1.5em" viewbox="0 0 100 100">
+                <g fill="transparent" stroke="currentColor" stroke-width="5" transform="translate(50, 50)">
+                  <circle r="35"></circle>
+                  <path d="M 0 0 L 25 -25" stroke-width="2.5"></path>
+                </g>
+              </svg>
+            </div>
             <%- translate 'div.actual-label', 'classify.tools.cluster' %>
           </div>
         </div>
@@ -46,7 +60,14 @@
         <input type="radio" name="tool" value="CircleTool" />
         <div class="outer-label">
           <div class="inner-label">
-            <div class="icon"><i class="fa fa-ban"></i></div>
+            <div class="icon">
+              <svg width="2em" height="1.5em" viewbox="0 0 100 100">
+                <g fill="transparent" stroke="currentColor" stroke-width="5" transform="translate(50, 50)">
+                  <circle r="35"></circle>
+                  <path d="M 0 0 L 25 -25" stroke-width="2.5"></path>
+                </g>
+              </svg>
+            </div>
             <%- translate 'div.actual-label', 'classify.tools.ego' %>
           </div>
         </div>
@@ -58,7 +79,14 @@
         <input type="radio" name="tool" value="CircleTool" />
         <div class="outer-label">
           <div class="inner-label">
-            <div class="icon"><i class="fa fa-ban"></i></div>
+            <div class="icon">
+              <svg width="2em" height="1.5em" viewbox="0 0 100 100">
+                <g fill="transparent" stroke="currentColor" stroke-width="5" transform="translate(50, 50)">
+                  <circle r="35"></circle>
+                  <path d="M 0 0 L 25 -25" stroke-width="2.5"></path>
+                </g>
+              </svg>
+            </div>
             <%- translate 'div.actual-label', 'classify.tools.galaxy' %>
           </div>
         </div>
@@ -70,7 +98,16 @@
         <input type="radio" name="tool" value="ObjectTool" />
         <div class="outer-label">
           <div class="inner-label">
-            <div class="icon"><i class="fa fa-ban"></i></div>
+            <div class="icon">
+              <svg width="2em" height="1.5em" viewbox="0 0 100 100">
+                <g fill="transparent" stroke="currentColor" stroke-width="5" transform="translate(50, 50)">
+                  <rect x="-30" y="-30" width="60" height="60"></rect>
+                  <circle cx="45" cy="-20" r="5" ></circle>
+                  <circle cx="45" cy="0" r="5" ></circle>
+                  <circle cx="45" cy="20" r="5" ></circle>
+                </g>
+              </svg>
+            </div>
             <%- translate 'div.actual-label', 'classify.tools.object' %>
           </div>
         </div>

@@ -38,7 +38,7 @@
         z-index: 1
 
   .subject
-    background: rgba(black, 0.9)
+    background: rgba(DARK_BLUEISH, 0.9)
     border-radius: 5px
     color: white
     position: relative
@@ -90,12 +90,11 @@
 
   .tools
     border-spacing: 10px 0
-    margin: 0 -10px
     display: table
-    margin: 30px 0
+    margin: 30px -10px
     text-align: center
     width: 100%
-    width: calc(unquote("100% + 20px"))
+    width: calc(100% \+ 20px)
 
     .tool
       display: table-cell
@@ -126,6 +125,11 @@
       height: 100px
       position: relative
       width: 100%
+
+    button[name="finish"]
+      background: GREEN
+      border-width: 0
+      color: white
 
     :checked + .outer-label
       background: BLUEISH

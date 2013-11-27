@@ -32,9 +32,13 @@ stack = new StackOfPages
 
 document.body.appendChild stack.el
 
+footerContainer = document.createElement 'div'
+footerContainer.className = 'inverted site-footer-container'
+
 Footer = require 'zooniverse/controllers/footer'
 footer = new Footer
-footer.el.appendTo document.body
+document.body.appendChild footerContainer
+footer.el.appendTo footerContainer
 
 User = require 'zooniverse/models/user'
 User.fetch()

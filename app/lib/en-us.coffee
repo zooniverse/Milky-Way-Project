@@ -10,7 +10,7 @@ module.exports =
     data: 'Data'
 
   home:
-    content: 'This is the home page'
+    content: 'This is the home page. You should go to the the <a href="#/classify">classify page</a>.'
 
   science:
     content: 'SCIENCE!'

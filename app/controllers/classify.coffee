@@ -39,12 +39,14 @@ class Classify extends Controller
   template: require '../views/classify'
 
   events:
+    'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="help"]': 'onClickHelp'
     'change input[name="tool"]': 'onChangeTool'
     'click button[name="finish"]': 'onClickFinish'
 
   elements:
     '.discuss': 'talkLink'
+    'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
     '.show-during': 'showDuring'
@@ -76,6 +78,10 @@ class Classify extends Controller
     Subject.on 'get-next', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
 
+  onClickFavorite: ->
+    @classification.favorite = !@classification.favorite
+    @favoriteButton.toggleClass 'active', @classification.favorite
+
   onClickHelp: ->
     @helpOverlay.toggle()
 
@@ -87,6 +93,8 @@ class Classify extends Controller
     Subject.next() if not @classification?
 
   onSubjectGettingNext: =>
+    @talkLink.attr 'href', null
+    @favoriteButton.attr 'disabled', true
     @el.addClass 'loading'
 
   onSubjectSelect: (e, subject) =>
@@ -97,6 +105,9 @@ class Classify extends Controller
     @classification = new Classification {subject}
 
     @talkLink.attr 'href', subject.talkHref()
+
+    @favoriteButton.toggleClass 'active', !!@classification.favorite
+    @favoriteButton.attr 'disabled', false
 
     loadImage subject.location.standard, ({width, height}) =>
       slideOut = animate 500, (step) =>

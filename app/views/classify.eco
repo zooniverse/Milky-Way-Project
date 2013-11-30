@@ -3,7 +3,7 @@
 <div class="interface">
   <div class="subject-options">
     <div><%- translate 'a.discuss', '<i class="fa fa-comments"></i>', title: 'classify.options.discuss' %></div>
-    <div><%- translate 'button', '<i class="fa fa-star"></i>', name: 'favorite', title: 'classify.options.favourite' %></div>
+    <div><%- translate 'button', '<i class="fa fa-star"></i>', name: 'favorite', title: 'classify.options.favourite', disabled: true %></div>
     <% helpButtonContent = '<i class="fa fa-question hide-with-overlay"></i>' %>
     <% helpButtonContent += '<span class="show-inline-with-overlay">&times;</span>' %>
     <div><%- translate 'button', helpButtonContent, name: 'help', title: 'classify.options.help' %></div>
@@ -11,7 +11,6 @@
 
   <div class="subject">
     <!--Marking surface goes here-->
-    <div class="loading-indicator"><i class="fa fa-refresh fa-spin"></i></div>
   </div>
 
   <div class="question"><%- translate 'span', 'classify.question' %></div>

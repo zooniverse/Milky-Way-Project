@@ -2,6 +2,7 @@ Controller = require 'zooniverse/controllers/base-controller'
 Overlay = require './overlay'
 MarkingSurface = require 'marking-surface'
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
+Throbber = require './throbber'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
@@ -49,8 +50,6 @@ class Classify extends Controller
     'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
-    '.show-during': 'showDuring'
-    '.show-after': 'showAfter'
 
   constructor: ->
     super
@@ -71,8 +70,12 @@ class Classify extends Controller
 
     @subjectContainer.append @surface.el
 
-    # @footer = new Footer
-    # @footer.el.appendTo @el
+    @throbber = new Throbber
+      width: SUBJECT_WIDTH
+      height: SUBJECT_HEIGHT / 2
+      rpm: 100
+
+    @subjectContainer.append @throbber.canvas
 
     User.on 'change', @onUserChange
     Subject.on 'get-next', @onSubjectGettingNext
@@ -95,7 +98,8 @@ class Classify extends Controller
   onSubjectGettingNext: =>
     @talkLink.attr 'href', null
     @favoriteButton.attr 'disabled', true
-    @el.addClass 'loading'
+    @throbber.start()
+    $(@throbber.canvas).fadeIn()
 
   onSubjectSelect: (e, subject) =>
     console?.log 'Subject', subject.location.standard
@@ -111,7 +115,9 @@ class Classify extends Controller
 
     loadImage subject.location.standard, ({width, height}) =>
       slideOut = animate 500, (step) =>
-        @subjectImage.attr 'y', -1 * @surface.height * step
+        @subjectImage.attr
+          opacity: 1 - step
+          y: -1 * @surface.height * step
 
       slideOut.then =>
         @subjectImage.attr
@@ -120,17 +126,15 @@ class Classify extends Controller
           height: SUBJECT_HEIGHT
 
         slideIn = animate 500, (step) =>
-          @subjectImage.attr 'y', @surface.height + (-1 * @surface.height * step)
+          @subjectImage.attr
+            opacity: step
+            y: @surface.height + (-1 * @surface.height * step)
 
         slideIn.then =>
-          @showDuring.show()
-          @showAfter.hide()
-          @el.removeClass 'loading'
+          $(@throbber.canvas).fadeOut 'slow', =>
+            @throbber.stop()
 
   onClickFinish: ->
-    @showDuring.hide()
-    @showAfter.show()
-
     @classification.annotate mark for mark in @surface.marks
     console?.log JSON.stringify @classification
     # @classification.send()

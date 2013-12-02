@@ -13,13 +13,26 @@ class Overlay extends Controller
 
   hidden: true
 
+  clickedVeryRecently: false
+
   constructor: ->
     super
+    @el.addClass @constructor::className
     @el.addClass "from-#{@from}"
     @associated = $(@associated)
 
     @hide() if @hidden
     @el.prependTo document.body
+
+    @onHashChange()
+
+  onClick: =>
+    @clickedVeryRecently = true
+    setTimeout (=> @clickedVeryRecently = false), 50
+
+  onHashChange: =>
+    if @clickedVeryRecently
+      setTimeout (=> @hide()), 250
 
   onKeyDown: (e) =>
     if e.which is ESC
@@ -32,12 +45,16 @@ class Overlay extends Controller
     @el.toggleClass 'hidden', false
     $(@associated)?.toggleClass 'showing-overlay', true
     @hidden = false
+    addEventListener 'click', @onClick, false
+    addEventListener 'hashchange', @onHashChange, false
     addEventListener 'keydown', @onKeyDown, false
 
   hide: ->
     @el.toggleClass 'hidden', true
     $(@associated)?.toggleClass 'showing-overlay', false
     @hidden = true
+    removeEventListener 'click', @onClick, false
+    removeEventListener 'hashchange', @onHashChange, false
     removeEventListener 'keydown', @onKeyDown, false
 
 module.exports = Overlay

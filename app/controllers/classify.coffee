@@ -1,5 +1,6 @@
 Controller = require 'zooniverse/controllers/base-controller'
 Overlay = require './overlay'
+translate = require 't7e'
 MarkingSurface = require 'marking-surface'
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
 Throbber = require './throbber'
@@ -28,7 +29,7 @@ loadImage = (src, callback) ->
 
 animate = (duration, step) ->
   deferred = new $.Deferred
-  $('<span></span>').animate {opacity: 0},
+  $(document.createElement 'span').animate {opacity: 0},
     duration: duration
     progress: (promise, step) -> deferred.notify step
     done: -> deferred.resolve()
@@ -57,8 +58,9 @@ class Classify extends Controller
     window.classifer = @
 
     @helpOverlay = new Overlay
+      className: 'classify-help'
       from: 'left'
-      content: '<p>TODO</p><p>Lorem ipsum dolor sit amet</p>'
+      content: translate 'div', 'classify.help'
       associated: @helpButton
 
     @surface = new MarkingSurface

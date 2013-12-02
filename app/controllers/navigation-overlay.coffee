@@ -12,13 +12,13 @@ class NavigationMenu extends Overlay
   constructor: ->
     super
 
+    addEventListener 'click', @onClick
     addEventListener 'hashchange', @onHashChange
     @onHashChange()
 
-  events:
-    click: ->
-      @clickedVeryRecently = true
-      setTimeout (=> @clickedVeryRecently = false), 50
+  onClick: =>
+    @clickedVeryRecently = true
+    setTimeout (=> @clickedVeryRecently = false), 50
 
   onHashChange: =>
     currentHash = location.hash || @defaultHash

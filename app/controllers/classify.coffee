@@ -73,7 +73,6 @@ class Classify extends Controller
     @throbber = new Throbber
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT / 2
-      rpm: 100
 
     @subjectContainer.append @throbber.canvas
 

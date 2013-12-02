@@ -1,12 +1,11 @@
-{PI, random, sin, cos, min, max} = Math
+{PI, random, sin, cos, min, max, abs} = Math
 requestAnimationFrame = requestAnimationFrame || (fn) -> setTimeout fn, 60
 
 class Throbber
   width: NaN
   height: NaN
   stars: 100
-  rpm: 15 # I think?
-
+  rpm: 100 # I think?
   glow: 10
 
   className: 'throbber'
@@ -23,11 +22,12 @@ class Throbber
 
     @_stars = for i in [0...@stars]
       position: random()
-      distance: random() - (random() * 0.5) # More toward the center
+      distance: abs random() - (random() * 0.5) # More toward the center
       offset: random()
       speed: random() * ((@rpm / 60) / 60)
 
   start: ->
+    return if @playing
     @playing = true
     @loop()
 
@@ -59,7 +59,8 @@ class Throbber
     @ctx.shadowBlur = @glow
 
     for star in @_stars
-      star.position = (star.position + star.speed) % 1
+      speedAddition = star.speed * (1 - star.distance)
+      star.position = (star.position + speedAddition) % 1
 
       {position, distance, offset} = star
 

@@ -2,11 +2,32 @@ OriginalEllipseTool = require 'marking-surface/lib/tools/ellipse'
 
 {PI, max, min, sqrt, pow, sin, cos} = Math
 
+PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iO'
+
 toRad = (t) -> t * (PI / 180)
 
 class EllipseTool extends OriginalEllipseTool
+  handleRadius: if PROBABLY_IOS then 20 else 5
+
   controlsOffset: 25
   controlsAngle: 45
+
+  handleStyle:
+    fill: 'white'
+    stroke: 'rgba(255, 255, 255, 0.01)'
+    strokeWidth: 15
+
+  initialize: ->
+    super
+
+    @path.attr
+      stroke: 'rgba(255, 255, 255, 0.25)'
+      strokeWidth: 1
+      strokeDasharray: []
+
+    unless PROBABLY_IOS
+      @xHandle.attr @handleStyle
+      @yHandle.attr @handleStyle
 
   getControlsPosition: ->
     {rx: a, ry: b} = @mark

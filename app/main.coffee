@@ -9,14 +9,14 @@ siteHeader = new SiteHeader
 siteHeader.el.appendTo document.body
 
 Api = require 'zooniverse/lib/api'
-api = new Api # project: 'milky_way'
+api = new Api project: 'milky_way'
 
 TopBar = require 'zooniverse/controllers/top-bar'
 topBar = new TopBar
 topBar.el.appendTo document.body
 
 Subject = require 'zooniverse/models/subject'
-Subject.group = false
+Subject.group = true
 Subject.fallback = './offline-subjects.json'
 
 StackOfPages = require 'stack-of-pages'

@@ -11,6 +11,6 @@
   },
   "scripts": {
     "start": "haw serve --port 6414",
-    "deploy-to-staging": "haw build ./build && publisssh ./build zooniverse-demo/milky-way-project && rm -rf ./build"
+    "stage": "haw build ./build && publisssh --config ./publisssh/staging && rm -rf ./build"
   }
 }

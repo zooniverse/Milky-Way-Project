@@ -2,7 +2,6 @@ Controller = require 'zooniverse/controllers/base-controller'
 Overlay = require './overlay'
 translate = require 't7e'
 MarkingSurface = require 'marking-surface'
-DefaultControls = require 'marking-surface/lib/tools/default-controls'
 Throbber = require './throbber'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
@@ -14,9 +13,6 @@ tools =
   EllipseTool: require './tools/ellipse'
   CircleTool: require './tools/circle'
   ObjectTool: require './tools/object'
-
-tools.EllipseTool.Controls = DefaultControls
-tools.CircleTool.Controls = DefaultControls
 
 SUBJECT_WIDTH = 800
 SUBJECT_HEIGHT = 400

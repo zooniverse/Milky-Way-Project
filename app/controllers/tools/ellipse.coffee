@@ -1,4 +1,5 @@
 OriginalEllipseTool = require 'marking-surface/lib/tools/ellipse'
+DefaultControls = require 'marking-surface/lib/tools/default-controls'
 
 {PI, max, min, sqrt, pow, sin, cos} = Math
 
@@ -7,9 +8,11 @@ PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iO'
 toRad = (t) -> t * (PI / 180)
 
 class EllipseTool extends OriginalEllipseTool
+  @Controls: DefaultControls
+
   handleRadius: if PROBABLY_IOS then 20 else 5
 
-  controlsOffset: 25
+  controlsOffset: 15
   controlsAngle: 45
 
   handleStyle:

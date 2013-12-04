@@ -12,15 +12,7 @@ class ObjectControls extends DefaultControls
 
   onChangeRadioButtons: (e) =>
     setTimeout =>
-      @tool.mark.set 'content', $(@el).find("input[name='object-type']:checked").val()
-
-  onToolSelect: ->
-    super
-    @el.style.display = ''
-
-  onToolDeselect: ->
-    super
-    @el.style.display = 'none'
+      @tool.mark.set 'content', $(@el).find('input[name="object-type"]:checked').val()
 
 class ObjectTool extends RectangleTool
   @Controls: ObjectControls

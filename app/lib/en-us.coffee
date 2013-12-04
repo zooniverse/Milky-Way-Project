@@ -10,7 +10,14 @@ module.exports =
     data: 'Data'
 
   home:
-    content: 'This is the home page. You should go to the the <a href="#/classify">classify page</a>.'
+    counter:
+      bubbles: 'Bubbles'
+      clusters: 'Star Clusters'
+      egos: 'EGOs'
+      galaxies: 'Galaxies'
+    content:
+      welcome: 'The Milky Way Project aims to sort and measure our galaxy. We need your help looking through tens of thousands of images of our Galaxy from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
+      go_classify: 'Start Mapping Our Galaxy!'
 
   science:
     content: 'SCIENCE!'

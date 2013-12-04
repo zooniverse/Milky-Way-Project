@@ -2,5 +2,15 @@
 
 <div class="content">
   <%- translate 'h1', 'projectName' %>
-  <%- translate 'p', 'home.content' %>
+  
+  <ul>
+  	<li class="count"><span class="count" id="bubbles_count">155,567</span> <%- translate 'span', 'home.counter.bubbles' %></li>
+	<li class="count"><span class="count" id="clusters_count">2,024</span> <%- translate 'span', 'home.counter.clusters' %></li>
+	<li class="count"><span class="count" id="egos_count">1,692</span> <%- translate 'span', 'home.counter.egos' %></li>
+	<li class="count"><span class="count" id="galaxies_count">87</span> <%- translate 'span', 'home.counter.galaxies' %></li>
+  </ul>
+
+  <%- translate 'p', 'home.content.welcome' %>
+  
+  <a href="#/classify" class="call_to_action"><%- translate 'span', 'home.content.go_classify' %></a>
 </div>

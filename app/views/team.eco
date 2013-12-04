@@ -1,5 +1,32 @@
 <% translate = require 't7e' %>
 <div class="content">
   <%- translate 'h1', 'projectName' %>
-  <%- translate 'p', 'team.content' %>
+  
+  <%- translate 'p', 'team.introduction' %>
+
+  <%- translate 'h3', 'team.org_title' %>
+  <ul id="org_list">
+  	<li><%- translate 'span.name', 'team.organisations.oxford.name' %><%- translate 'span.description', 'team.organisations.oxford.description' %></li>
+  	<li><%- translate 'span.name', 'team.organisations.adler.name' %><%- translate 'span.description', 'team.organisations.adler.description' %></li>
+  	<li><%- translate 'span.name', 'team.organisations.spitzer.name' %><%- translate 'span.description', 'team.organisations.spitzer.description' %></li>
+  </ul>
+
+  <%- translate 'h3', 'team.science_title' %>
+  <ul id="science_team">
+  	<li><%- translate 'span.name', 'team.scientists.rob.name' %><%- translate 'span.bio', 'team.scientists.rob.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.matt.name' %><%- translate 'span.bio', 'team.scientists.matt.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.sarah.name' %><%- translate 'span.bio', 'team.scientists.sarah.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.chris.name' %><%- translate 'span.bio', 'team.scientists.chris.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.chrisn.name' %><%- translate 'span.bio', 'team.scientists.chrisn.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.sarahm.name' %><%- translate 'span.bio', 'team.scientists.sarahm.bio' %></li>
+  	<li><%- translate 'span.name', 'team.scientists.bob.name' %><%- translate 'span.bio', 'team.scientists.bob.bio' %></li>
+  </ul>
+
+  <%- translate 'h3', 'team.dev_title' %>
+  <ul id="dev_team">
+  	<li><%- translate 'span.name', 'team.developers.brian.name' %><%- translate 'span.bio', 'team.developers.brian.bio' %></li>
+  	<li><%- translate 'span.name', 'team.developers.heath.name' %><%- translate 'span.bio', 'team.developers.heath.bio' %></li>
+  	<li><%- translate 'span.name', 'team.developers.chriss.name' %><%- translate 'span.bio', 'team.developers.chriss.bio' %></li>
+  </ul>
+
 </div>

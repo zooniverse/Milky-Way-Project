@@ -4,7 +4,7 @@ requestAnimationFrame = requestAnimationFrame || (fn) -> setTimeout fn, 60
 class Throbber
   width: NaN
   height: NaN
-  stars: 100
+  stars: 250
   rpm: 100 # I think?
   glow: 10
 

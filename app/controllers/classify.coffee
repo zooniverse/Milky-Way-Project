@@ -47,6 +47,7 @@ class Classify extends Controller
     'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
+    'button[name="finish"]': 'finishButton'
 
   constructor: ->
     super
@@ -64,13 +65,19 @@ class Classify extends Controller
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT
 
-    @subjectImage = @surface.addShape 'image'
+    @subjectImage = @surface.addShape 'image',
+      width: SUBJECT_WIDTH
+      height: SUBJECT_HEIGHT
+
+    @discardImage = @surface.addShape 'image',
+      width: SUBJECT_WIDTH
+      height: SUBJECT_HEIGHT
 
     @subjectContainer.append @surface.el
 
     @throbber = new Throbber
       width: SUBJECT_WIDTH
-      height: SUBJECT_HEIGHT / 2
+      height: SUBJECT_HEIGHT
 
     @subjectContainer.append @throbber.canvas
 
@@ -96,7 +103,7 @@ class Classify extends Controller
     @talkLink.attr 'href', null
     @favoriteButton.attr 'disabled', true
     @throbber.start()
-    $(@throbber.canvas).fadeIn()
+    $(@throbber.canvas).fadeIn 'fast'
 
   onSubjectSelect: (e, subject) =>
     console?.log 'Subject', subject.location.standard
@@ -110,32 +117,31 @@ class Classify extends Controller
     @favoriteButton.toggleClass 'active', !!@classification.favorite
     @favoriteButton.attr 'disabled', false
 
-    loadImage subject.location.standard, ({width, height}) =>
-      slideOut = animate 500, (step) =>
-        @subjectImage.attr
+    loadImage subject.location.standard, =>
+      @discardImage.attr 'xlink:href', @subjectImage.attr 'xlink:href'
+      @discardImage.attr 'opacity', 1
+      @subjectImage.attr 'xlink:href', subject.location.standard
+
+      fade = animate 1000, (step) =>
+        scale = 1 + (step / 2)
+        @discardImage.attr
           opacity: 1 - step
-          y: -1 * @surface.height * step
+          x: (SUBJECT_WIDTH - (SUBJECT_WIDTH / scale)) / -2
+          y: (SUBJECT_HEIGHT - (SUBJECT_HEIGHT / scale)) / -2
+          transform: "scale(#{scale}, #{scale})"
 
-      slideOut.then =>
-        @subjectImage.attr
-          'xlink:href': subject.location.standard
-          width: SUBJECT_WIDTH
-          height: SUBJECT_HEIGHT
+      fade.then =>
+        $(@throbber.canvas).fadeOut 'slow', =>
+          @throbber.stop()
+          setTimeout (=> @finishButton.attr 'disabled', false), 1000
 
-        slideIn = animate 500, (step) =>
-          @subjectImage.attr
-            opacity: step
-            y: @surface.height + (-1 * @surface.height * step)
-
-        slideIn.then =>
-          $(@throbber.canvas).fadeOut 'slow', =>
-            @throbber.stop()
 
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks
     console?.log JSON.stringify @classification
     # @classification.send()
 
+    @finishButton.attr 'disabled', true
     Subject.next()
 
 module.exports = Classify

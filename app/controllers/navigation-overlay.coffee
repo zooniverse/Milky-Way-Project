@@ -11,12 +11,12 @@ class NavigationMenu extends Overlay
 
   constructor: ->
     super
-    @onHashChange()
+    @onHashChangeForNav()
+    addEventListener 'hashchange', @onHashChangeForNav, false
 
-  onHashChange: =>
+  onHashChangeForNav: =>
     currentHash = location.hash || @defaultHash
     for a in @el.find 'a'
       $(a).toggleClass 'active', a.hash is currentHash
-    super
 
 module.exports = NavigationMenu

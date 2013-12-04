@@ -24,8 +24,6 @@ class Overlay extends Controller
     @hide() if @hidden
     @el.prependTo document.body
 
-    @onHashChange()
-
   onClick: =>
     @clickedVeryRecently = true
     setTimeout (=> @clickedVeryRecently = false), 50

@@ -20,7 +20,18 @@ module.exports =
       go_classify: 'Start Mapping Our Galaxy!'
 
   science:
-    content: 'SCIENCE!'
+    title: 'The Science'
+    general:
+      title: 'Why Scientists Need You'
+      g_01: '''The Milky Way Project (MWP) shows you data taken from the Spitzer Space Telescope. Specifically from the <span title="Galactic Legacy Infrared Mid-Plane Survey Extraordinaire">GLIMPSE</span> survey. What you see is actually the infrared light from deep within our galaxy, the Milky Way. This is not what you would see with your eyes. In fact, that is exactly why astronomers have collected so much infrared data in the past twenty years: we are trying to understand the diffuse material, called dust, that creates the beautiful structures in these images. You can read more about dust below.'''
+      g_02:'''We're looking into the cold, murky depths of interstellar space for interesting shapes and features. The bubbles and star clusters we sometimes see in these images are part of the life cycle of stars. Some bubbles have already been found - by the first version of the MWP - but we want to find them in other parts of the galaxy. The first MWP was so successful that we have expanded the search to new regions in the Milky Way. We're building up a comprehensive view of not only these bubbles, but our galaxy as a whole. We're asking you to help us map star formation in our galaxy.'''
+      g_03: '''As well as bubbles and stars clusters there are other objects hidden throughout these images such as strange green objects seen near young stars (called EGOs) and never-before-seen galaxies that lie far beyond our own galaxy, hidden behind the stars and dust. If you see anything unusual in the images, make sure to mark it and give your best guess as to what it is. We hope to map out these objects and then use your discoveries to make more observations. You might even discover something we didn't expect.'''
+    bubbles:
+      title: 'Interstellar Dust'
+      b_01: '''Imagine holding a single grain of sand in your hand. Pretty small, right? Now shrink that grain of sand tenfold. This is roughly how big interstellar dust particles are. Yet this incredibly tiny piece of material exists in such huge quantity in the Universe, that it has huge consequences. Dust one-tenth the size of a grain of sand is one of the key players in the process of star formation. Massive clouds of dust and gas are what collapse to begin to form stars.'''
+      b_02: '''The trouble is that this dust, composed of tiny silicon particles, is behaving in unexpected ways. It appears to be able to survive near hot, massive OB stars, when the interstellar winds and radiation pressure should force this usually cold dust to heat up and scatter. Bubbles are interesting places - they are 'holes' in our understanding of star formation.'''
+      b_03: '''The answer might be found in examining partial and closed rings - bubbles - that exist in the galaxy, and this is one of the aims of the Milky Way Project. By looking at bubbles in our galaxy, the Milky Way, we hope to get a better understanding of star formation, which can in turn help us understand these mysterious characteristics of the dust that is so important in creating stars.'''
+      b_04: '''How is it that we know the bubbles indicate sites of active star formation? Because bubbles are made by hot stars, and hot stars are generally found dominating clusters containing several hundred to several thousand low-mass stars apiece! Hot stars also don't live long enough to move far from the clouds where they formed. All this means that each bubble represents several hundred to several thousand very young stars.'''
 
   team:
     content: 'There are so many people invovled. These are some of them.'

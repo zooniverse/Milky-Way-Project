@@ -1,6 +1,26 @@
 <% translate = require 't7e' %>
 
 <div class="content">
-  <%- translate 'h1', 'projectName' %>
-  <%- translate 'p', 'science.content' %>
+  <%- translate 'h1', 'science.title' %>
+
+  <%- translate 'h3', 'science.general.title' %>
+  <%- translate 'p', 'science.general.g_01' %>
+
+  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+
+  <%- translate 'p', 'science.general.g_02' %>
+  <%- translate 'p', 'science.general.g_03' %>
+
+
+  <%- translate 'h3', 'science.bubbles.title' %>
+  <%- translate 'p', 'science.bubbles.b_01' %>
+  <%- translate 'p', 'science.bubbles.b_02' %>
+
+  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+
+  <%- translate 'p', 'science.bubbles.b_03' %>
+  <%- translate 'p', 'science.bubbles.b_04' %>
+
 </div>

@@ -196,6 +196,7 @@ module.exports =
       object: 'Object'
     objectTypes:
       darkNebula: 'Dark Nebula'
+      pillars: 'Pillars'
       artefact: 'Artifact'
       other: 'Other'
 

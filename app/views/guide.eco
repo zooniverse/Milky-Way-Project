@@ -3,45 +3,48 @@
 <div class="content">
   <%- translate 'h1', 'guide.title' %>
   <%- translate 'p', 'guide.introduction' %>
+</div>
 
-  <%- translate 'h3', 'guide.bubbles.title' %>
-  <%- translate 'p', 'guide.bubbles.description' %>
-  <img src="./images/guide/bubble1.jpg" />
-  <img src="./images/guide/bubble2.jpg" />
-  <img src="./images/guide/bubble3.jpg" />
-  <img src="./images/guide/bubble4.jpg" />
-  <img src="./images/guide/bubble5.jpg" />
+<div class="general">
+  <div class="content">
+    <%- translate 'h3', 'guide.bubbles.title' %>
+    <%- translate 'p', 'guide.bubbles.description' %>
+    <img src="./images/guide/bubble1.jpg" />
+    <img src="./images/guide/bubble2.jpg" />
+    <img src="./images/guide/bubble3.jpg" />
+    <img src="./images/guide/bubble4.jpg" />
+    <img src="./images/guide/bubble5.jpg" />
 
-  <%- translate 'h3', 'guide.clusters.title' %>
-  <%- translate 'p', 'guide.clusters.description' %>
-  <img src="./images/guide/cluster1.jpg" />
-  <img src="./images/guide/cluster2.jpg" />
-  <img src="./images/guide/cluster3.jpg" />
-  <img src="./images/guide/cluster4.jpg" />
-  <img src="./images/guide/cluster5.jpg" />
+    <%- translate 'h3', 'guide.clusters.title' %>
+    <%- translate 'p', 'guide.clusters.description' %>
+    <img src="./images/guide/cluster1.jpg" />
+    <img src="./images/guide/cluster2.jpg" />
+    <img src="./images/guide/cluster3.jpg" />
+    <img src="./images/guide/cluster4.jpg" />
+    <img src="./images/guide/cluster5.jpg" />
 
-  <%- translate 'h3', 'guide.egos.title' %>
-  <%- translate 'p', 'guide.egos.description' %>
-  <img src="./images/guide/ego1.jpg" />
-  <img src="./images/guide/ego2.jpg" />
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
+    <%- translate 'h3', 'guide.egos.title' %>
+    <%- translate 'p', 'guide.egos.description' %>
+    <img src="./images/guide/ego1.jpg" />
+    <img src="./images/guide/ego2.jpg" />
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
 
-  <%- translate 'h3', 'guide.galaxies.title' %>
-  <%- translate 'p', 'guide.galaxies.description' %>
-  <img src="./images/guide/gal1.jpg" />
-  <img src="./images/guide/gal2.jpg" />
-  <img src="./images/guide/gal3.jpg" />
-  <img src="./images/guide/gal4.jpg" />
-  <img src="./images/guide/gal5.jpg" />
+    <%- translate 'h3', 'guide.galaxies.title' %>
+    <%- translate 'p', 'guide.galaxies.description' %>
+    <img src="./images/guide/gal1.jpg" />
+    <img src="./images/guide/gal2.jpg" />
+    <img src="./images/guide/gal3.jpg" />
+    <img src="./images/guide/gal4.jpg" />
+    <img src="./images/guide/gal5.jpg" />
 
-  <%- translate 'h3', 'guide.other.title' %>
-  <%- translate 'p', 'guide.other.description' %>
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
-  <img src="http://placehold.it/150x150" />
-
+    <%- translate 'h3', 'guide.other.title' %>
+    <%- translate 'p', 'guide.other.description' %>
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
+    <img src="http://placehold.it/150x150" />
+  </div>
 </div>

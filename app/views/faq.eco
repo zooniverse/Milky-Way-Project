@@ -1,24 +1,46 @@
 <% translate = require 't7e' %>
+
 <div class="content">
-  
   <%- translate 'h1', 'faq.title' %>
   <%- translate 'p', 'faq.introduction' %>
-  <ul>
-    <li><%- translate 'span.question', 'faq.q01.question' %> <%- translate 'span.answer', 'faq.q01.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q02.question' %> <%- translate 'span.answer', 'faq.q02.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q03.question' %> <%- translate 'span.answer', 'faq.q03.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q04.question' %> <%- translate 'span.answer', 'faq.q04.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q05.question' %> <%- translate 'span.answer', 'faq.q05.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q06.question' %> <%- translate 'span.answer', 'faq.q06.answer' %></li>
-  </ul>
+</div>
 
-  <ul>
-    <li><%- translate 'span.question', 'faq.q07.question' %> <%- translate 'span.answer', 'faq.q07.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q08.question' %> <%- translate 'span.answer', 'faq.q08.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q09.question' %> <%- translate 'span.answer', 'faq.q09.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q10.question' %> <%- translate 'span.answer', 'faq.q10.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q11.question' %> <%- translate 'span.answer', 'faq.q11.answer' %></li>
-    <li><%- translate 'span.question', 'faq.q12.question' %> <%- translate 'span.answer', 'faq.q12.answer' %></li>
-  </ul>
+<div class="general">
+  <div class="minor content">
+    <%- translate 'h2.question', 'faq.q01.question' %>
+    <%- translate 'p.answer', 'faq.q01.answer' %>
 
+    <%- translate 'h2.question', 'faq.q02.question' %>
+    <%- translate 'p.answer', 'faq.q02.answer' %>
+
+    <%- translate 'h2.question', 'faq.q03.question' %>
+    <%- translate 'p.answer', 'faq.q03.answer' %>
+
+    <%- translate 'h2.question', 'faq.q04.question' %>
+    <%- translate 'p.answer', 'faq.q04.answer' %>
+
+    <%- translate 'h2.question', 'faq.q05.question' %>
+    <%- translate 'p.answer', 'faq.q05.answer' %>
+
+    <%- translate 'h2.question', 'faq.q06.question' %>
+    <%- translate 'p.answer', 'faq.q06.answer' %>
+
+    <%- translate 'h2.question', 'faq.q07.question' %>
+    <%- translate 'p.answer', 'faq.q07.answer' %>
+
+    <%- translate 'h2.question', 'faq.q08.question' %>
+    <%- translate 'p.answer', 'faq.q08.answer' %>
+
+    <%- translate 'h2.question', 'faq.q09.question' %>
+    <%- translate 'p.answer', 'faq.q09.answer' %>
+
+    <%- translate 'h2.question', 'faq.q10.question' %>
+    <%- translate 'p.answer', 'faq.q10.answer' %>
+
+    <%- translate 'h2.question', 'faq.q11.question' %>
+    <%- translate 'p.answer', 'faq.q11.answer' %>
+
+    <%- translate 'h2.question', 'faq.q12.question' %>
+    <%- translate 'p.answer', 'faq.q12.answer' %>
+  </div>
 </div>

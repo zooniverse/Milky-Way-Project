@@ -21,7 +21,7 @@ Subject.fallback = './offline-subjects.json'
 
 StackOfPages = require 'stack-of-pages'
 stack = new StackOfPages
-  DEFAULT: '#/classify'
+  DEFAULT: '#/'
   '#/': require './controllers/home'
   '#/classify': require './controllers/classify'
   '#/subject/:id': require './controllers/subject'

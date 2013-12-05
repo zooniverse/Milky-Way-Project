@@ -100,7 +100,24 @@ module.exports =
         bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
 
   data:
-    content: 'We aim to provide public periodic releases of Milky Way Project data. On this page you can download the first release of data from 2012. Our first data release paper was published in the Monthly Notices of the Royal Astronomical Society and is available on arXiv. It describes the reduction of more than half a million bubble drawings by users of the Milky Way Project into a catalogue of 5,106 bubbles.'
+    title: 'Data and Results'
+    introduction: '''We aim to provide periodic, public releases of Milky Way Project data. On this page you can download the first release of data from 2012, and see the publications that have used data from this site.'''
+    dr1:
+      title: 'Data Release 1'
+      description: '''In 2012 we released our first dataset, created from more than half a million bubble drawings by volunteers on the Milky Way Project. The resultant catalogue of 5,106 bubbles is publicly available. It contains the details of their location, size and angle on the sky.'''
+      get_data: 'Get DR1 Data'
+    papers:
+      get_paper: '''View Paper Online'''
+      simpson12:
+        title: 'Simpson et al 2012: The Milky Way Project First Data Release: a bubblier Galactic disc'
+        description: '''Our first data release paper was published in the Monthly Notices of the Royal Astronomical Society and is available on arXiv. It describes the reduction of more than half a million bubble drawings by users of the Milky Way Project into a catalogue of 5,106 bubbles.'''
+      kendrew12:
+        title: 'Kendrew et al 2012: A Statistical Study of Massive Star Formation Associated with Infrared Bubbles'
+        description: '''Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'''
+      beaumont13:
+        title: 'Beaumont et al 2013: Leveraging Citizen Science and Machine Learning to Detect Interstellar Bubbles'
+        description: '''Coming Soon...'''
+
 
   guide:
     title: '''Classiifer's Guide'''

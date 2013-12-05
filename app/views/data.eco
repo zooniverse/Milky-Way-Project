@@ -1,6 +1,24 @@
 <% translate = require 't7e' %>
 
 <div class="content">
-  <%- translate 'h1', 'projectName' %>
-  <%- translate 'p', 'data.content' %>
+  <%- translate 'h1', 'data.title' %>
+  <%- translate 'p', 'data.introduction' %>
+
+  <%- translate 'h3', 'data.dr1.title' %>
+  <%- translate 'p', 'data.dr1.description' %>
+  <%- translate 'a.download_data', 'data.dr1.get_data' %>
+
+	<img src="http://placehold.it/800x240" alt="Example Image" />
+
+  <%- translate 'h3', 'data.papers.simpson12.title' %>
+  <%- translate 'p', 'data.papers.simpson12.description' %>
+  <%- translate 'a.download_paper', 'data.papers.get_paper' %>
+
+  <%- translate 'h3', 'data.papers.kendrew12.title' %>
+  <%- translate 'p', 'data.papers.kendrew12.description' %>
+  <%- translate 'a.download_paper', 'data.papers.get_paper' %>
+
+  <%- translate 'h3', 'data.papers.beaumont13.title' %>
+  <%- translate 'p', 'data.papers.beaumont13.description' %>
+  <%- translate 'a.download_paper', 'data.papers.get_paper' %>
 </div>

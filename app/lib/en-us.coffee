@@ -41,7 +41,7 @@ module.exports =
     organisations:
       oxford:
         name: 'University of Oxford'
-        description: '''The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries. Today, it combines research in the humanities with major effort in the natural sciences and medicine. Citizen science is supported by the Department of Physics, the Division of Mathematics, Physical and Life Sciences, and the Oxford Martin Schools.'''
+        description: '''The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries. Today, it combines research in the humanities with major effort in the natural sciences and medicine. Citizen science is supported by the Department of Physics, the Division of Mathematics, Physical and Life Sciences, and the Oxford Martin School.'''
       adler:
         name: 'The Adler Planetarium'
         description: '''The Adler Planetarium – America’s First Planetarium – was founded in 1930 by Chicago business leader Max Adler. The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.'''
@@ -71,7 +71,7 @@ module.exports =
         bio: 'Zooniverse Researcher and Developer at Oxford University. Fearless lader of the Milky Way Project.'
       matt:
         name: 'Matthew Povich'
-        bio: ""
+        bio: "Assistant Professor in the Department of Physics and Astronomy at California Poly Pomona."
       sarah:
         name: 'Sarah Kendrew'
         twitter: 'sarahkendrew'

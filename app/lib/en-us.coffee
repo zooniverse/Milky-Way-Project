@@ -8,6 +8,8 @@ module.exports =
     science: 'Science'
     team: 'Team'
     data: 'Data'
+    faq: 'FAQ'
+    guide: '''Classifier's Guide'''
 
   home:
     counter:
@@ -100,45 +102,66 @@ module.exports =
   data:
     content: 'We aim to provide public periodic releases of Milky Way Project data. On this page you can download the first release of data from 2012. Our first data release paper was published in the Monthly Notices of the Royal Astronomical Society and is available on arXiv. It describes the reduction of more than half a million bubble drawings by users of the Milky Way Project into a catalogue of 5,106 bubbles.'
 
+  guide:
+    title: '''Classiifer's Guide'''
+    introduction: 'Here you can find examples of the types of objects we want people to tag in the data. You can also find examples on the blog and Talk.'
+    bubbles:
+      title: 'Bubble Examples'
+      description: '''Bubbles are usually circular or elliptical, but often only partiallly seen. They may be viewed as arcs of re din these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometime shave star clusters nearby, but not always.'''
+    clusters:
+      title: 'Star Cluster Examples'
+      description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark them.'''
+    egos:
+      title: 'EGO Examples'
+      description: '''Extended green objects (EGOs) are usually seen near to bright stars as very small, irregular blobs of green. They are quite rare and they are a special find. There is much work being done by researchers to find and understand these objects.'''
+    galaxies:
+      title: 'Galaxy Examples'
+      description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometime sseen in gaps in the diffuse emission of the dust, and they me seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glwoing in red or pink.'''
+    other:
+      title: 'Other Objects Yiou Might Spot'
+      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particuarly strange or interesting. You may also see dark nebulae and odd image artefacts from time to time. These can be useful for the research team. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
+
   faq:
+    title: 'Frequently Asked Questions'
+    introduction: 'Here we try to answer some of the most-commonly asked questions about the MWP and the science behind it.'
     q01:
-      ans: '''The images shown in the Milky Way Project were taken with a camera onboard the Spitzer Space Telescope, as part of a survey called GLIMPSE, which aimed to map around 85% of the plane of the Milky Way galaxy. Over 440,000 images were taken for this survey. The galactic plane is where most of the young stars, gas and dust are located, and Spitzer is especially sensitive to those. The high resolution of the Spitzer infrared camera makes it possible to see fine detail in these clouds, and the bubbles we see are a great example of that.'''
+      answer: '''The images shown in the Milky Way Project were taken with a camera onboard the Spitzer Space Telescope, as part of a survey called GLIMPSE, which aimed to map around 85% of the plane of the Milky Way galaxy. Over 440,000 images were taken for this survey. The galactic plane is where most of the young stars, gas and dust are located, and Spitzer is especially sensitive to those. The high resolution of the Spitzer infrared camera makes it possible to see fine detail in these clouds, and the bubbles we see are a great example of that.'''
       question: '''What are we looking at in these images?'''
     q02:
-      ans: '''These images are from places all along the plane of the Milky Way. At night in darker areas you can see the Milky Way as a bright stripe across the sky. The region covered by these images is about as wide as a finger's length held at arm's length away from you, and stretches all the way around the earth following the brightest part of the Milky Way's stripe.'''
+      answer: '''These images are from places all along the plane of the Milky Way. At night in darker areas you can see the Milky Way as a bright stripe across the sky. The region covered by these images is about as wide as a finger's length held at arm's length away from you, and stretches all the way around the earth following the brightest part of the Milky Way's stripe.'''
       question: '''What part of the night sky are we seeing?'''
     q03:
-      ans: '''That's part of what we're trying to find out with this project! Right now our best understanding is that these are regions around young massive stars that are so bright that their light has caused a shock wave to affect the cloud around them and blown a bubble which we can see in infrared light. The red area is where the shock has already passed by and the bright green ring around it is where the shock is currently impacting the gas cloud.'''
+      answer: '''That's part of what we're trying to find out with this project! Right now our best understanding is that these are regions around young massive stars that are so bright that their light has caused a shock wave to affect the cloud around them and blown a bubble which we can see in infrared light. The red area is where the shock has already passed by and the bright green ring around it is where the shock is currently impacting the gas cloud.'''
       question: '''What are these bubbles anyway?'''
     q04:
-      ans: '''Most of the circular features (bubbles) in these images are produced by hot young stars, as winds and radiation from these young stars sweep up the surrounding gas and dust from which they formed (like a snowplow that compresses the snow in its path.) Sometimes, the swept-up material becomes dense enough for gravity to pull it together to form new stars.'''
+      answer: '''Most of the circular features (bubbles) in these images are produced by hot young stars, as winds and radiation from these young stars sweep up the surrounding gas and dust from which they formed (like a snowplow that compresses the snow in its path.) Sometimes, the swept-up material becomes dense enough for gravity to pull it together to form new stars.'''
       question: '''What has this got to do with star formation?'''
     q05: 
-      ans: '''Relax! We're sure you are. This sort of pattern recognition is something humans are very good at, and so just take your best guess at each image as it comes up. Several people will be shown each image, so don't worry too much about making a simple mistake. If you want some more guidance, then revisit the tutorial or read the extended version.'''
+      answer: '''Relax! We're sure you are. This sort of pattern recognition is something humans are very good at, and so just take your best guess at each image as it comes up. Several people will be shown each image, so don't worry too much about making a simple mistake. If you want some more guidance, then revisit the tutorial or read the extended version.'''
       question: '''How do I know if I'm any good?'''
     q06:
-      ans: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyse the results to make surethat collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use."'''
+      answer: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyse the results to make surethat collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use."'''
       question: '''What happens to the classifications I provide?'''
     q07:
-      ans: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you'vefinished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes."'''
+      answer: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you'vefinished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes."'''
       question: '''How can I change a classification?'''
     q08:
-      ans: '''It is not possible to redo a classification, as we want each one to be independent. Allowing classifications to be replaced would open up thepossibility of classifiers discussing images and changing their classifications to agree with one another. This would reduce our ability to understand the uncertainties in the classifications. However, don't worry about our final results: each image will be looked at by many people, so on average the classification is likely to be correct, and occasional mistakes don't matter.'''
+      answer: '''It is not possible to redo a classification, as we want each one to be independent. Allowing classifications to be replaced would open up thepossibility of classifiers discussing images and changing their classifications to agree with one another. This would reduce our ability to understand the uncertainties in the classifications. However, don't worry about our final results: each image will be looked at by many people, so on average the classification is likely to be correct, and occasional mistakes don't matter.'''
       question: '''Can I redo a classification?'''
     q09:
-      ans: '''If one person classificaties these images — even if they're an expert — then anything odd or interesting can be blamed on them. With multipleindependent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project."'''
+      answer: '''If one person classificaties these images — even if they're an expert — then anything odd or interesting can be blamed on them. With multipleindependent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project."'''
       question: '''Why do you need so many people to help?'''
     q10:
-      ans: '''Light is a wave, specifically a wave of electromagnetic energy, and it comes in a wide range of wavelengths. Light that we see, or visible light, are electromagnetic waves that oscillate back and forth every 0.4-0.7 microns (there are a thousand microns in a millimeter, or a million microns in a meter). Infrared is light that has longer wavelengths, from 0.7 microns all the way up to about 300 microns.  The shorter-wavelength end of that range is called near infrared because it is near to visible light, and the longer-wavelength range is called far infrared.'''
+      answer: '''Light is a wave, specifically a wave of electromagnetic energy, and it comes in a wide range of wavelengths. Light that we see, or visible light, are electromagnetic waves that oscillate back and forth every 0.4-0.7 microns (there are a thousand microns in a millimeter, or a million microns in a meter). Infrared is light that has longer wavelengths, from 0.7 microns all the way up to about 300 microns.  The shorter-wavelength end of that range is called near infrared because it is near to visible light, and the longer-wavelength range is called far infrared.'''
       question: '''What is infrared?'''
     q11:
-      ans: '''These images come from two instruments, both aboard the Spitzer Space Telescope.  One of the instruments took images at wavelengths in the 3-8 micron range (and that light is coloured green in these images) and the other took images at a wavelength of 24 microns, which is coloured red.'''
+      answer: '''These images come from two instruments, both aboard the Spitzer Space Telescope.  One of the instruments took images at wavelengths in the 3-8 micron range (and that light is coloured green in these images) and the other took images at a wavelength of 24 microns, which is coloured red.'''
       question: '''What wavelength are these images?'''
     q00:
-      ans: '''All the stars you see in the night sky are part of a very large group of stars (a few hundred billion) that we call the Milky Way Galaxy. If you've ever looked at the night sky from a dark location, you've probably seen the band of light that we also call the 'Milky Way'. This band of light contains most of the stars in the Milky Way Galaxy, and the images you're inspecting all come from a narrow band only a few full moons wide along the Milky Way.'''
+      answer: '''All the stars you see in the night sky are part of a very large group of stars (a few hundred billion) that we call the Milky Way Galaxy. If you've ever looked at the night sky from a dark location, you've probably seen the band of light that we also call the 'Milky Way'. This band of light contains most of the stars in the Milky Way Galaxy, and the images you're inspecting all come from a narrow band only a few full moons wide along the Milky Way.'''
       question: '''WHY IS IT CALLED THE MILKY WAY PROJECT?'''
     q12:
-      ans: '''All the objects you see are in the Milky Way, and essentially all of them will be on our side of the Milky Way since the stuff on the far side is mostly obscured by all the things in the way.  The objects you do see will range from about 1,000 to 25,000 light years away.  The more distant ones will probably be smaller and the closer ones larger, but not always! There might be some extremely large, distant bubbles that appear bigger than some small, nearby ones.'''
+      answer: '''All the objects you see are in the Milky Way, and essentially all of them will be on our side of the Milky Way since the stuff on the far side is mostly obscured by all the things in the way.  The objects you do see will range from about 1,000 to 25,000 light years away.  The more distant ones will probably be smaller and the closer ones larger, but not always! There might be some extremely large, distant bubbles that appear bigger than some small, nearby ones.'''
       question: '''How far away are these objects?'''
 
   classify:

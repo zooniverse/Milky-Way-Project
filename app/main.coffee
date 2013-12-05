@@ -28,6 +28,8 @@ stack = new StackOfPages
   '#/science': require './controllers/science'
   '#/team': require './controllers/team'
   '#/data': require './controllers/data'
+  '#/guide': require './controllers/guide'
+  '#/faq': require './controllers/faq'
   NOT_FOUND: require './controllers/not-found'
 
 document.body.appendChild stack.el

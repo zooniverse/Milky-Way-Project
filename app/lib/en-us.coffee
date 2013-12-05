@@ -90,67 +90,126 @@ module.exports =
 
   team:
     introduction: 'There are so many people involved. These are some of them.'
-    org_title: 'Organizations'
-    dev_title: 'Development Team'
-    science_title: 'Science Team'
+
     organisations:
+      title: 'Organizations'
+
       oxford:
         name: 'University of Oxford'
-        description: '''The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries. Today, it combines research in the humanities with major effort in the natural sciences and medicine. Citizen science is supported by the Department of Physics, the Division of Mathematics, Physical and Life Sciences, and the Oxford Martin School.'''
+        image: '//placehold.it/100.png'
+        description: '''
+          The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries.
+          Today, it combines research in the humanities with major effort in the natural sciences and medicine.
+          Citizen science is supported by the Department of Physics, the Division of Mathematics, Physical and Life Sciences, and the Oxford Martin School.
+        '''
+
       adler:
         name: 'The Adler Planetarium'
-        description: '''The Adler Planetarium – America’s First Planetarium – was founded in 1930 by Chicago business leader Max Adler. The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.'''
+        image: '//placehold.it/100.png'
+        description: '''
+          The Adler Planetarium – America’s First Planetarium – was founded in 1930 by Chicago business leader Max Adler.
+          The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
+          Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.
+        '''
+
       spitzer:
         name: 'The Spitzer Space Telescope'
-        description: '''Spitzer was launched into space in 2003, as part of NASA's Great Observatories program. The spacecraft travels in an Earth-trailing orbit around the Sun, and for the first six years of operation was kept at temperatures close to absolute zero using liquid Helium. The Milky Way Project uses observations made with the Spitzer Space Telescope, which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA.'''
+        image: '//placehold.it/100.png'
+        description: '''
+          Spitzer was launched into space in 2003, as part of NASA's Great Observatories program.
+          The spacecraft travels in an Earth-trailing orbit around the Sun,
+          and for the first six years of operation was kept at temperatures close to absolute zero using liquid Helium.
+          The Milky Way Project uses observations made with the Spitzer Space Telescope,
+          which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA.
+        '''
+
     developers:
+      title: 'Development Team'
+
       heath:
         name: 'Heath van Singel'
-        twitter: 'heath_vs'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        image: '//placehold.it/100.png'
+        url: 'https://www.twitter.com/heath_vs'
+        description: '''
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        '''
+
       brian:
         name: 'Brian Carstensen'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        image: '//placehold.it/100.png'
+        description: '''
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        '''
+
       michael:
         name: 'Michael Parrish'
-        twitter: 'michaelparrish'
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-      more:
-        name: 'More Names'
-        twitter: ''
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        image: '//placehold.it/100.png'
+        url: 'https://www.twitter.com/michaelparrish'
+        description: '''
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        '''
+
     scientists:
+      title: 'Science Team'
+
       rob:
         name: 'Robert Simpson'
-        twitter: 'orbitingfrog'
-        bio: 'Zooniverse Researcher and Developer at Oxford University. Fearless lader of the Milky Way Project.'
+        image: '//placehold.it/100.png'
+        url: 'https://www.twitter.com/orbitingfrog'
+        description: '''
+          Zooniverse Researcher and Developer at Oxford University. Fearless lader of the Milky Way Project.
+        '''
+
       matt:
+        image: '//placehold.it/100.png'
         name: 'Matthew Povich'
-        bio: "Assistant Professor in the Department of Physics and Astronomy at California Poly Pomona."
+        description: '''
+          Assistant Professor in the Department of Physics and Astronomy at California Poly Pomona.
+        '''
+
       sarah:
         name: 'Sarah Kendrew'
-        twitter: 'sarahkendrew'
-        bio: 'Postdoctoral researcher at the University of Oxford. Cross-correlater extraordinaire.'
+        image: '//placehold.it/100.png'
+        url: 'https://www.twitter.com/sarahkendrew'
+        description: '''
+          Postdoctoral researcher at the University of Oxford. Cross-correlater extraordinaire.
+        '''
+
       chris:
         name: 'Chris Lintott'
-        twitter: 'chrislintott'
-        bio: 'Astronomer at the University of Oxford. PI of the Zooniverse (it\'s his fault).'
+        image: '//placehold.it/100.png'
+        url: 'https://www.twitter.com/chrislintott'
+        description: '''
+          Astronomer at the University of Oxford. PI of the Zooniverse (it's his fault).
+        '''
+
       bob:
+        image: '//placehold.it/100.png'
         name: 'Robert Benjamin'
-        bio: 'GLIMPSE team member and Professor of Physics, University of Wisconsin-Whitewater.'
+        description: '''
+          GLIMPSE team member and Professor of Physics, University of Wisconsin-Whitewater.
+        '''
+
       ed:
+        image: '//placehold.it/100.png'
         name: 'Ed Churchwell'
-        bio: 'Professor Emeritus at the University of Wisconsin-Madison, Principal Investigator of the GLIMPSE I&II surveys and team member on all other GLIMPSE Surveys.'
+        description: '''
+          Professor Emeritus at the University of Wisconsin-Madison, Principal Investigator of the GLIMPSE I&II surveys and team member on all other GLIMPSE Surveys.
+        '''
+
       chrisn:
+        image: '//placehold.it/100.png'
         name: 'Chris North'
-        bio: 'Chris is the UK Herschel Outreach Officer and is based at Cardiff University in Wales.'
+        description: '''
+          Chris is the UK Herschel Outreach Officer and is based at Cardiff University in Wales.
+        '''
+
       sarahm:
+        image: '//placehold.it/100.png'
         name: 'Sarah Maddison'
-        bio: 'Associate Professor of Astrophysics at Swinburne University, Australia.'
-      more:
-        name: 'More Names'
-        twitter: ''
-        bio: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        description: '''
+          Associate Professor of Astrophysics at Swinburne University, Australia.
+        '''
 
   data:
     title: 'Data and Results'

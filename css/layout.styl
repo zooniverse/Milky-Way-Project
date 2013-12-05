@@ -50,17 +50,29 @@ hr
   margin: 3em 0
 
 .columns
+  GUTTER = 20px
+
   clearfix()
   margin: 3em 0
 
-  > * > :first-child
-    margin-top: 0
-
-  .half
+  > *
     float: left
-    margin-right: 20px
-    width: 45%
-    width: calc(50% \- 20px)
+    margin-right: GUTTER
+
+    &.half
+      width: 45%
+      width: calc(50% \- GUTTER)
+
+    &.third
+      width: 30%
+      width: calc(33.33% \- GUTTER)
+
+    &.quarter
+      width: 20%
+      width: calc(25% \- GUTTER)
+
+    > :first-child
+      margin-top: 0
 
   img
     max-width: 100%

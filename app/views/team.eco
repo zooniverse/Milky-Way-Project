@@ -1,32 +1,34 @@
 <% translate = require 't7e' %>
+<% enUs = require '../lib/en-us' %>
+
 <div class="content">
   <%- translate 'h1', 'projectName' %>
-  
   <%- translate 'p', 'team.introduction' %>
+</div>
 
-  <%- translate 'h3', 'team.org_title' %>
-  <ul id="org_list">
-  	<li><%- translate 'span.name', 'team.organisations.oxford.name' %><%- translate 'span.description', 'team.organisations.oxford.description' %></li>
-  	<li><%- translate 'span.name', 'team.organisations.adler.name' %><%- translate 'span.description', 'team.organisations.adler.description' %></li>
-  	<li><%- translate 'span.name', 'team.organisations.spitzer.name' %><%- translate 'span.description', 'team.organisations.spitzer.description' %></li>
-  </ul>
+<% groups = ['organisations', 'scientists', 'developers'] %>
+<% groupMembers = {} %>
+<% groupMembers.organisations = ['oxford', 'adler', 'spitzer'] %>
+<% groupMembers.scientists = ['rob', 'matt', 'sarah', 'chris', 'chrisn', 'sarahm', 'bob'] %>
+<% groupMembers.developers = ['brian', 'heath', 'michael'] %>
 
-  <%- translate 'h3', 'team.science_title' %>
-  <ul id="science_team">
-  	<li><%- translate 'span.name', 'team.scientists.rob.name' %><%- translate 'span.bio', 'team.scientists.rob.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.matt.name' %><%- translate 'span.bio', 'team.scientists.matt.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.sarah.name' %><%- translate 'span.bio', 'team.scientists.sarah.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.chris.name' %><%- translate 'span.bio', 'team.scientists.chris.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.chrisn.name' %><%- translate 'span.bio', 'team.scientists.chrisn.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.sarahm.name' %><%- translate 'span.bio', 'team.scientists.sarahm.bio' %></li>
-  	<li><%- translate 'span.name', 'team.scientists.bob.name' %><%- translate 'span.bio', 'team.scientists.bob.bio' %></li>
-  </ul>
-
-  <%- translate 'h3', 'team.dev_title' %>
-  <ul id="dev_team">
-  	<li><%- translate 'span.name', 'team.developers.brian.name' %><%- translate 'span.bio', 'team.developers.brian.bio' %></li>
-  	<li><%- translate 'span.name', 'team.developers.heath.name' %><%- translate 'span.bio', 'team.developers.heath.bio' %></li>
-  	<li><%- translate 'span.name', 'team.developers.chriss.name' %><%- translate 'span.bio', 'team.developers.chriss.bio' %></li>
-  </ul>
-
+<div class="general">
+  <% for group in groups: %>
+    <div class="minor content">
+      <%- translate 'h2', "team.#{group}.title" %>
+      <% for member in groupMembers[group]: %>
+        <div class="member">
+          <%- translate 'img', '', src: "team.#{group}.#{member}.image" %>
+          <h3>
+            <% if enUs.team[group][member].url?: %>
+              <%- translate 'a', "team.#{group}.#{member}.name", href: "team.#{group}.#{member}.url" %>
+            <% else: %>
+              <%- translate 'span', "team.#{group}.#{member}.name" %>
+            <% end %>
+          </h3>
+          <%- translate 'p.member-description', "team.#{group}.#{member}.description" %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
 </div>

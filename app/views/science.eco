@@ -2,25 +2,51 @@
 
 <div class="content">
   <%- translate 'h1', 'science.title' %>
+</div>
 
-  <%- translate 'h3', 'science.general.title' %>
-  <%- translate 'p', 'science.general.g_01' %>
+<div class="general">
+  <div class="content">
+    <%- translate 'h2', 'science.general.title' %>
+    <%- translate 'p', 'science.general.g_01' %>
 
-  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
-  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+    <hr />
 
-  <%- translate 'p', 'science.general.g_02' %>
-  <%- translate 'p', 'science.general.g_03' %>
+    <div class="columns">
+      <div class="half minor">
+        <h3>Smaller subhead</h3>
+        <img src="//placehold.it/400x200.png" alt="Example Image" />
+        <p>This one is "minor"</p>
+      </div>
 
+      <div class="half minor">
+        <h3>Smaller subhead</h3>
+        <img src="//placehold.it/400x200.png" alt="Example Image" />
+        <p>This one is "minor"</p>
+      </div>
+    </div>
 
-  <%- translate 'h3', 'science.bubbles.title' %>
-  <%- translate 'p', 'science.bubbles.b_01' %>
-  <%- translate 'p', 'science.bubbles.b_02' %>
+    <%- translate 'p', 'science.general.g_02' %>
+    <%- translate 'p', 'science.general.g_03' %>
 
-  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
-  <img class="half" src="http://placehold.it/400x200" alt="Example Image" />
+    <%- translate 'h2', 'science.bubbles.title' %>
+    <%- translate 'p', 'science.bubbles.b_01' %>
+    <%- translate 'p', 'science.bubbles.b_02' %>
 
-  <%- translate 'p', 'science.bubbles.b_03' %>
-  <%- translate 'p', 'science.bubbles.b_04' %>
+    <div class="columns">
+      <div class="half minor">
+        <h3>Smaller subhead</h3>
+        <img src="//placehold.it/400x200.png" alt="Example Image" />
+        <p>This one is "minor"</p>
+      </div>
 
+      <div class="half minor">
+        <h3>Smaller subhead</h3>
+        <img src="//placehold.it/400x200.png" alt="Example Image" />
+        <p>This one is "minor"</p>
+      </div>
+    </div>
+
+    <%- translate 'p', 'science.bubbles.b_03' %>
+    <%- translate 'p', 'science.bubbles.b_04' %>
+  </div>
 </div>

@@ -9,14 +9,67 @@ body
 .inverted
   background: rgba(DARK_BLUEISH, 0.9)
   color: white
-  overflow: hidden
+  padding: 1px 0
+
+.general
+  background: BEIGE
+  font-size: 18px
+  padding: 1px 0 3em
 
 .content
+  line-height: 30px
   margin: 0 auto
   width: 800px
 
-  a
-    color: GREEN
+.minor
+  font-size: 14px
+  line-height: 24px
+
+h1
+  color: black
+  font-size: 34px
+  font-weight: inherit
+  margin: 3em 0 1em
+
+  & ~ p
+    font-size: 22px
+
+h2,
+h3
+  font-size: inherit
+  font-weight bold
+  letter-spacing: 1px
+  margin: 3em 0 1em
+  text-transform: uppercase
+
+hr
+  background: transparent
+  color: darken(BEIGE, 10%)
+  border: 0 solid
+  border-top-width: 1px
+  margin: 3em 0
+
+.columns
+  clearfix()
+  margin: 3em 0
+
+  > * > :first-child
+    margin-top: 0
+
+  .half
+    float: left
+    margin-right: 20px
+    width: 45%
+    width: calc(50% \- 20px)
+
+  img
+    max-width: 100%
+
+a
+  color: GREEN
+
+  &:not([href])
+    opacity: 0.5
 
 button
   background: transparent
@@ -31,8 +84,8 @@ button
   &:disabled
     opacity: 0.5
 
-a:not([href])
-  opacity: 0.5
+abbr[title]
+  cursor: help
 
 .zooniverse-footer
   color: BLUEISH
@@ -44,7 +97,3 @@ a:not([href])
 
   a
     color: inherit
-
-img.half
-  width: 395px
-  display: inline-block

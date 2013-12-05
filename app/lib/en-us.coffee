@@ -36,8 +36,8 @@ module.exports =
       b_04: '''How is it that we know the bubbles indicate sites of active star formation? Because bubbles are made by hot stars, and hot stars are generally found dominating clusters containing several hundred to several thousand low-mass stars apiece! Hot stars also don't live long enough to move far from the clouds where they formed. All this means that each bubble represents several hundred to several thousand very young stars.'''
 
   team:
-    introduction: 'There are so many people invovled. These are some of them.'
-    org_title: 'Organisations'
+    introduction: 'There are so many people involved. These are some of them.'
+    org_title: 'Organizations'
     dev_title: 'Development Team'
     science_title: 'Science Team'
     organisations:
@@ -49,7 +49,7 @@ module.exports =
         description: '''The Adler Planetarium – America’s First Planetarium – was founded in 1930 by Chicago business leader Max Adler. The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math. Throughout 80 years, the Adler has inspired the next generation of explorers by sharing the personal stories of space exploration and America’s space heroes.'''
       spitzer:
         name: 'The Spitzer Space Telescope'
-        description: '''Spitzer was launched into space in 2003, as part of NASA's Great Observatories programme. The spacecraft travels in an Earth-trailing orbit around the Sun, and for the first six years of operation was kept at temperatures close to absolute zero using liquid Helium. The Milky Way Project uses observations made with the Spitzer Space Telescope, which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA.'''
+        description: '''Spitzer was launched into space in 2003, as part of NASA's Great Observatories program. The spacecraft travels in an Earth-trailing orbit around the Sun, and for the first six years of operation was kept at temperatures close to absolute zero using liquid Helium. The Milky Way Project uses observations made with the Spitzer Space Telescope, which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA.'''
     developers:
       heath:
         name: 'Heath van Singel'
@@ -77,11 +77,11 @@ module.exports =
       sarah:
         name: 'Sarah Kendrew'
         twitter: 'sarahkendrew'
-        bio: 'Postdoctoral researcher at the University of Oxford. Cross-correlator extraordinaire.'
+        bio: 'Postdoctoral researcher at the University of Oxford. Cross-correlater extraordinaire.'
       chris:
         name: 'Chris Lintott'
         twitter: 'chrislintott'
-        bio: 'Astronomer at the Universit yof Oxford. PI of the Zooniverse (it\'s his fault).'
+        bio: 'Astronomer at the University of Oxford. PI of the Zooniverse (it\'s his fault).'
       bob:
         name: 'Robert Benjamin'
         bio: 'GLIMPSE team member and Professor of Physics, University of Wisconsin-Whitewater.'
@@ -90,7 +90,7 @@ module.exports =
         bio: 'Professor Emeritus at the University of Wisconsin-Madison, Principal Investigator of the GLIMPSE I&II surveys and team member on all other GLIMPSE Surveys.'
       chrisn:
         name: 'Chris North'
-        bio: 'Chris is the UK Herschel Outreach Officer and is absed at Cardiff University in Wales.'
+        bio: 'Chris is the UK Herschel Outreach Officer and is based at Cardiff University in Wales.'
       sarahm:
         name: 'Sarah Maddison'
         bio: 'Associate Professor of Astrophysics at Swinburne University, Australia.'
@@ -104,7 +104,7 @@ module.exports =
     introduction: '''We aim to provide periodic, public releases of Milky Way Project data. On this page you can download the first release of data from 2012, and see the publications that have used data from this site.'''
     dr1:
       title: 'Data Release 1'
-      description: '''In 2012 we released our first dataset, created from more than half a million bubble drawings by volunteers on the Milky Way Project. The resultant catalogue of 5,106 bubbles is publicly available. It contains the details of their location, size and angle on the sky.'''
+      description: '''In 2012 we released our first dataset, created from more than half a million bubble drawings by volunteers on the Milky Way Project. The resultant catalog of 5,106 bubbles is publicly available. It contains the details of their location, size and angle on the sky.'''
       get_data: 'Get DR1 Data'
     papers:
       get_paper: '''View Paper Online'''
@@ -120,11 +120,11 @@ module.exports =
 
 
   guide:
-    title: '''Classiifer's Guide'''
+    title: '''Classifier's Guide'''
     introduction: 'Here you can find examples of the types of objects we want people to tag in the data. You can also find examples on the blog and Talk.'
     bubbles:
       title: 'Bubble Examples'
-      description: '''Bubbles are usually circular or elliptical, but often only partiallly seen. They may be viewed as arcs of re din these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometime shave star clusters nearby, but not always.'''
+      description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of re din these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometime shave star clusters nearby, but not always.'''
     clusters:
       title: 'Star Cluster Examples'
       description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark them.'''
@@ -133,16 +133,16 @@ module.exports =
       description: '''Extended green objects (EGOs) are usually seen near to bright stars as very small, irregular blobs of green. They are quite rare and they are a special find. There is much work being done by researchers to find and understand these objects.'''
     galaxies:
       title: 'Galaxy Examples'
-      description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometime sseen in gaps in the diffuse emission of the dust, and they me seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glwoing in red or pink.'''
+      description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometimes seen in gaps in the diffuse emission of the dust, and they me seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glowing in red or pink.'''
     other:
-      title: 'Other Objects Yiou Might Spot'
-      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particuarly strange or interesting. You may also see dark nebulae and odd image artefacts from time to time. These can be useful for the research team. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
+      title: 'Other Objects You Might Spot'
+      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particularly strange or interesting. You may also see dark nebulae and odd image artifacts from time to time. These can be useful for the research team. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
 
   faq:
     title: 'Frequently Asked Questions'
     introduction: 'Here we try to answer some of the most-commonly asked questions about the MWP and the science behind it.'
     q01:
-      answer: '''The images shown in the Milky Way Project were taken with a camera onboard the Spitzer Space Telescope, as part of a survey called GLIMPSE, which aimed to map around 85% of the plane of the Milky Way galaxy. Over 440,000 images were taken for this survey. The galactic plane is where most of the young stars, gas and dust are located, and Spitzer is especially sensitive to those. The high resolution of the Spitzer infrared camera makes it possible to see fine detail in these clouds, and the bubbles we see are a great example of that.'''
+      answer: '''The images shown in the Milky Way Project were taken with a camera on board the Spitzer Space Telescope, as part of a survey called GLIMPSE, which aimed to map around 85% of the plane of the Milky Way galaxy. Over 440,000 images were taken for this survey. The galactic plane is where most of the young stars, gas and dust are located, and Spitzer is especially sensitive to those. The high resolution of the Spitzer infrared camera makes it possible to see fine detail in these clouds, and the bubbles we see are a great example of that.'''
       question: '''What are we looking at in these images?'''
     q02:
       answer: '''These images are from places all along the plane of the Milky Way. At night in darker areas you can see the Milky Way as a bright stripe across the sky. The region covered by these images is about as wide as a finger's length held at arm's length away from you, and stretches all the way around the earth following the brightest part of the Milky Way's stripe.'''
@@ -157,22 +157,22 @@ module.exports =
       answer: '''Relax! We're sure you are. This sort of pattern recognition is something humans are very good at, and so just take your best guess at each image as it comes up. Several people will be shown each image, so don't worry too much about making a simple mistake. If you want some more guidance, then revisit the tutorial or read the extended version.'''
       question: '''How do I know if I'm any good?'''
     q06:
-      answer: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyse the results to make surethat collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use."'''
+      answer: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyze the results to make sure that collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use."'''
       question: '''What happens to the classifications I provide?'''
     q07:
-      answer: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you'vefinished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes."'''
+      answer: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you've finished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes."'''
       question: '''How can I change a classification?'''
     q08:
-      answer: '''It is not possible to redo a classification, as we want each one to be independent. Allowing classifications to be replaced would open up thepossibility of classifiers discussing images and changing their classifications to agree with one another. This would reduce our ability to understand the uncertainties in the classifications. However, don't worry about our final results: each image will be looked at by many people, so on average the classification is likely to be correct, and occasional mistakes don't matter.'''
+      answer: '''It is not possible to redo a classification, as we want each one to be independent. Allowing classifications to be replaced would open up the possibility of classifiers discussing images and changing their classifications to agree with one another. This would reduce our ability to understand the uncertainties in the classifications. However, don't worry about our final results: each image will be looked at by many people, so on average the classification is likely to be correct, and occasional mistakes don't matter.'''
       question: '''Can I redo a classification?'''
     q09:
-      answer: '''If one person classificaties these images — even if they're an expert — then anything odd or interesting can be blamed on them. With multipleindependent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project."'''
+      answer: '''If one person misclassifies these images it doesn't matter too much. The power of the project is that the crowd agrees and finds interesting and reliable data.. With multiple independent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project."'''
       question: '''Why do you need so many people to help?'''
     q10:
       answer: '''Light is a wave, specifically a wave of electromagnetic energy, and it comes in a wide range of wavelengths. Light that we see, or visible light, are electromagnetic waves that oscillate back and forth every 0.4-0.7 microns (there are a thousand microns in a millimeter, or a million microns in a meter). Infrared is light that has longer wavelengths, from 0.7 microns all the way up to about 300 microns.  The shorter-wavelength end of that range is called near infrared because it is near to visible light, and the longer-wavelength range is called far infrared.'''
       question: '''What is infrared?'''
     q11:
-      answer: '''These images come from two instruments, both aboard the Spitzer Space Telescope.  One of the instruments took images at wavelengths in the 3-8 micron range (and that light is coloured green in these images) and the other took images at a wavelength of 24 microns, which is coloured red.'''
+      answer: '''These images come from two instruments, both aboard the Spitzer Space Telescope.  One of the instruments took images at wavelengths in the 3-8 micron range (and that light is colored green in these images) and the other took images at a wavelength of 24 microns, which is colored red.'''
       question: '''What wavelength are these images?'''
     q00:
       answer: '''All the stars you see in the night sky are part of a very large group of stars (a few hundred billion) that we call the Milky Way Galaxy. If you've ever looked at the night sky from a dark location, you've probably seen the band of light that we also call the 'Milky Way'. This band of light contains most of the stars in the Milky Way Galaxy, and the images you're inspecting all come from a narrow band only a few full moons wide along the Milky Way.'''
@@ -184,7 +184,7 @@ module.exports =
   classify:
     options:
       discuss: 'Discuss'
-      favourite: 'Favourite'
+      favourite: 'Favorite'
       help: 'Help'
 
     question: 'What do you see in this image?'
@@ -196,7 +196,7 @@ module.exports =
       object: 'Object'
     objectTypes:
       darkNebula: 'Dark Nebula'
-      artefact: 'Artefact'
+      artefact: 'Artifact'
       other: 'Other'
 
     finish: 'I\'m done!'

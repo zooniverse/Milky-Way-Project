@@ -12,15 +12,16 @@ module.exports =
     guide: '''Classifier's Guide'''
 
   home:
-    counter:
+    heading: 'Big heading about space objects'
+    welcome: 'The Milky Way Project aims to measure and map our galaxy. We need your help looking through tens of thousands of images from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
+    start: 'Start classifying'
+
+    counters:
       classifications: 'Classifications'
       bubbles: 'Bubbles'
       clusters: 'Star Clusters'
       egos: 'EGOs'
       galaxies: 'Galaxies'
-    content:
-      welcome: 'The Milky Way Project aims to measure and map our galaxy. We need your help looking through tens of thousands of images from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
-      go_classify: 'Start Mapping Our Galaxy!'
 
   science:
     title: 'The Science'

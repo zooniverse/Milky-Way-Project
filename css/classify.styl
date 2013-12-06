@@ -133,6 +133,16 @@
       border-width: 0
       color: white
 
+      .finish-label
+        display: none
+
+      &.has-marks
+        .skip-label
+          display: none
+
+        .finish-label
+          display: inline
+
     :checked + .outer-label
       background: BLUEISH
       border-color: BLUEISH

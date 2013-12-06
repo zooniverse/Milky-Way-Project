@@ -174,7 +174,10 @@
     </div>
 
     <div class="tool">
-      <%- translate 'button', 'classify.finish', name: 'finish' %>
+      <button name="finish">
+        <%- translate 'span.skip-label', 'classify.skip' %>
+        <%- translate 'span.finish-label', 'classify.finish' %>
+      </button>
     </div>
   </div>
 </div>

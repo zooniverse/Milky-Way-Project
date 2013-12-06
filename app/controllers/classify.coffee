@@ -65,6 +65,9 @@ class Classify extends Controller
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT
 
+    @surface.on 'change', =>
+      @finishButton.toggleClass 'has-marks', @surface.marks.length > 0
+
     @subjectImage = @surface.addShape 'image',
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT

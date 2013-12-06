@@ -316,6 +316,7 @@ module.exports =
       artefact: 'Artifact'
       other: 'Other'
 
+    skip: 'Nothing<br />to mark'
     finish: 'I\'m done!'
 
     help: '''

@@ -13,6 +13,7 @@ module.exports =
 
   home:
     counter:
+      classifications: 'Classifications'
       bubbles: 'Bubbles'
       clusters: 'Star Clusters'
       egos: 'EGOs'
@@ -217,15 +218,19 @@ module.exports =
       description: '''In 2012 we released our first dataset, created from more than half a million bubble drawings by volunteers on the Milky Way Project. The resultant catalog of 5,106 bubbles is publicly available. It contains the details of their location, size and angle on the sky.'''
       get_data: 'Get DR1 Data'
     papers:
+      title: 'Milky Way Project Papers'
       get_paper: '''View Paper Online'''
       simpson12:
-        title: 'Simpson et al 2012: The Milky Way Project First Data Release: a bubblier Galactic disc'
+        title: 'The Milky Way Project First Data Release: a bubblier Galactic disc'
+        author: 'Simpson et al. 2012'
         description: '''Our first data release paper was published in the Monthly Notices of the Royal Astronomical Society and is available on arXiv. It describes the reduction of more than half a million bubble drawings by users of the Milky Way Project into a catalogue of 5,106 bubbles.'''
       kendrew12:
-        title: 'Kendrew et al 2012: A Statistical Study of Massive Star Formation Associated with Infrared Bubbles'
-        description: '''Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'''
+        title: 'A Statistical Study of Massive Star Formation Associated with IR Bubbles'
+        author: 'Kendrew et al. 2012'
+        description: '''We present a detailed statistical analysis of the MWP data with the Red MSX Source catalog. We investigate the association of these bubbles with massive star formation. We particularly address the question of massive triggered star formation near infrared bubbles.'''
       beaumont13:
-        title: 'Beaumont et al 2013: Leveraging Citizen Science and Machine Learning to Detect Interstellar Bubbles'
+        title: 'Leveraging Citizen Science and Machine Learning to Detect Interstellar Bubbles'
+        author: 'Beaumont et al. 2013'
         description: '''Coming Soon...'''
 
 

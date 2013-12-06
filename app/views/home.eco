@@ -4,6 +4,7 @@
   <%- translate 'h1', 'projectName' %>
   
   <ul>
+  	<li class="count"><span class="count" id="classifications_count">482,502</span> <%- translate 'span', 'home.counter.classifications' %></li>
   	<li class="count"><span class="count" id="bubbles_count">155,567</span> <%- translate 'span', 'home.counter.bubbles' %></li>
 	<li class="count"><span class="count" id="clusters_count">2,024</span> <%- translate 'span', 'home.counter.clusters' %></li>
 	<li class="count"><span class="count" id="egos_count">1,692</span> <%- translate 'span', 'home.counter.egos' %></li>

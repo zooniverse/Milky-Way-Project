@@ -18,7 +18,7 @@
   <div class="tools">
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="EllipseTool" checked="checked" />
+        <input type="radio" name="tool" value="bubble" checked="checked" />
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -51,7 +51,7 @@
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="CircleTool" />
+        <input type="radio" name="tool" value="cluster" />
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -86,7 +86,7 @@
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="CircleTool" />
+        <input type="radio" name="tool" value="ego" />
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -116,7 +116,7 @@
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="CircleTool" />
+        <input type="radio" name="tool" value="galaxy" />
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -146,7 +146,7 @@
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="ObjectTool" />
+        <input type="radio" name="tool" value="object" />
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">

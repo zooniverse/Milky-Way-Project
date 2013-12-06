@@ -2,6 +2,9 @@ Controller = require 'zooniverse/controllers/base-controller'
 Overlay = require './overlay'
 translate = require 't7e'
 MarkingSurface = require 'marking-surface'
+EllipseTool = require './tools/ellipse'
+CircleTool = require './tools/circle'
+ObjectTool = require './tools/object'
 Throbber = require './throbber'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
@@ -10,9 +13,11 @@ Classification = require 'zooniverse/models/classification'
 Footer = require 'zooniverse/controllers/footer'
 
 tools =
-  EllipseTool: require './tools/ellipse'
-  CircleTool: require './tools/circle'
-  ObjectTool: require './tools/object'
+  bubble: class extends EllipseTool then name: 'bubble'
+  cluster: class extends CircleTool then name: 'cluster'
+  ego: class extends CircleTool then name: 'ego'
+  galaxy: class extends CircleTool then name: 'galaxy'
+  object: ObjectTool
 
 SUBJECT_WIDTH = 800
 SUBJECT_HEIGHT = 400
@@ -61,7 +66,7 @@ class Classify extends Controller
       associated: @helpButton
 
     @surface = new MarkingSurface
-      tool: tools.EllipseTool
+      tool: tools.bubble
       width: SUBJECT_WIDTH
       height: SUBJECT_HEIGHT
 

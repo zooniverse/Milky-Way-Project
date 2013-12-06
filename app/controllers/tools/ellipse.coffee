@@ -10,6 +10,8 @@ toRad = (t) -> t * (PI / 180)
 class EllipseTool extends OriginalEllipseTool
   @Controls: DefaultControls
 
+  name: ''
+
   handleRadius: if PROBABLY_IOS then 20 else 5
 
   controlsOffset: 15
@@ -22,6 +24,8 @@ class EllipseTool extends OriginalEllipseTool
 
   initialize: ->
     super
+
+    @mark.set 'name', @name
 
     @path.attr
       stroke: 'rgba(255, 255, 255, 0.25)'

@@ -15,10 +15,12 @@ class ObjectControls extends DefaultControls
       @tool.mark.set 'content', $(@el).find('input[name="object-type"]:checked').val()
 
 class ObjectTool extends RectangleTool
+  name: 'object'
   @Controls: ObjectControls
 
   initialize: ->
     super
+    @mark.set 'name', @name
     @mark.set 'content', ''
 
 MarkingSurface.ObjectTool = ObjectTool

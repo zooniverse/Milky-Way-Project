@@ -9,8 +9,6 @@
     <%- translate 'h2', 'science.general.title' %>
     <%- translate 'p', 'science.general.g_01' %>
 
-    <hr />
-
     <div class="columns">
       <div class="half minor">
         <img src="./images/science/bubble_cluster_ego.jpg" alt="Bubble, cluster and EGO" />
@@ -37,7 +35,7 @@
       </div>
 
       <div class="half minor">
-<img src="./images/science/dusty_galaxy.jpg" alt="Galaxy seen through the dust" />
+        <img src="./images/science/dusty_galaxy.jpg" alt="Galaxy seen through the dust" />
         <p>A beautiful spiral galaxy seen in the distance, through the material in the Milky Way. It's dust glows red too.</p>
       </div>
     </div>

@@ -18,7 +18,7 @@ module.exports =
       egos: 'EGOs'
       galaxies: 'Galaxies'
     content:
-      welcome: 'The Milky Way Project aims to sort and measure our galaxy. We need your help looking through tens of thousands of images of our Galaxy from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
+      welcome: 'The Milky Way Project aims to measure and map our galaxy. We need your help looking through tens of thousands of images from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
       go_classify: 'Start Mapping Our Galaxy!'
 
   science:
@@ -28,19 +28,17 @@ module.exports =
       title: 'Why Scientists Need You'
 
       g_01: '''
-        The Milky Way Project (MWP) shows you data taken from the Spitzer Space Telescope.
-        Specifically from the <abbr title="Galactic Legacy Infrared Mid-Plane Survey Extraordinaire">GLIMPSE</abbr> survey.
+        The Milky Way Project shows you data taken from the Spitzer Space Telescope.
         What you see is actually the infrared light from deep within our galaxy, the Milky Way.
         This is not what you would see with your eyes.
         In fact, that is exactly why astronomers have collected so much infrared data in the past twenty years:
         we are trying to understand the diffuse material, called dust, that creates the beautiful structures in these images.
-        You can read more about dust below.
       '''
 
       g_02: '''
         We're looking into the cold, murky depths of interstellar space for interesting shapes and features.
         The bubbles and star clusters we sometimes see in these images are part of the life cycle of stars.
-        Some bubbles have already been found - by the first version of the MWP - but we want to find them in other parts of the galaxy.
+        Some bubbles have already been found - by previous studies, including the first version of the MWP - but we want to find them in other parts of the galaxy.
         The first MWP was so successful that we have expanded the search to new regions in the Milky Way.
         We're building up a comprehensive view of not only these bubbles, but our galaxy as a whole.
         We're asking you to help us map star formation in our galaxy.
@@ -51,8 +49,8 @@ module.exports =
         such as strange green objects seen near young stars (called EGOs)
         and never-before-seen galaxies that lie far beyond our own galaxy, hidden behind the stars and dust.
         If you see anything unusual in the images, make sure to mark it and give your best guess as to what it is.
-        We hope to map out these objects and then use your discoveries to make more observations.
-        You might even discover something we didn't expect.
+        We hope to map out these objects and then use your discoveries to make future observations.
+        You might even discover something we didn't expect, something truly extraordinary!
       '''
 
     bubbles:
@@ -248,7 +246,7 @@ module.exports =
       description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometimes seen in gaps in the diffuse emission of the dust, and they me seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glowing in red or pink.'''
     other:
       title: 'Other Objects You Might Spot'
-      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particularly strange or interesting. You may also see dark nebulae and odd image artifacts from time to time. These can be useful for the research team. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
+      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particularly strange or interesting. You may also see bow shocks: arcs that form as stars push into the dust; pillars or columns of dust; and odd image artifacts. These can be useful for the research team so please mark them where you can. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
 
   faq:
     title: 'Frequently Asked Questions'
@@ -307,7 +305,7 @@ module.exports =
       galaxy: 'Galaxy'
       object: 'Object'
     objectTypes:
-      darkNebula: 'Dark Nebula'
+      bowshock: 'Bow Shock'
       pillars: 'Pillars'
       artefact: 'Artifact'
       other: 'Other'

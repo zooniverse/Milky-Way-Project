@@ -3,7 +3,7 @@ DefaultControls = require 'marking-surface/lib/tools/default-controls'
 
 {PI, max, min, sqrt, pow, sin, cos} = Math
 
-PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iO'
+PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iP'
 
 toRad = (t) -> t * (PI / 180)
 
@@ -32,9 +32,8 @@ class EllipseTool extends OriginalEllipseTool
       strokeWidth: 1
       strokeDasharray: []
 
-    unless PROBABLY_IOS
-      @xHandle.attr @handleStyle
-      @yHandle.attr @handleStyle
+    @xHandle.attr @handleStyle
+    @yHandle.attr @handleStyle
 
   getControlsPosition: ->
     {rx: a, ry: b} = @mark

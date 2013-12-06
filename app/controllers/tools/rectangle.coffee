@@ -1,6 +1,6 @@
 OriginalRectangleTool = require 'marking-surface/lib/tools/rectangle'
 
-PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iO'
+PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iP'
 
 class RectangleTool extends OriginalRectangleTool
   controlsOffset: 10
@@ -15,9 +15,8 @@ class RectangleTool extends OriginalRectangleTool
   initialize: ->
     super
 
-    unless PROBABLY_IOS
-      for handle in @handles
-        handle.attr @handleStyle
+    for handle in @handles
+      handle.attr @handleStyle
 
   getControlsPosition: ->
     [@mark.left + @mark.width + @controlsOffset,  @mark.top - @controlsOffset]

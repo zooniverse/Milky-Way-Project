@@ -45,22 +45,22 @@
   <div class="columns">
     <div class="minor half">
       <img src="//placehold.it/200.png" class="round" />
-      <h2>Hello</h2>
-      <p>Lorem ipsum dolor sit amet</p>
+      <%- translate 'h2', 'home.task.heading' %>
+      <%- translate 'p', 'home.task.content' %>
     </div>
 
     <div class="minor half">
       <img src="//placehold.it/200.png" class="round" />
-      <h2>World</h2>
-      <p>Lorem ipsum dolor sit amet</p>
+      <%- translate 'h2', 'home.unknown.heading' %>
+      <%- translate 'p', 'home.unknown.content' %>
     </div>
   </div>
 </div>
 
 <div class="why project-summary">
   <div class="content">
-    <h2>The Milky Way Galaxy is massive!</h2>
-    <p>Lorem ipsum</p>
+    <%- translate 'h2', 'home.massive.heading' %>
+    <%- translate 'p', 'home.massive.content' %>
   </div>
 </div>
 

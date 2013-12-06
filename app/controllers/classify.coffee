@@ -138,7 +138,6 @@ class Classify extends Controller
           @throbber.stop()
           setTimeout (=> @finishButton.attr 'disabled', false), 1000
 
-
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks
     console?.log JSON.stringify @classification

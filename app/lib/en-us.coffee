@@ -1,5 +1,5 @@
 module.exports =
-  projectName: 'Milky Way Project'
+  projectName: 'The Milky Way Project'
 
   navigation:
     label: 'Menu'
@@ -13,7 +13,12 @@ module.exports =
 
   home:
     heading: 'Big heading about space objects'
-    welcome: 'The Milky Way Project aims to measure and map our galaxy. We need your help looking through tens of thousands of images from the Spitzer Space Telescope. By telling us what you see in this infrared data, we can better understand how stars form.'
+    welcome: '''
+      The Milky Way Project aims to measure and map our galaxy.
+      We need your help looking through tens of thousands of images from the Spitzer Space Telescope.
+      By telling us what you see in this infrared data, we can better understand how stars form.
+    '''
+
     start: 'Start classifying'
 
     counters:
@@ -22,6 +27,27 @@ module.exports =
       clusters: 'Star Clusters'
       egos: 'EGOs'
       galaxies: 'Galaxies'
+
+    task:
+      heading: 'Identify, mark, and size'
+      content: '''
+        Using our bubble-marking interface, our hope is that you will find bubbles and note any
+        important or unusual characteristics. Find stuff today!
+      '''
+
+    unknown:
+      heading: 'Enter the unknown'
+      content: '''
+        If you see anything unusual in the images, make sure to mark it using the "other" tool.
+        Who knows? You might find something truly extraordinary!
+      '''
+
+    massive:
+      heading: 'The Milky Way Galaxy is massive!'
+      content: '''
+        There's no way we could do this on our own. We need the help of the public to classify the thousands of images we have on file.
+        If all 900,000 of our members classified a few images, we'd be done in no time!
+      '''
 
   science:
     title: 'The Science'

@@ -1,37 +1,41 @@
 <% translate = require 't7e' %>
 
-<div class="content">
-  <div class="introduction">
+  <div class="introduction content">
     <%- translate 'h1', 'home.heading' %>
     <%- translate 'p', 'home.welcome' %>
+
     <div class="action">
       <%- translate 'a.classify-link', 'home.start', href: '#/classify' %>
+      &emsp;
+      <a href="#TODO_TWITTER" class="social"><i class="fa fa-twitter"></i></a>
+      <a href="#TODO_FACEBOOK" class="social"><i class="fa fa-facebook-square"></i></a>
     </div>
   </div>
 
+<div class="content">
   <div class="counters">
     <div class="counter">
-      <div class="count">0</div>
+      <div class="counter-value">0</div>
       <%- translate 'div.counter-label', 'home.counters.classifications' %>
     </div>
 
     <div class="counter">
-      <div class="count">0</div>
+      <div class="counter-value">0</div>
       <%- translate 'div.counter-label', 'home.counters.bubbles' %>
     </div>
 
     <div class="counter">
-      <div class="count">0</div>
+      <div class="counter-value">0</div>
       <%- translate 'div.counter-label', 'home.counters.clusters' %>
     </div>
 
     <div class="counter">
-      <div class="count">0</div>
+      <div class="counter-value">0</div>
       <%- translate 'div.counter-label', 'home.counters.egos' %>
     </div>
 
     <div class="counter">
-      <div class="count">0</div>
+      <div class="counter-value">0</div>
       <%- translate 'div.counter-label', 'home.counters.galaxies' %>
     </div>
   </div>
@@ -39,13 +43,15 @@
 
 <div class="what project-summary content">
   <div class="columns">
-    <div class="half">
-      <img src="//placehold.it/200.png" />
+    <div class="minor half">
+      <img src="//placehold.it/200.png" class="round" />
+      <h2>Hello</h2>
       <p>Lorem ipsum dolor sit amet</p>
     </div>
 
-    <div class="half">
-      <img src="//placehold.it/200.png" />
+    <div class="minor half">
+      <img src="//placehold.it/200.png" class="round" />
+      <h2>World</h2>
       <p>Lorem ipsum dolor sit amet</p>
     </div>
   </div>

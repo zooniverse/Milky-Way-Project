@@ -1,35 +1,61 @@
 [data-location-hash="#/"] .site-header
-  height: 620px
+  height: 600px
+
+  .home-background
+    opacity: 1
 
 .home-page
-  margin-top: -560px
+  margin-top: -600px
 
   .introduction
     color: white
-    margin: 10px 0
+    height: 450px
+
+    .action
+      margin-top: 50px
+
+      .social
+        color: inherit
+        display: inline-block
+        height: 1.25em
+        font-size: 30px
+        text-align: center
+        vertical-align: middle
+        width: 1.25em
 
   .classify-link
     background: BLUEISH
-    border-radius: 3px
+    border-radius: 5px
     color: white
     display: inline-block
     padding: 10px 30px
     text-decoration: none
+    vertical-align: middle
 
   .counters
-    background: black
+    background: lighten(black, 15%)
+    border-radius: 5px
+    color: white
     display: table
     text-align: center
     width: 100%
 
   .counter
     display: table-cell
+    padding: 15px 0 25px
     width: 20%
+
+  .counter-value
+    font-size: 30px
+
+  .counter-label
+    font-size: 14px
 
   .project-summary
     padding: 100px 0
     text-align: center
 
   .why
-    background: gray /* TODO */
+    background: gray url("./images/blurry-redness.jpg") 50% 50% fixed
+    background-size: cover
     color: white

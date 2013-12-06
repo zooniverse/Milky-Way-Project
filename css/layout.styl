@@ -6,6 +6,9 @@ html
 body
   margin: 0
 
+  > .stack-of-pages
+    position: relative
+
 .inverted
   background: rgba(DARK_BLUEISH, 0.9)
   color: white
@@ -14,39 +17,15 @@ body
 .general
   background: BEIGE
   font-size: 18px
-  padding: 1px 0 3em
+  padding: 1px 0 4em
 
 .content
-  line-height: 30px
   margin: 0 auto
   width: 800px
 
 .minor
   font-size: 14px
   line-height: 24px
-
-h1
-  font-size: 34px
-  font-weight: inherit
-  margin: 3em 0 1em
-
-  & ~ p
-    font-size: 22px
-
-h2,
-h3
-  font-size: inherit
-  font-weight bold
-  letter-spacing: 1px
-  margin: 3em 0 1em
-  text-transform: uppercase
-
-hr
-  background: transparent
-  color: darken(BEIGE, 10%)
-  border: 0 solid
-  border-top-width: 1px
-  margin: 3em 0
 
 .columns
   GUTTER = 20px
@@ -75,6 +54,35 @@ hr
 
   img
     max-width: 100%
+
+h1
+  font-size: 34px
+  font-weight: inherit
+  margin: 3em 0 1em
+
+  & ~ p
+    font-size: 22px
+
+h2,
+h3
+  font-size: inherit
+  font-weight bold
+  letter-spacing: 1px
+  margin: 3em 0 1em
+  text-transform: uppercase
+
+hr
+  background: transparent
+  color: darken(BEIGE, 10%)
+  border: 0 solid
+  border-top-width: 1px
+  margin: 3em 0
+
+p
+  line-height: 30px
+
+img.round
+  border-radius: 50%
 
 a
   color: GREEN

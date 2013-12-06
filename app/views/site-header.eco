@@ -1,5 +1,7 @@
 <% translate = require 't7e' %>
 
+<div class="home-background"></div>
+
 <div class="content">
   <div class="constant">
     <%- translate 'a.logo', 'projectName', href: '#/' %>

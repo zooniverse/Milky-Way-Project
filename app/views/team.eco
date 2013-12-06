@@ -14,21 +14,34 @@
 
 <div class="general">
   <% for group in groups: %>
-    <div class="minor content">
+    <div class="content">
       <%- translate 'h2', "team.#{group}.title" %>
-      <% for member in groupMembers[group]: %>
-        <div class="member">
-          <%- translate 'img', '', src: "team.#{group}.#{member}.image" %>
-          <h3>
-            <% if enUs.team[group][member].url?: %>
-              <%- translate 'a', "team.#{group}.#{member}.name", href: "team.#{group}.#{member}.url" %>
-            <% else: %>
-              <%- translate 'span', "team.#{group}.#{member}.name" %>
-            <% end %>
-          </h3>
-          <%- translate 'p.member-description', "team.#{group}.#{member}.description" %>
-        </div>
-      <% end %>
+
+      <div class="minor <%= group %>">
+        <% for member, i in groupMembers[group]: %>
+          <div class="member">
+            <h3>
+              <% if enUs.team[group][member].url?: %>
+                <%- translate 'a', "team.#{group}.#{member}.name", href: "team.#{group}.#{member}.url" %>
+              <% else: %>
+                <%- translate 'span', "team.#{group}.#{member}.name" %>
+              <% end %>
+            </h3>
+
+            <div class="image">
+              <%- translate 'img', '', src: "team.#{group}.#{member}.image" %>
+            </div>
+
+            <div class="description">
+              <%- translate 'p.member-description', "team.#{group}.#{member}.description" %>
+            </div>
+          </div>
+
+          <% unless (i + 1) % 3: %>
+            <div class="line-separator"></div>
+          <% end %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 </div>

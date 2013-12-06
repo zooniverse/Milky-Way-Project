@@ -28,9 +28,9 @@
               <% end %>
             </h3>
 
-            <div class="image">
+            <!--<div class="image">
               <%- translate 'img', '', src: "team.#{group}.#{member}.image" %>
-            </div>
+            </div>-->
 
             <div class="description">
               <%- translate 'p.member-description', "team.#{group}.#{member}.description" %>

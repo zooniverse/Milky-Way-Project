@@ -1,6 +1,11 @@
 <% translate = require 't7e' %>
 <% enUs = require '../lib/en-us' %>
 
+<% GROUPS_OF = 3 %>
+<% WEB_ICON = '<i class="fa fa-globe"></i>' %>
+<% TWITTER_ICON = '<i class="fa fa-twitter"></i>' %>
+<% GITHUB_ICON = '<i class="fa fa-github-alt"></i>' %>
+
 <div class="content">
   <%- translate 'h1', 'projectName' %>
   <%- translate 'p', 'team.introduction' %>
@@ -21,10 +26,18 @@
         <% for member, i in groupMembers[group]: %>
           <div class="member">
             <h3>
-              <% if enUs.team[group][member].url?: %>
-                <%- translate 'a', "team.#{group}.#{member}.name", href: "team.#{group}.#{member}.url" %>
-              <% else: %>
-                <%- translate 'span', "team.#{group}.#{member}.name" %>
+              <%- translate 'span', "team.#{group}.#{member}.name" %>
+
+              <% if enUs.team[group][member].web?: %>
+                <%- translate 'a', WEB_ICON, href: "team.#{group}.#{member}.web" %>
+              <% end %>
+
+              <% if enUs.team[group][member].twitter?: %>
+                <%- translate 'a', TWITTER_ICON, href: "team.#{group}.#{member}.twitter" %>
+              <% end %>
+
+              <% if enUs.team[group][member].github?: %>
+                <%- translate 'a', GITHUB_ICON, href: "team.#{group}.#{member}.github" %>
               <% end %>
             </h3>
 
@@ -37,7 +50,7 @@
             </div>
           </div>
 
-          <% unless (i + 1) % 3: %>
+          <% unless (i + 1) % GROUPS_OF: %>
             <div class="line-separator"></div>
           <% end %>
         <% end %>

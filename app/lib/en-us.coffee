@@ -155,7 +155,7 @@ module.exports =
       heath:
         name: 'Heath van Singel'
         image: '//placehold.it/100.png'
-        url: 'https://www.twitter.com/heath_vs'
+        twitter: 'https://twitter.com/heath_vs'
         description: '''
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         '''
@@ -163,6 +163,7 @@ module.exports =
       brian:
         name: 'Brian Carstensen'
         image: '//placehold.it/100.png'
+        github: 'https://github.com/brian-c'
         description: '''
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         '''
@@ -170,7 +171,7 @@ module.exports =
       michael:
         name: 'Michael Parrish'
         image: '//placehold.it/100.png'
-        url: 'https://www.twitter.com/michaelparrish'
+        twitter: 'https://twitter.com/michaelparrish'
         description: '''
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         '''
@@ -181,7 +182,7 @@ module.exports =
       rob:
         name: 'Robert Simpson'
         image: '//placehold.it/100.png'
-        url: 'https://www.twitter.com/orbitingfrog'
+        twitter: 'https://twitter.com/orbitingfrog'
         description: '''
           Zooniverse Researcher and Developer at Oxford University. Fearless lader of the Milky Way Project.
         '''
@@ -196,7 +197,7 @@ module.exports =
       sarah:
         name: 'Sarah Kendrew'
         image: '//placehold.it/100.png'
-        url: 'https://www.twitter.com/sarahkendrew'
+        twitter: 'https://twitter.com/sarahkendrew'
         description: '''
           Postdoctoral researcher at the University of Oxford. Cross-correlater extraordinaire.
         '''
@@ -204,7 +205,7 @@ module.exports =
       chris:
         name: 'Chris Lintott'
         image: '//placehold.it/100.png'
-        url: 'https://www.twitter.com/chrislintott'
+        twitter: 'https://twitter.com/chrislintott'
         description: '''
           Astronomer at the University of Oxford. PI of the Zooniverse (it's his fault).
         '''

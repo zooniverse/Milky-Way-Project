@@ -11,27 +11,27 @@
     <%- translate 'p', 'data.dr1.description' %>
     <%- translate 'a.download_data', 'data.dr1.get_data' %>
 
-	<%- translate 'h2', 'data.papers.title' %>
-	<div class="columns">
+  <%- translate 'h2', 'data.papers.title' %>
+  <div class="columns">
       <div class="half minor">
-	    <img src="./images/data/simpson12.jpg" />
-	    <%- translate 'h3', 'data.papers.simpson12.title' %>
-	    <%- translate 'p.author', 'data.papers.simpson12.author' %>
-	    <%- translate 'p', 'data.papers.simpson12.description' %>
-	    <a href="http://mnras.oxfordjournals.org/content/424/4/2442.abstract?sid=4a445f2b-71d6-4865-9e64-3aba88192f61" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>
+      <img src="./images/data/simpson12.jpg" />
+      <%- translate 'h3', 'data.papers.simpson12.title' %>
+      <%- translate 'p.author', 'data.papers.simpson12.author' %>
+      <%- translate 'p', 'data.papers.simpson12.description' %>
+      <a href="http://mnras.oxfordjournals.org/content/424/4/2442.abstract?sid=4a445f2b-71d6-4865-9e64-3aba88192f61" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>
 
-	    <%- translate 'h2', 'data.papers.beaumont13.title' %>
-	    <%- translate 'p.author', 'data.papers.beaumont13.author' %>
-    	<%- translate 'p', 'data.papers.beaumont13.description' %>
-    	<!--<a href="#" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>-->
+      <%- translate 'h2', 'data.papers.beaumont13.title' %>
+      <%- translate 'p.author', 'data.papers.beaumont13.author' %>
+      <%- translate 'p', 'data.papers.beaumont13.description' %>
+      <!--<a href="#" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>-->
       </div>
 
       <div class="half minor">
-	    <img src="./images/data/kendrew12.jpg" />
-	    <%- translate 'h3', 'data.papers.kendrew12.title' %>
-	    <%- translate 'p.author', 'data.papers.kendrew12.author' %>
-	    <%- translate 'p', 'data.papers.kendrew12.description' %>
-	    <a href="http://adsabs.harvard.edu/abs/2012ApJ...755...71K" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>
+      <img src="./images/data/kendrew12.jpg" />
+      <%- translate 'h3', 'data.papers.kendrew12.title' %>
+      <%- translate 'p.author', 'data.papers.kendrew12.author' %>
+      <%- translate 'p', 'data.papers.kendrew12.description' %>
+      <a href="http://adsabs.harvard.edu/abs/2012ApJ...755...71K" class="download_paper"><%- translate 'span', 'data.papers.get_paper' %></a>
       </div>
     </div>
 

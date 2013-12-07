@@ -371,7 +371,7 @@ module.exports =
 
     markBubble:
       content: '''
-        We're primarily looking for bubbles like the one in the bottom-left of this image. Let's mark it now.
+        We're looking for bubbles like the one in the bottom-left of this image. Let's mark it now.
       '''
 
       instruction: '''
@@ -384,12 +384,13 @@ module.exports =
       '''
 
       instruction: '''
-        Drag the other point of the ellips to match the bubble.
+        Drag the other point of the ellipse to match the bubble.
       '''
 
     selectClusterTool:
       content: '''
-        Great! Now we'll mark the small cluster of bright stars off to the right.
+        Great! We also want to find stars clusters.
+        Let's mark the cluster of bright stars off to the right.
       '''
 
       instruction: '''
@@ -420,7 +421,7 @@ module.exports =
       '''
 
       instruction: '''
-        Drag out a circle aroudnt he EGO until it is contained.
+        Drag out a circle around the EGO until it is contained.
       '''
 
     callOutTalk:

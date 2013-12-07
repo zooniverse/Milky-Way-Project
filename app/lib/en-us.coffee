@@ -267,7 +267,7 @@ module.exports =
     introduction: 'Here you can find examples of the types of objects we want people to tag in the data. You can also find examples on the blog and Talk.'
     bubbles:
       title: 'Bubble Examples'
-      description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of red in these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometime shave star clusters nearby, but not always.'''
+      description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of red in these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometimes have star clusters nearby, but not always.'''
     clusters:
       title: 'Star Cluster Examples'
       description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark them.'''
@@ -276,10 +276,22 @@ module.exports =
       description: '''Extended green objects (EGOs) are usually seen near to bright stars as very small, irregular blobs of green. They are quite rare and they are a special find. There is much work being done by researchers to find and understand these objects.'''
     galaxies:
       title: 'Galaxy Examples'
-      description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometimes seen in gaps in the diffuse emission of the dust, and they me seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glowing in red or pink.'''
-    other:
-      title: 'Other Objects You Might Spot'
-      description: '''Bright stars and red fuzzy objects are littered through out the data on the Milky Way Project. You don't need to mark these unless you think they're particularly strange or interesting. You may also see bow shocks: arcs that form as stars push into the dust; pillars or columns of dust; and odd image artifacts. These can be useful for the research team so please mark them where you can. You may of course find things we don't expect at all - and that's why there is an 'other' category.'''
+      description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometimes seen in gaps in the diffuse emission of the dust, and they might be seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glowing in red or pink.'''
+    bows:
+      title: 'Other Objects: Bow Shocks'
+      description: '''Once in a while you might see bow shocks in the data. They are very rare but really interesting. They're so rare that we could only find two examples for this page! These could be large or small and they will look like arcs that form as stars push into the dust. These can be selected as an option in the 'other' category.'''
+    pillars:
+      title: 'Other Objects: Pillars'
+      description: '''Around some bubbles and complex regions you will see pillars or columns of dust. These may have stars at their tips or not, but they are often quite striking. These can be selected as an option in the 'other' category.'''
+    artifacts:
+      title: 'Other Objects: Artifacts'
+      description: '''There are several different kinds of image artifacts in the data. Knowing where these are can be useful for the research team. These can be selected as an option in the 'other' category. <strong>However</strong>, we don't you to mark the large, blocky artifacts at the edge of many of the images (see below).'''
+    stars:
+      title: '''Don't Mark: Single, Bright Stars'''
+      description: '''Bright stars are very common in the data and they sometimes produce long cross-hairs in the images. This is normal and we don't need you to mark these.'''
+    edges:
+      title: '''Don't Mark: Edge Colors'''
+      description: '''Many of the images come from the edges of the dataset where there is one or more data channels missing. This produces triangular or zig-zag blocks of blue, yellow, or red. You don't need to mark these as artifacts because we know where the edge of the survey are.'''
 
   faq:
     title: 'Frequently Asked Questions'

@@ -7,6 +7,7 @@
 
 <div class="general">
   <div class="content">
+
     <%- translate 'h3', 'guide.bubbles.title' %>
     <%- translate 'p', 'guide.bubbles.description' %>
     <img src="./images/guide/bubble1.jpg" />
@@ -39,12 +40,46 @@
     <img src="./images/guide/gal4.jpg" />
     <img src="./images/guide/gal5.jpg" />
 
-    <%- translate 'h3', 'guide.other.title' %>
-    <%- translate 'p', 'guide.other.description' %>
-    <img src="./images/guide/other1.jpg" />
-    <img src="./images/guide/other2.jpg" />
-    <img src="./images/guide/other5.jpg" />
-    <img src="./images/guide/other3.jpg" />
-    <img src="./images/guide/other4.jpg" />
+    <hr>
+
+    <%- translate 'h3', 'guide.artifacts.title' %>
+    <%- translate 'p', 'guide.artifacts.description' %>
+    <img src="./images/guide/artifacts1.jpg" />
+    <img src="./images/guide/artifacts2.jpg" />
+    <img src="./images/guide/artifacts3.jpg" />
+    <img src="./images/guide/artifacts4.jpg" />
+    <img src="./images/guide/artifacts5.jpg" />
+
+    <%- translate 'h3', 'guide.bows.title' %>
+    <%- translate 'p', 'guide.bows.description' %>
+    <img src="./images/guide/bows1.jpg" />
+    <img src="./images/guide/bows2.jpg" />
+
+    <%- translate 'h3', 'guide.pillars.title' %>
+    <%- translate 'p', 'guide.pillars.description' %>
+    <img src="./images/guide/pillars1.jpg" />
+    <img src="./images/guide/pillars2.jpg" />
+    <img src="./images/guide/pillars3.jpg" />
+    <img src="./images/guide/pillars4.jpg" />
+    <img src="./images/guide/pillars5.jpg" />
+
+    <hr>
+
+    <%- translate 'h3', 'guide.stars.title' %>
+    <%- translate 'p', 'guide.stars.description' %>
+    <img src="./images/guide/stars1.jpg" />
+    <img src="./images/guide/stars2.jpg" />
+    <img src="./images/guide/stars3.jpg" />
+    <img src="./images/guide/stars4.jpg" />
+    <img src="./images/guide/stars5.jpg" />
+
+    <%- translate 'h3', 'guide.edges.title' %>
+    <%- translate 'p', 'guide.edges.description' %>
+    <img src="./images/guide/edges1.jpg" />
+    <img src="./images/guide/edges2.jpg" />
+    <img src="./images/guide/edges3.jpg" />
+    <img src="./images/guide/edges4.jpg" />
+    <img src="./images/guide/edges5.jpg" />
+
   </div>
 </div>

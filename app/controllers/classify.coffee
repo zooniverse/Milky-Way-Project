@@ -94,6 +94,7 @@ class Classify extends Controller
     @tutorial = new Tutorial
       parent: @el.get 0
       steps: require '../lib/tutorial-steps'
+      onEnd: -> @guide?.remove()
       classifier: @
 
     User.on 'change', @onUserChange

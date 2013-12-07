@@ -1,7 +1,6 @@
 translate = require 't7e'
 GhostMouse = require 'ghost-mouse'
 
-guide = null
 guideStyle =
   fill: 'transparent'
   stroke: 'white'
@@ -36,11 +35,11 @@ tutorialSteps =
     arrow: 'left'
 
     onLoad: ->
-      guide = @classifier.surface.addShape 'ellipse',
+      @guide = @classifier.surface.addShape 'ellipse',
         rx: 110
         ry: 90
         transform: 'translate(210, 290), rotate(40)'
-      guide.attr guideStyle
+      @guide.attr guideStyle
 
     demo: ->
       ghostMouse.run ->
@@ -58,7 +57,7 @@ tutorialSteps =
     arrow: 'bottom'
 
     onUnload: ->
-      guide.remove()
+      @guide.remove()
 
     next:
       'mouseup .marking-surface': 'selectClusterTool'
@@ -85,13 +84,13 @@ tutorialSteps =
         @drag '.marking-surface', (580 / 800), (180 / 400)
 
     onLoad: ->
-      guide = @classifier.surface.addShape 'circle',
+      @guide = @classifier.surface.addShape 'circle',
         r: 60
         transform: 'translate(550, 120)'
-      guide.attr guideStyle
+      @guide.attr guideStyle
 
     onUnload: ->
-      guide.remove()
+      @guide.remove()
 
     next:
       'mouseup .marking-surface': 'selectEgoTool'
@@ -118,13 +117,13 @@ tutorialSteps =
         @drag '.marking-surface', (280 / 800), (55 / 400)
 
     onLoad: ->
-      guide = @classifier.surface.addShape 'circle',
+      @guide = @classifier.surface.addShape 'circle',
         r: 15
         transform: 'translate(275, 30)'
-      guide.attr guideStyle
+      @guide.attr guideStyle
 
     onUnload: ->
-      guide.remove()
+      @guide.remove()
 
     next:
       'mouseup .marking-surface': 'callOutTalk'

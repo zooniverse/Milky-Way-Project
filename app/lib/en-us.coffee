@@ -442,6 +442,6 @@ module.exports =
     theEnd:
       content: '''
         You should have enough knowledge to get started on your own.
-        Each image is reviewed by seberal volunteers, so don't be discouraged by a difficult one.
+        Each image is reviewed by several volunteers, so don't be discouraged by a difficult one.
         Just try your best, and thanks for helping us explore the Milky Way!
       '''

@@ -6,6 +6,7 @@ EllipseTool = require './tools/ellipse'
 CircleTool = require './tools/circle'
 ObjectTool = require './tools/object'
 Throbber = require './throbber'
+{Tutorial} = require 'zootorial'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
@@ -89,6 +90,11 @@ class Classify extends Controller
 
     @subjectContainer.append @throbber.canvas
 
+    @tutorial = new Tutorial
+      parent: @el.get 0
+      steps: require '../lib/tutorial-steps'
+      classifier: @
+
     User.on 'change', @onUserChange
     Subject.on 'get-next', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
@@ -115,7 +121,7 @@ class Classify extends Controller
 
   onSubjectSelect: (e, subject) =>
     console?.log 'Subject', subject.location.standard
-    @surface.marks[0].destroy() until @surface.marks.length==0
+    @surface.marks[0].destroy() until @surface.marks.length is 0
 
     @classification?.destroy()
     @classification = new Classification {subject}
@@ -142,6 +148,10 @@ class Classify extends Controller
         $(@throbber.canvas).fadeOut 'slow', =>
           @throbber.stop()
           setTimeout (=> @finishButton.attr 'disabled', false), 1000
+          @startTutorial() if subject.tutorial or true # TODO
+
+  startTutorial: ->
+    @tutorial.start()
 
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks

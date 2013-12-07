@@ -352,3 +352,84 @@ module.exports =
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
     '''
+
+  tutorial:
+    first:
+      header: 'Welcome!'
+      content: '''
+        This quick walk-through will show you how to use the interface.
+      '''
+
+    selectBubbleTool:
+      content: '''
+        First let's select the bubble tool.
+      '''
+
+      instruction: '''
+        Select the "Bubble" tool.
+      '''
+
+    markBubble:
+      content: '''
+        We're primarily looking for bubbles like the one in the bottom-left of this image. Let's mark it now.
+      '''
+
+      instruction: '''
+        Drag out from the center to the edge of the bubble.
+      '''
+
+    adjustBubbleMarking:
+      content: '''
+        Now let's adjust until our ellipse matches the curve of the bubble.
+      '''
+
+      instruction: '''
+        Drag the other point of the ellips to match the bubble.
+      '''
+
+    selectClusterTool:
+      content: ''''''
+      instruction: '''
+        Select the "Cluster" tool.
+      '''
+
+    markCluster:
+      content: ''''''
+      instruction: '''
+        Drag out a circle from the center of the star cluster until it is contained.
+      '''
+
+    selectEgoTool:
+      content: ''''''
+      instruction: '''
+        Select the "EGO" tool.
+      '''
+
+    markEgo:
+      content: ''''''
+      instruction: '''
+        Drag out a circle aroudnt he EGO until it is contained.
+      '''
+
+    callOutTalk:
+      content: '''
+        Use this button to discuss this image and others with scientists and other volunteers in Talk.
+      '''
+
+    callOutFavorite:
+      content: '''
+        If you find a particularly interesting image, click this star before you submit your classification.
+        You'll be able to find it later in your Favorites collection in Talk.
+      '''
+
+    callOutHelp:
+      content: '''
+        This button will bring up a quick reference to the different objects we're looking for.
+      '''
+
+    theEnd:
+      content: '''
+        You should have enough knowledge to get started on your own.
+        Each image is reviewed by seberal volunteers, so don't be discouraged by a difficult one.
+        Just try your best, and thanks for helping us explore the Milky Way!
+      '''

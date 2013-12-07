@@ -359,10 +359,26 @@ module.exports =
     finish: 'I\'m done!'
 
     help: '''
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.</p>
+      <h3>Objects to Look For:</h3>
+      
+      <p><img src="./images/guide/bubble1.jpg" class="help-image" /><img src="./images/guide/bubble3.jpg" class="help-image" /></p>
+      <p>Bubbles</p>
+      
+      <p><img src="./images/guide/cluster1.jpg" class="help-image" /><img src="./images/guide/cluster2.jpg" class="help-image" /></p>
+      <p>Star Clusters</p>
+
+      <p><img src="./images/guide/ego1.jpg" class="help-image" /><img src="./images/guide/ego2.jpg" class="help-image" /></p>
+      <p>EGOs</p>
+
+      <p><img src="./images/guide/gal1.jpg" class="help-image" /><img src="./images/guide/gal2.jpg" class="help-image" /></p>
+      <p>Galaxies</p>
+
+      <h3>You Don't Need to Mark These:</h3>
+      <p><img src="./images/guide/edges1.jpg" class="help-image" /><img src="./images/guide/edges2.jpg" class="help-image" /></p>
+      <p>Edges</p>
+
+      <p><img src="./images/guide/stars1.jpg" class="help-image" /><img src="./images/guide/stars2.jpg" class="help-image" /></p>
+      <p>Stars</p>
     '''
 
   tutorial:

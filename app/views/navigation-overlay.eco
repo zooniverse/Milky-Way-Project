@@ -12,13 +12,15 @@
   </div>
 
   <div class="social">
-    <a href="#TODO_TWITTER">
+    <a href="https://twitter.com/milkywayproj‎">
       <i class="fa fa-twitter"></i>
-    </a><!--
-    --><a href="#TODO_FACEBOOK">
+    </a>
+
+    <a href="#TODO_FACEBOOK">
       <i class="fa fa-facebook-square"></i>
-    </a><!--
-    --><a href="#TODO_PINTEREST">
+    </a>
+
+    <a href="#TODO_PINTEREST">
       <i class="fa fa-pinterest"></i>
     </a>
   </div>

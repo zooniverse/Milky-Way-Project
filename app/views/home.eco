@@ -7,7 +7,7 @@
     <div class="action">
       <%- translate 'a.classify-link', 'home.start', href: '#/classify' %>
       &emsp;
-      <a href="#TODO_TWITTER" class="social"><i class="fa fa-twitter"></i></a>
+      <a href="https://twitter.com/milkywayproj‎" class="social"><i class="fa fa-twitter"></i></a>
       <a href="#TODO_FACEBOOK" class="social"><i class="fa fa-facebook-square"></i></a>
     </div>
   </div>

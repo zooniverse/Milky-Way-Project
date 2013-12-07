@@ -10,6 +10,7 @@ Throbber = require './throbber'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
+selectTutorialSubject = require '../lib/select-tutorial-subject'
 Classification = require 'zooniverse/models/classification'
 Footer = require 'zooniverse/controllers/footer'
 
@@ -111,7 +112,11 @@ class Classify extends Controller
 
   onUserChange: (e, user) =>
     @el.toggleClass 'signed-in', user?
-    Subject.next() if not @classification?
+
+    if user?.finished_tutorial_or_whatever
+      Subject.next() if @surface.marks.length is 0
+    else
+      selectTutorialSubject()
 
   onSubjectGettingNext: =>
     @talkLink.attr 'href', null
@@ -136,6 +141,11 @@ class Classify extends Controller
       @discardImage.attr 'opacity', 1
       @subjectImage.attr 'xlink:href', subject.location.standard
 
+      if subject.tutorial
+        @tutorial.start()
+      else if @tutorial._current?
+        @tutorial.end()
+
       fade = animate 1000, (step) =>
         scale = 1 + (step / 2)
         @discardImage.attr
@@ -147,11 +157,8 @@ class Classify extends Controller
       fade.then =>
         $(@throbber.canvas).fadeOut 'slow', =>
           @throbber.stop()
-          setTimeout (=> @finishButton.attr 'disabled', false), 1000
-          @startTutorial() if subject.tutorial or true # TODO
 
-  startTutorial: ->
-    @tutorial.start()
+          setTimeout (=> @finishButton.attr 'disabled', false), 1000
 
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks

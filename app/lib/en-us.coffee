@@ -388,25 +388,37 @@ module.exports =
       '''
 
     selectClusterTool:
-      content: ''''''
+      content: '''
+        Great! Now we'll mark the small cluster of bright stars off to the right.
+      '''
+
       instruction: '''
         Select the "Cluster" tool.
       '''
 
     markCluster:
-      content: ''''''
+      content: '''
+        We just need to draw a simple circle around the cluster.
+      '''
+
       instruction: '''
         Drag out a circle from the center of the star cluster until it is contained.
       '''
 
     selectEgoTool:
-      content: ''''''
+      content: '''
+        There's a tiny green smudge at the top of this image, just left of center.
+        That's an extended green object, or EGO, which we'll mark with another circle.
+      '''
       instruction: '''
         Select the "EGO" tool.
       '''
 
     markEgo:
-      content: ''''''
+      content: '''
+        Here it is. Let's circle it.
+      '''
+
       instruction: '''
         Drag out a circle aroudnt he EGO until it is contained.
       '''

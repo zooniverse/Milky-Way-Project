@@ -2,6 +2,7 @@
   "name": "milky-way-project",
   "version": "0.0.1",
   "dependencies": {
+    "ghost-mouse": "~0.0.8",
     "haw": "~0.2.9",
     "marking-surface": "~0.4.6",
     "publisssh": "~0.2.1",

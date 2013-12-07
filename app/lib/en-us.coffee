@@ -5,11 +5,11 @@ module.exports =
     label: 'Menu'
     home: 'Home'
     classify: 'Classify'
+    guide: 'Guide'
     science: 'Science'
     team: 'Team'
     data: 'Data'
-    faq: 'FAQ'
-    guide: '''Classifier's Guide'''
+    faq: 'F.A.Q.'
 
   home:
     heading: 'Big heading about space objects'

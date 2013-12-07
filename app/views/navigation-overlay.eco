@@ -3,8 +3,10 @@
 <div class="links">
   <div class="pages">
     <div><%- translate 'a', 'navigation.home', href: '#/' %></div>
-    <div><%- translate 'a', 'navigation.classify', href: '#/classify' %></div>
-    <div><%- translate 'a', 'navigation.guide', href: '#/guide' %></div>
+    <div>
+      <%- translate 'a', 'navigation.classify', href: '#/classify' %>
+      <%- translate 'a.aux', 'navigation.guide', href: '#/guide' %>
+    </div>
     <div><%- translate 'a', 'navigation.faq', href: '#/faq' %></div>
     <div><%- translate 'a', 'navigation.science', href: '#/science' %></div>
     <div><%- translate 'a', 'navigation.team', href: '#/team' %></div>

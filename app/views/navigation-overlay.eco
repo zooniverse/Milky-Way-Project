@@ -2,15 +2,15 @@
 
 <div class="links">
   <div class="pages">
-    <div><%- translate 'a', 'navigation.home', href: '#/' %></div>
-    <div>
+    <%- translate 'a', 'navigation.home', href: '#/' %><br />
+    <span class="has-aux">
       <%- translate 'a', 'navigation.classify', href: '#/classify' %>
       <%- translate 'a.aux', 'navigation.guide', href: '#/guide' %>
-    </div>
-    <div><%- translate 'a', 'navigation.faq', href: '#/faq' %></div>
-    <div><%- translate 'a', 'navigation.science', href: '#/science' %></div>
-    <div><%- translate 'a', 'navigation.team', href: '#/team' %></div>
-    <div><%- translate 'a', 'navigation.data', href: '#/data' %></div>
+    </span><br />
+    <%- translate 'a', 'navigation.faq', href: '#/faq' %><br />
+    <%- translate 'a', 'navigation.science', href: '#/science' %><br />
+    <%- translate 'a', 'navigation.team', href: '#/team' %><br />
+    <%- translate 'a', 'navigation.data', href: '#/data' %><br />
   </div>
 
   <div class="social">

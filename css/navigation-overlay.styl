@@ -21,13 +21,20 @@
       display: inline-block
       padding: 10px 0
 
-      &.aux
-        border: 2px solid
-        border-radius: 1em
-        font-size: 14px
-        font-weight: bold
-        padding: 5px 15px
-        vertical-align: middle
+  .has-aux
+    position: relative
+
+    .aux
+      border: 2px solid
+      border-radius: 1em
+      font-size: 14px
+      font-weight: bold
+      left: 100%
+      padding: 5px 15px
+      position: absolute
+      top: 55%
+      transform: translateY(-50%)
+      vertical-align: middle
 
   .social
     margin-top: 60px

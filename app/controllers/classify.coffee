@@ -100,6 +100,9 @@ class Classify extends Controller
     Subject.on 'get-next', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
 
+  activate: ->
+    setTimeout (=> @tutorial.attach() if @tutorial._current?), 500
+
   onClickFavorite: ->
     @classification.favorite = !@classification.favorite
     @favoriteButton.toggleClass 'active', @classification.favorite

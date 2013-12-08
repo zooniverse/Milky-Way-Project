@@ -12,9 +12,8 @@ module.exports =
     faq: 'F.A.Q.'
 
   home:
-    heading: 'Big heading about space objects'
+    heading: 'Measure and map our galaxy'
     welcome: '''
-      The Milky Way Project aims to measure and map our galaxy.
       We need your help looking through tens of thousands of images from the Spitzer Space Telescope.
       By telling us what you see in this infrared data, we can better understand how stars form.
     '''

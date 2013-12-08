@@ -2,7 +2,11 @@
   height: 370px
 
 .classify
-  margin-top: -300px
+  margin-top: -270px
+
+  @media (max-height: 640px)
+    &
+      margin-top: -300px
 
   .interface
     margin: 0 auto
@@ -90,7 +94,9 @@
     margin: 15px 0
     text-align: center
 
-    display: none
+    @media (max-height: 640px)
+      &
+        display: none
 
   .tools
     border-spacing: 10px 0

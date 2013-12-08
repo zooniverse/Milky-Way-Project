@@ -360,49 +360,67 @@ module.exports =
 
     help: '''
       <h3>Objects to Look For:</h3>
-      
-      <p>
-        <img src="./images/guide/bubble1.jpg" class="help-image" />
-        <img src="./images/guide/bubble2.jpg" class="help-image" />
-        <img src="./images/guide/bubble3.jpg" class="help-image" />
-      </p>
-      <p>Bubbles</p>
-      
-      <p>
-        <img src="./images/guide/cluster1.jpg" class="help-image" />
-        <img src="./images/guide/cluster2.jpg" class="help-image" />
-        <img src="./images/guide/cluster3.jpg" class="help-image" />
-      </p>
-      <p>Star Clusters</p>
 
-      <p>
-        <img src="./images/guide/ego1.jpg" class="help-image" />
-        <img src="./images/guide/ego2.jpg" class="help-image" />
-        <img src="./images/guide/ego3.jpg" class="help-image" />
-      </p>
-      <p>EGOs</p>
+      <div class="columns">
+        <div class="half">
+          <p>
+            <img src="./images/guide/bubble1.jpg" class="help-image" />
+            <img src="./images/guide/bubble2.jpg" class="help-image" />
+            <img src="./images/guide/bubble3.jpg" class="help-image" />
+            <br />
+            Bubbles
+          </p>
 
-      <p>
-        <img src="./images/guide/gal1.jpg" class="help-image" />
-        <img src="./images/guide/gal3.jpg" class="help-image" />
-        <img src="./images/guide/gal5.jpg" class="help-image" />
-      </p>
-      <p>Galaxies</p>
+          <p>
+            <img src="./images/guide/cluster1.jpg" class="help-image" />
+            <img src="./images/guide/cluster2.jpg" class="help-image" />
+            <img src="./images/guide/cluster3.jpg" class="help-image" />
+            <br />
+            Star Clusters
+          </p>
+        </div>
+
+        <div class="half">
+          <p>
+            <img src="./images/guide/ego1.jpg" class="help-image" />
+            <img src="./images/guide/ego2.jpg" class="help-image" />
+            <img src="./images/guide/ego3.jpg" class="help-image" />
+            <br />
+            EGOs
+          </p>
+
+          <p>
+            <img src="./images/guide/gal1.jpg" class="help-image" />
+            <img src="./images/guide/gal3.jpg" class="help-image" />
+            <img src="./images/guide/gal5.jpg" class="help-image" />
+            <br />
+            Galaxies
+          </p>
+        </div>
+      </div>
 
       <h3>You Don't Need to Mark These:</h3>
-      <p>
-        <img src="./images/guide/edges1.jpg" class="help-image" />
-        <img src="./images/guide/edges2.jpg" class="help-image" />
-        <img src="./images/guide/edges3.jpg" class="help-image" />
-      </p>
-      <p>Edge Artifacts</p>
+      <div class="columns">
+        <div class="half">
+          <p>
+            <img src="./images/guide/edges1.jpg" class="help-image" />
+            <img src="./images/guide/edges2.jpg" class="help-image" />
+            <img src="./images/guide/edges3.jpg" class="help-image" />
+            <br />
+            Edge Artifacts
+          </p>
+        </div>
 
-      <p>
-        <img src="./images/guide/stars1.jpg" class="help-image" />
-        <img src="./images/guide/stars2.jpg" class="help-image" />
-        <img src="./images/guide/stars3.jpg" class="help-image" />
-      </p>
-      <p>Individual, Bright Stars</p>
+        <div class="half">
+          <p>
+            <img src="./images/guide/stars1.jpg" class="help-image" />
+            <img src="./images/guide/stars2.jpg" class="help-image" />
+            <img src="./images/guide/stars3.jpg" class="help-image" />
+            <br />
+            Individual, Bright Stars
+          </p>
+        </div>
+      </div>
     '''
 
   tutorial:

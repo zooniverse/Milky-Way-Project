@@ -93,6 +93,7 @@ class Classify extends Controller
 
     @tutorial = new Tutorial
       parent: @el.get 0
+      attachment: [0.5, 0.5, @el.get(0), 0.5, 0.5]
       steps: require '../lib/tutorial-steps'
       onEnd: -> @guide?.remove()
       classifier: @

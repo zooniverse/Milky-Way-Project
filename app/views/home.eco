@@ -58,6 +58,7 @@
 </div>
 
 <div class="why project-summary">
+  <div class="background"></div>
   <div class="content">
     <%- translate 'h2', 'home.massive.heading' %>
     <%- translate 'p', 'home.massive.content' %>

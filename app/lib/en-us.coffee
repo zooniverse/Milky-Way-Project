@@ -266,7 +266,7 @@ module.exports =
     introduction: 'Here you can find examples of the types of objects we want people to tag in the data. You can also find examples on the blog and Talk.'
     bubbles:
       title: 'Bubble Examples'
-      description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of red in these data, sometimes brightening into pinks and whites. They are seen because of dust being warmed by the radiation from young stars. Bubble will sometimes have star clusters nearby, but not always.'''
+      description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of red in these data, sometimes brightening into pinks and whites. They are seen because ultraviolet radiation from young stars causes molecules in the surrounding gas to glow in the infrared. Bubble will sometimes have obvious star clusters nearby, but not always.'''
     clusters:
       title: 'Star Cluster Examples'
       description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark them.'''

@@ -272,7 +272,7 @@ module.exports =
       description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. You might see them inside a bubble, or on their own. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark those shapes as anything unusual.'''
     egos:
       title: 'EGO Examples'
-      description: '''Extended green objects (EGOs) are usually seen near to bright stars as very small, irregular blobs of green. They are quite rare and they are a special find. There is much work being done by researchers to find and understand these objects.'''
+      description: '''Extended green objects (EGOs) are small, irregular blobs of green. You may see them near bright stars, but they can also appear more isolated. They are quite rare and they are a special find: in fact, they were first identified in the images from this survey. There is much work being done by researchers to find and understand these objects.'''
     galaxies:
       title: 'Galaxy Examples'
       description: '''Sometimes when we look in infrared data we catch a glimpse of a distant galaxy in the background. These are sometimes seen in gaps in the diffuse emission of the dust, and they might be seen as lovely, spiral shapes or more-commonly as edge-on disks, seen as long cigar-type objects, glowing in red or pink.'''

@@ -311,16 +311,16 @@ module.exports =
       answer: '''Relax! We're sure you are. This sort of pattern recognition is something humans are very good at, and so just take your best guess at each image as it comes up. Several people will be shown each image, so don't worry too much about making a simple mistake. If you want some more guidance, then revisit the tutorial or read the extended version.'''
       question: '''How do I know if I'm any good?'''
     q06:
-      answer: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyze the results to make sure that collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use."'''
+      answer: '''They're stored with those provided by everyone who takes part. The Milky Way Project team will carefully analyze the results to make sure that collectively we’re producing results that are useful to scientists — keep an eye on the blog for details. All results will eventually be made public for anyone to use.'''
       question: '''What happens to the classifications I provide?'''
     q07:
-      answer: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you've finished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes."'''
+      answer: '''If you'd like to change your mind during working on a particular image, you can delete bubbles you've marked using the X button. Once you've finished an image, and your classification has been submitted to our database, then you can't change it, but don't worry — we compare classifications from multiple users so someone else will correct any mistakes.'''
       question: '''How can I change a classification?'''
     q08:
       answer: '''It is not possible to redo a classification, as we want each one to be independent. Allowing classifications to be replaced would open up the possibility of classifiers discussing images and changing their classifications to agree with one another. This would reduce our ability to understand the uncertainties in the classifications. However, don't worry about our final results: each image will be looked at by many people, so on average the classification is likely to be correct, and occasional mistakes don't matter.'''
       question: '''Can I redo a classification?'''
     q09:
-      answer: '''If one person misclassifies these images it doesn't matter too much. The power of the project is that the crowd agrees and finds interesting and reliable data.. With multiple independent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project."'''
+      answer: '''If one person misclassifies these images it doesn't matter too much. The power of the project is that the crowd agrees and finds interesting and reliable data.. With multiple independent classifications we can statistically calculate the confidence in our work, and that's a large part of the power of Milky Way Project.'''
       question: '''Why do you need so many people to help?'''
     q10:
       answer: '''Light is a wave, specifically a wave of electromagnetic energy, and it comes in a wide range of wavelengths. Light that we see, or visible light, are electromagnetic waves that oscillate back and forth every 0.4-0.7 microns (there are a thousand microns in a millimeter, or a million microns in a meter). Infrared is light that has longer wavelengths, from 0.7 microns all the way up to about 300 microns.  The shorter-wavelength end of that range is called near infrared because it is near to visible light, and the longer-wavelength range is called far infrared.'''

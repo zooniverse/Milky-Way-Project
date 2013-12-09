@@ -20,6 +20,7 @@ class ObjectTool extends RectangleTool
 
   initialize: ->
     super
+    @root.attr 'data-name', @name
     @mark.set 'name', @name
     @mark.set 'content', ''
 

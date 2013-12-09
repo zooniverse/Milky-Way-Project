@@ -137,6 +137,11 @@
       position: relative
       width: 100%
 
+    :checked + .outer-label
+      background: BLUEISH
+      border-color: BLUEISH
+      color: white
+
     button[name="finish"]
       background: GREEN
       border-width: 0
@@ -151,11 +156,6 @@
 
         .finish-label
           display: inline
-
-    :checked + .outer-label
-      background: BLUEISH
-      border-color: BLUEISH
-      color: white
 
     .inner-label
       left: 50%

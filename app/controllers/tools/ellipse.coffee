@@ -17,6 +17,7 @@ class EllipseTool extends OriginalEllipseTool
   controlsOffset: 15
   controlsAngle: 45
 
+  stroke: 'currentColor'
   handleStyle:
     fill: 'white'
     stroke: 'rgba(255, 255, 255, 0.01)'
@@ -25,6 +26,7 @@ class EllipseTool extends OriginalEllipseTool
   initialize: ->
     super
 
+    @root.attr 'data-name', @name
     @mark.set 'name', @name
 
     @path.attr

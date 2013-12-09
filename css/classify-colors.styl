@@ -1,0 +1,69 @@
+BLUE_HUE = hue(BLUEISH)
+BLUE_SATURATION = saturation(BLUEISH)
+BLUE_LIGHTNESS = lightness(BLUEISH)
+
+MODIFIED_BLUE = hsl(BLUE_HUE + 0, BLUE_SATURATION, BLUE_LIGHTNESS)
+MODIFIED_PURPLE = hsl(BLUE_HUE + 72, BLUE_SATURATION, BLUE_LIGHTNESS)
+MODIFIED_RED = hsl(BLUE_HUE + 144, BLUE_SATURATION, BLUE_LIGHTNESS)
+MODIFIED_OLIVE = hsl(BLUE_HUE + 216, BLUE_SATURATION, BLUE_LIGHTNESS)
+MODIFIED_GREEN = hsl(BLUE_HUE + 288, BLUE_SATURATION, BLUE_LIGHTNESS)
+
+.classify
+  .marking-surface
+    [data-name="bubble"]
+      color: lighten(MODIFIED_BLUE, 50%)
+
+    [data-name="cluster"]
+      color: lighten(MODIFIED_OLIVE, 50%)
+
+    [data-name="ego"]
+      color: lighten(MODIFIED_GREEN, 50%)
+
+    [data-name="galaxy"]
+      color: lighten(MODIFIED_PURPLE, 50%)
+
+    [data-name="object"]
+      color: lighten(MODIFIED_RED, 50%)
+
+
+  .tools input[name="tool"]
+    &[value="bubble"] + .outer-label
+      color: MODIFIED_BLUE
+
+    &[value="cluster"] + .outer-label
+      color: MODIFIED_OLIVE
+
+    &[value="ego"] + .outer-label
+      color: MODIFIED_GREEN
+
+    &[value="galaxy"] + .outer-label
+      color: MODIFIED_PURPLE
+
+    &[value="object"] + .outer-label
+      color: MODIFIED_RED
+
+    &:checked
+      &[value="bubble"] + .outer-label
+        background: MODIFIED_BLUE
+        border-color: MODIFIED_BLUE
+        color: white
+
+      &[value="cluster"] + .outer-label
+        background: MODIFIED_OLIVE
+        border-color: MODIFIED_OLIVE
+        color: white
+
+      &[value="ego"] + .outer-label
+        background: MODIFIED_GREEN
+        border-color: MODIFIED_GREEN
+        color: white
+
+      &[value="galaxy"] + .outer-label
+        background: MODIFIED_PURPLE
+        border-color: MODIFIED_PURPLE
+        color: white
+
+      &[value="object"] + .outer-label
+        background: MODIFIED_RED
+        border-color: MODIFIED_RED
+        color: white

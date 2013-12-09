@@ -495,7 +495,7 @@ module.exports =
 
     callOutTalk:
       content: '''
-        Use this button to discuss this image and others with scientists and other volunteers in Talk.
+        You can use this button to discuss images with scientists and other volunteers in our discussion site, 'Talk'.
       '''
 
     callOutFavorite:

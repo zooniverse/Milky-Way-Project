@@ -145,7 +145,7 @@ module.exports =
           The spacecraft travels in an Earth-trailing orbit around the Sun,
           and for the first six years of operation was kept at temperatures close to absolute zero using liquid Helium.
           The Milky Way Project uses observations made with the Spitzer Space Telescope,
-          which is operated by the Jet Propulsion Laboratory, California Institute of Technology under a contract with NASA.
+          which is operated by the Jet Propulsion Laboratory and California Institute of Technology under a contract with NASA.
         '''
 
     developers:
@@ -183,7 +183,7 @@ module.exports =
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/orbitingfrog'
         description: '''
-          Zooniverse Researcher and Developer at Oxford University. Fearless lader of the Milky Way Project.
+          Zooniverse Researcher and Developer at Oxford University. Fearless leader of the Milky Way Project.
         '''
 
       matt:
@@ -290,7 +290,7 @@ module.exports =
       description: '''Bright stars are very common in the data and they sometimes produce long cross-hairs in the images. This is normal and we don't need you to mark these.'''
     edges:
       title: '''Don't Mark: Edge Colors'''
-      description: '''Many of the images come from the edges of the dataset where there is one or more data channels missing. This produces triangular or zig-zag blocks of blue, yellow, or red. You don't need to mark these as artifacts because we know where the edge of the survey are.'''
+      description: '''Many of the images come from the edges of the dataset where there are one or more data channels missing. This produces triangular or zig-zag blocks of blue, yellow, or red. You don't need to mark these as artifacts because we know where the edges of the survey are.'''
 
   faq:
     title: 'Frequently Asked Questions'

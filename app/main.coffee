@@ -1,6 +1,11 @@
 $ = window.jQuery
 $.noConflict()
 
+GoogleAnalytics = require 'zooniverse/lib/google-analytics'
+new GoogleAnalytics
+  account: 'UA-1224199-24'
+  domain: 'milkywayproject.org'
+
 t7e = require 't7e'
 t7e.load require './lib/en-us'
 

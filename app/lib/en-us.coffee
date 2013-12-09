@@ -95,7 +95,7 @@ module.exports =
         The trouble is that this dust, composed of tiny silicon particles, is behaving in unexpected ways.
         It appears to be able to survive near hot, massive OB stars,
         when the interstellar winds and radiation pressure should force this usually cold dust to heat up and scatter.
-        Bubbles are interesting places - they are 'holes' in our understanding of star formation.
+        Bubbles are interesting places - they mark the locations where radiation from newly formed massive stars is impacting on the surrounding cloud material. We know this has a profound impact on the lifecycle of dust and gas in galaxies, and characterizing this effect is crucial for understanding how galaxies have evolved over the history of the Universe.
       '''
 
       b_03: '''

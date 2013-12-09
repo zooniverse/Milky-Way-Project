@@ -130,7 +130,6 @@ class Classify extends Controller
     $(@throbber.canvas).fadeIn 'fast'
 
   onSubjectSelect: (e, subject) =>
-    console?.log 'Subject', subject.location.standard
     @surface.marks[0].destroy() until @surface.marks.length is 0
 
     @classification?.destroy()
@@ -167,8 +166,8 @@ class Classify extends Controller
 
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks
-    console?.log JSON.stringify @classification
-    # @classification.send()
+    # console?.log JSON.stringify @classification
+    @classification.send()
 
     @finishButton.attr 'disabled', true
     Subject.next()

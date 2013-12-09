@@ -1,41 +1,41 @@
 <% translate = require 't7e' %>
 
-  <div class="introduction content">
-    <%- translate 'h1', 'home.heading' %>
-    <%- translate 'p', 'home.welcome' %>
+<div class="introduction content">
+  <%- translate 'h1', 'home.heading' %>
+  <%- translate 'p', 'home.welcome' %>
 
-    <div class="action">
-      <%- translate 'a.classify-link', 'home.start', href: '#/classify' %>
-      &emsp;
-      <a href="https://twitter.com/milkywayproj" class="social"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.facebook.com/milkywayproject" class="social"><i class="fa fa-facebook-square"></i></a>
-    </div>
+  <div class="action">
+    <%- translate 'a.classify-link', 'home.start', href: '#/classify' %>
+    &emsp;
+    <a href="https://twitter.com/milkywayproj" class="social"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.facebook.com/milkywayproject" class="social"><i class="fa fa-facebook-square"></i></a>
   </div>
+</div>
 
 <div class="content">
   <div class="counters">
     <div class="counter">
-      <div class="counter-value">0</div>
+      <div class="classifications counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.classifications' %>
     </div>
 
     <div class="counter">
-      <div class="counter-value">0</div>
+      <div class="bubbles counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.bubbles' %>
     </div>
 
     <div class="counter">
-      <div class="counter-value">0</div>
+      <div class="clusters counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.clusters' %>
     </div>
 
     <div class="counter">
-      <div class="counter-value">0</div>
+      <div class="egos counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.egos' %>
     </div>
 
     <div class="counter">
-      <div class="counter-value">0</div>
+      <div class="galaxies counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.galaxies' %>
     </div>
   </div>

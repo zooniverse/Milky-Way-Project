@@ -13,7 +13,7 @@ ghostMouse = new GhostMouse
 
 tutorialSteps =
   first:
-    content: translate 'div', 'tutorial.first.content'
+    content: translate 'span', 'tutorial.first.content'
     next: ->
       if @classifier.surface.tool::name is 'bubble'
         'markBubble'
@@ -21,16 +21,16 @@ tutorialSteps =
         'selectBubbleTool'
 
   selectBubbleTool:
-    content: translate 'div', 'tutorial.selectBubbleTool.content'
-    instruction: translate 'div', 'tutorial.selectBubbleTool.instruction'
+    content: translate 'span', 'tutorial.selectBubbleTool.content'
+    instruction: translate 'span', 'tutorial.selectBubbleTool.instruction'
     attachment: [0.5, 1, 'input[name="tool"][value="bubble"] + *', 0.5, 0]
     arrow: 'bottom'
     actionable: 'input[name="tool"][value="bubble"] + *'
     next: 'change input[name="tool"][value="bubble"]': 'markBubble'
 
   markBubble:
-    content: translate 'div', 'tutorial.markBubble.content'
-    instruction: translate 'div', 'tutorial.markBubble.instruction'
+    content: translate 'span', 'tutorial.markBubble.content'
+    instruction: translate 'span', 'tutorial.markBubble.instruction'
     attachment: [0, 0.5, '.marking-surface', 0.45, 0.75]
     arrow: 'left'
 
@@ -51,8 +51,8 @@ tutorialSteps =
       'touchend .marking-surface': 'adjustBubbleMarking'
 
   adjustBubbleMarking:
-    content: translate 'div', 'tutorial.adjustBubbleMarking.content'
-    instruction: translate 'div', 'tutorial.adjustBubbleMarking.instruction'
+    content: translate 'span', 'tutorial.adjustBubbleMarking.content'
+    instruction: translate 'span', 'tutorial.adjustBubbleMarking.instruction'
     attachment: [0.33, 0.67, '.marking-surface', 0.25, 0.25]
     arrow: 'bottom'
 
@@ -64,8 +64,8 @@ tutorialSteps =
       'touchend .marking-surface': 'selectClusterTool'
 
   selectClusterTool:
-    content: translate 'div', 'tutorial.selectClusterTool.content'
-    instruction: translate 'div', 'tutorial.selectClusterTool.instruction'
+    content: translate 'span', 'tutorial.selectClusterTool.content'
+    instruction: translate 'span', 'tutorial.selectClusterTool.instruction'
     attachment: [0.5, 1, 'input[name="tool"][value="cluster"] + *', 0.5, 0]
     arrow: 'bottom'
     actionable: 'input[name="tool"][value="cluster"] + *'
@@ -73,8 +73,8 @@ tutorialSteps =
     next: 'change input[name="tool"][value="cluster"]': 'markCluster'
 
   markCluster:
-    content: translate 'div', 'tutorial.markCluster.content'
-    instruction: translate 'div', 'tutorial.markCluster.instruction'
+    content: translate 'span', 'tutorial.markCluster.content'
+    instruction: translate 'span', 'tutorial.markCluster.instruction'
     attachment: [1, 0.5, '.marking-surface', 0.6, 0.3]
     arrow: 'right'
 
@@ -97,8 +97,8 @@ tutorialSteps =
       'touchend .marking-surface': 'selectEgoTool'
 
   selectEgoTool:
-    content: translate 'div', 'tutorial.selectEgoTool.content'
-    instruction: translate 'div', 'tutorial.selectEgoTool.instruction'
+    content: translate 'span', 'tutorial.selectEgoTool.content'
+    instruction: translate 'span', 'tutorial.selectEgoTool.instruction'
     attachment: [0.5, 1, 'input[name="tool"][value="ego"] + *', 0.5, 0]
     arrow: 'bottom'
     actionable: 'input[name="tool"][value="ego"] + *'
@@ -106,8 +106,8 @@ tutorialSteps =
     next: 'change input[name="tool"][value="ego"]': 'markEgo'
 
   markEgo:
-    content: translate 'div', 'tutorial.markEgo.content'
-    instruction: translate 'div', 'tutorial.markEgo.instruction'
+    content: translate 'span', 'tutorial.markEgo.content'
+    instruction: translate 'span', 'tutorial.markEgo.instruction'
     attachment: [0.5, 0, '.marking-surface', (275 / 800), (75 / 400)]
     arrow: 'top'
 
@@ -130,24 +130,24 @@ tutorialSteps =
       'touchend .marking-surface': 'callOutTalk'
 
   callOutTalk:
-    content: translate 'div', 'tutorial.callOutTalk.content'
+    content: translate 'span', 'tutorial.callOutTalk.content'
     attachment: [0, 0.5, 'a.discuss', 1, 0.5]
     arrow: 'left'
     next: 'callOutFavorite'
 
   callOutFavorite:
-    content: translate 'div', 'tutorial.callOutFavorite.content'
+    content: translate 'span', 'tutorial.callOutFavorite.content'
     attachment: [0, 0.5, 'button[name="favorite"]', 1, 0.5]
     arrow: 'left'
     next: 'callOutHelp'
 
   callOutHelp:
-    content: translate 'div', 'tutorial.callOutHelp.content'
+    content: translate 'span', 'tutorial.callOutHelp.content'
     attachment: [0, 0.5, 'button[name="help"]', 1, 0.5]
     arrow: 'left'
     next: 'theEnd'
 
   theEnd:
-    content: translate 'div', 'tutorial.theEnd.content'
+    content: translate 'span', 'tutorial.theEnd.content'
 
 module.exports = tutorialSteps

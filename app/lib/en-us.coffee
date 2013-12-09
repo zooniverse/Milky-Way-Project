@@ -287,7 +287,7 @@ module.exports =
       description: '''There are several different kinds of image artifacts in the data. Knowing where these are can be useful for the research team. These can be selected as an option in the 'other' category. <strong>However</strong>, we don't you to mark the large, blocky artifacts at the edge of many of the images (see below).'''
     stars:
       title: '''Don't Mark: Single, Bright Stars'''
-      description: '''Bright stars are very common in the data and they sometimes produce long cross-hairs in the images. This is normal and we don't need you to mark these.'''
+      description: '''Bright stars are very common in the data and they sometimes produce long cross-hairs in the images, or strange shapes nearby. This is normal and we don't need you to mark these.'''
     edges:
       title: '''Don't Mark: Edge Colors'''
       description: '''Many of the images come from the edges of the dataset where there are one or more data channels missing. This produces triangular or zig-zag blocks of blue, yellow, or red. You don't need to mark these as artifacts because we know where the edges of the survey are.'''

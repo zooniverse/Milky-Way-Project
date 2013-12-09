@@ -509,6 +509,12 @@ module.exports =
         This button will bring up a quick reference to the different objects we're looking for.
       '''
 
+    markStuff:
+      content: '''
+        You can also mark galaxies, and other objects including as bow shocks and pillars.
+        You can see examples of many objects in the Guide on the main menu.
+      '''
+
     theEnd:
       content: '''
         You should have enough knowledge to get started on your own.

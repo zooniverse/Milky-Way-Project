@@ -269,7 +269,7 @@ module.exports =
       description: '''Bubbles are usually circular or elliptical, but often only partially seen. They may be viewed as arcs of red in these data, sometimes brightening into pinks and whites. They are seen because ultraviolet radiation from young stars causes molecules in the surrounding gas to glow in the infrared. Bubble will sometimes have obvious star clusters nearby, but not always.'''
     clusters:
       title: 'Star Cluster Examples'
-      description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark them.'''
+      description: '''Star clusters are small groups of stars huddled together in these images. They are bright, often white or blue. You might see them inside a bubble, or on their own. Bright stars often create a cross-hair shape because of the light overloading the Spitzer detectors, this is normal and you don't need to mark those shapes as anything unusual.'''
     egos:
       title: 'EGO Examples'
       description: '''Extended green objects (EGOs) are usually seen near to bright stars as very small, irregular blobs of green. They are quite rare and they are a special find. There is much work being done by researchers to find and understand these objects.'''

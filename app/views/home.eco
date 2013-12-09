@@ -15,27 +15,27 @@
 <div class="content">
   <div class="counters">
     <div class="counter">
-      <div class="classifications counter-value">&mdash;</div>
+      <div class="classification counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.classifications' %>
     </div>
 
     <div class="counter">
-      <div class="bubbles counter-value">&mdash;</div>
+      <div class="bubble counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.bubbles' %>
     </div>
 
     <div class="counter">
-      <div class="clusters counter-value">&mdash;</div>
+      <div class="cluster counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.clusters' %>
     </div>
 
     <div class="counter">
-      <div class="egos counter-value">&mdash;</div>
+      <div class="ego counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.egos' %>
     </div>
 
     <div class="counter">
-      <div class="galaxies counter-value">&mdash;</div>
+      <div class="galaxy counter-value">&mdash;</div>
       <%- translate 'div.counter-label', 'home.counters.galaxies' %>
     </div>
   </div>

@@ -14,7 +14,7 @@
 <% groups = ['organisations', 'scientists', 'developers'] %>
 <% groupMembers = {} %>
 <% groupMembers.organisations = ['oxford', 'adler', 'spitzer'] %>
-<% groupMembers.scientists = [ 'rob', 'matt', 'sarah', 'barbara', 'bob', 'charles', 'claudia', 'chris', 'chrisn', 'ed', 'grace', 'kevin', 'kim', 'rachael', 'reid', 'roberth', 'sarahm' ] %>
+<% groupMembers.scientists = [ 'rob', 'matt', 'sarah', 'barbara', 'bob', 'charles', 'claudia', 'chris', 'chrisn', 'ed', 'grace', 'jason', 'kevin', 'kim', 'rachael', 'reid', 'roberth', 'sarahm' ] %>
 <% groupMembers.developers = ['brian', 'heath', 'michael'] %>
 
 <div class="general">

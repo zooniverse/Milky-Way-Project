@@ -159,7 +159,7 @@ module.exports =
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/heathvs'
         description: '''
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          UI/UX Designer at the Zooniverse in Chicago.
         '''
 
       brian:
@@ -175,7 +175,7 @@ module.exports =
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/michael_parrish'
         description: '''
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Zooniverse developer at the Adler Planetarium in Chicago.
         '''
 
     scientists:
@@ -308,6 +308,12 @@ module.exports =
         name: 'Robert Hurt'
         twitter: 'https://twitter.com/AstroRob'
         description: '''Spitzer Visualization Scientist working for NASA's Spitzer mission'''
+
+      jason:
+        image: '//placehold.it/100.png'
+        twitter: 'https://twitter.com/astrosavvy'
+        name: 'Jason E. Ybarra'
+        description: '''Postdoctoral fellow at Instituto de Astronomia, Universidad Nacional Autonoma de Mexico.'''
 
   data:
     title: 'Data and Results'

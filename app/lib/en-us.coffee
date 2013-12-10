@@ -159,7 +159,7 @@ module.exports =
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/heathvs'
         description: '''
-          UI/UX Designer at the Zooniverse in Chicago.
+          UI/UX Designer at the Zooniverse in Chicago. He makes websites look and feel amazing.
         '''
 
       brian:
@@ -167,7 +167,7 @@ module.exports =
         image: '//placehold.it/100.png'
         github: 'https://github.com/brian-c'
         description: '''
-          Zooniverse developer at the Adler Planetarium in Chicago.
+          Zooniverse developer at the Adler Planetarium in Chicago. He turns designs into a seamless, click-able reality.
         '''
 
       michael:
@@ -175,7 +175,7 @@ module.exports =
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/michael_parrish'
         description: '''
-          Zooniverse developer at the Adler Planetarium in Chicago.
+          Zooniverse developer at the Adler Planetarium in Chicago. He pwns databases daily. Likes dogs and bourbon.
         '''
 
     scientists:

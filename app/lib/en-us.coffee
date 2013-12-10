@@ -93,7 +93,7 @@ module.exports =
 
       b_02: '''
         The trouble is that this dust, composed of tiny silicon particles, is behaving in unexpected ways.
-        It appears to be able to survive near hot, massive OB stars,
+        It appears to be able to survive near hot, massive stars,
         when the interstellar winds and radiation pressure should force this usually cold dust to heat up and scatter.
         Bubbles are interesting places - they mark the locations where radiation from newly formed massive stars is impacting on the surrounding cloud material. We know this has a profound impact on the lifecycle of dust and gas in galaxies, and characterizing this effect is crucial for understanding how galaxies have evolved over the history of the Universe.
       '''
@@ -266,11 +266,6 @@ module.exports =
         image: '//placehold.it/100.png'
         name: 'Kim Arvidsson'
         description: 'Postdoctoral researcher at the Adler Planetarium.'
-    
-      reid: 
-        image: '//placehold.it/100.png'
-        name: 'Reid Sherman'
-        description: 'Millimeter-wave observational astronomer, graduate student at University of Chicago.'
     
       ed: 
         image: '//placehold.it/100.png'
@@ -589,7 +584,7 @@ module.exports =
 
     markStuff:
       content: '''
-        You can also mark galaxies, and other objects including as bow shocks and pillars.
+        You can also mark galaxies, and other objects such as bow shocks and pillars.
         You can see examples of many objects in the Guide on the main menu.
       '''
 

@@ -4,5 +4,5 @@ npm start
 ```
 
 ```
-npm run-script deploy-to-staging
+npm run stage
 ```

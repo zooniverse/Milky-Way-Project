@@ -122,6 +122,7 @@ module.exports =
       oxford:
         name: 'University of Oxford'
         image: '//placehold.it/100.png'
+        web: 'http://www.ox.ac.uk/'
         description: '''
           The University of Oxford is the oldest in the English-speaking world having been founded in the 11th or 12th centuries.
           Today, it combines research in the humanities with major effort in the natural sciences and medicine.
@@ -131,6 +132,7 @@ module.exports =
       adler:
         name: 'The Adler Planetarium'
         image: '//placehold.it/100.png'
+        web: 'http://www.adlerplanetarium.org/'
         description: '''
           The Adler Planetarium – America’s First Planetarium – was founded in 1930 by Chicago business leader Max Adler.
           The Adler is a recognized leader in science education, with a focus on inspiring young people to pursue careers in science, technology, engineering and math.
@@ -140,6 +142,7 @@ module.exports =
       spitzer:
         name: 'The Spitzer Space Telescope'
         image: '//placehold.it/100.png'
+        web: 'http://www.spitzer.caltech.edu/'
         description: '''
           Spitzer was launched into space in 2003, as part of NASA's Great Observatories program.
           The spacecraft travels in an Earth-trailing orbit around the Sun,
@@ -154,7 +157,7 @@ module.exports =
       heath:
         name: 'Heath van Singel'
         image: '//placehold.it/100.png'
-        twitter: 'https://twitter.com/heath_vs'
+        twitter: 'https://twitter.com/heathvs'
         description: '''
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         '''
@@ -170,7 +173,7 @@ module.exports =
       michael:
         name: 'Michael Parrish'
         image: '//placehold.it/100.png'
-        twitter: 'https://twitter.com/michaelparrish'
+        twitter: 'https://twitter.com/michael_parrish'
         description: '''
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         '''

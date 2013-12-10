@@ -22,7 +22,7 @@
     <div class="content">
       <%- translate 'h2', "team.#{group}.title" %>
 
-      <div class="minor <%= group %>">
+      <div class="<%= group %> <%= 'minor' unless group is 'organisations' %>">
         <% for member, i in groupMembers[group]: %>
           <div class="member">
             <h3>

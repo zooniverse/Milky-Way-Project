@@ -22,7 +22,7 @@
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
-              <svg width="2em" height="1.5em" viewBox="0 0 40 40">
+              <svg viewBox="0 0 40 40">
                 <g fill="currentColor">
                   <path d="M33.481,12.853c-0.608-1.907-2.089-3.628-3.264-4.541c-0.013-0.01-0.028-0.012-0.042-0.021
                     C27.393,5.64,23.638,4,19.5,4C19.224,4,19,4.224,19,4.5S19.224,5,19.5,5c5.743,0,10.702,3.365,13.048,8.218
@@ -55,7 +55,7 @@
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
-              <svg width="2em" height="1.5em" viewbox="0 0 40 40">
+              <svg viewbox="0 0 40 40">
                 <g fill="currentColor">
                   <path d="M27.873,22.736c-3.185,0-5.775,2.591-5.775,5.775c0,3.185,2.591,5.776,5.775,5.776
                     c3.185,0,5.776-2.591,5.776-5.776C33.648,25.327,31.058,22.736,27.873,22.736z M27.873,33.287c-2.633,0-4.775-2.143-4.775-4.776
@@ -90,7 +90,7 @@
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
-              <svg width="2em" height="1.5em" viewbox="0 0 40 40">
+              <svg viewbox="0 0 40 40">
                 <g fill="currentColor">
                   <circle cx="19.5" cy="19.5" r="4.867" />
                   <path d="M19.5,12.125c-4.066,0-7.375,3.309-7.375,7.375s3.309,7.375,7.375,7.375s7.375-3.309,7.375-7.375
@@ -120,7 +120,7 @@
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
-              <svg width="2em" height="1.5em" viewbox="0 0 40 40">
+              <svg viewbox="0 0 40 40">
                 <g fill="currentColor">
                   <path d="M20.5,6.409c-7.179,0-13.041,5.68-13.368,12.78c-0.027,0.208-0.046,0.419-0.046,0.634
                     c0,0.036,0.013,0.068,0.021,0.102C7.169,27.259,13.15,33.208,20.5,33.208c7.389,0,13.399-6.011,13.399-13.4S27.889,6.409,20.5,6.409
@@ -150,7 +150,7 @@
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
-              <svg width="2em" height="1.5em" viewbox="0 0 40 40">
+              <svg viewbox="0 0 40 40">
                 <g fill="currentColor">
                   <path d="M19.5,6.409c-7.219,0-13.091,5.873-13.091,13.091S12.281,32.591,19.5,32.591S32.591,26.719,32.591,19.5
                     S26.719,6.409,19.5,6.409z M19.5,31.591c-6.667,0-12.091-5.424-12.091-12.091S12.833,7.409,19.5,7.409S31.591,12.833,31.591,19.5

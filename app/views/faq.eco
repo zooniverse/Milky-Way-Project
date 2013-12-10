@@ -6,7 +6,7 @@
 </div>
 
 <div class="general">
-  <div class="minor content">
+  <div class="content">
     <%- translate 'h2.question', 'faq.q01.question' %>
     <%- translate 'p.answer', 'faq.q01.answer' %>
 

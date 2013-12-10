@@ -12,13 +12,13 @@ module.exports =
     faq: 'F.A.Q.'
 
   home:
-    heading: 'Measure and map our galaxy'
+    heading: 'Measure and Map Our Galaxy'
     welcome: '''
       We need your help looking through tens of thousands of images from the Spitzer Space Telescope.
       By telling us what you see in this infrared data, we can better understand how stars form.
     '''
 
-    start: 'Start classifying'
+    start: 'Start Classifying'
 
     counters:
       classifications: 'Classifications'
@@ -316,7 +316,7 @@ module.exports =
         description: '''Postdoctoral fellow at Instituto de Astronomia, Universidad Nacional Autonoma de Mexico.'''
 
   data:
-    title: 'Data and Results'
+    title: 'Data & Results'
     introduction: '''We aim to provide periodic, public releases of Milky Way Project data. On this page you can download the first release of data from 2012, and see the publications that have used data from this site.'''
     dr1:
       title: 'Data Release 1'

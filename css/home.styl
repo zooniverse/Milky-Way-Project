@@ -12,11 +12,11 @@
     opacity: 1
 
 .home-page
-  margin-top: -550px
+  margin-top: -500px
 
   .introduction
     color: white
-    height: 400px
+    height: 350px
 
     .action
       margin-top: 50px
@@ -37,7 +37,11 @@
     display: inline-block
     padding: 10px 30px
     text-decoration: none
+    transition: background 0.2s
     vertical-align: middle
+
+    &:hover
+      background: lighten(BLUEISH, 5%)
 
   .counters
     background: lighten(black, 15%)
@@ -49,11 +53,12 @@
 
   .counter
     display: table-cell
-    padding: 15px 0 25px
+    padding: 20px 0 20px
     width: 20%
 
   .counter-value
-    font-size: 30px
+    font-size: 24px
+    font-weight: bold
 
   .counter-label
     font-size: 14px

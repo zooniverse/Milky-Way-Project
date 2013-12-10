@@ -6,7 +6,7 @@
 
   @media (max-height: 640px)
     &
-      margin-top: -300px
+      margin-top: -290px
 
   .interface
     margin: 0 auto
@@ -91,7 +91,7 @@
   .question
     font-size: 18px
     line-height: 1
-    margin: 15px 0
+    margin: 20px 0
     text-align: center
 
     @media (max-height: 640px)
@@ -137,11 +137,6 @@
       position: relative
       width: 100%
 
-    :checked + .outer-label
-      background: BLUEISH
-      border-color: BLUEISH
-      color: white
-
     button[name="finish"]
       background: GREEN
       border-width: 0
@@ -164,4 +159,27 @@
       transform: translate(-50%, -50%)
 
     .icon
+      display: inline-block
       font-size: 30px
+      height: 1.5em
+      position: relative
+      width: 1.5em
+
+      svg
+        display: block
+        height: 100%
+        left: 50%
+        position: absolute
+        top: 50%
+        width: 100%
+        transform: translate(-50%, -50%)
+        transition: height 0.1s, width 0.1s
+
+    :checked + .outer-label
+      background: BLUEISH
+      border-color: BLUEISH
+      color: white
+
+      .icon svg
+        height: 125%
+        width: 125%

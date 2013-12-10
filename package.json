@@ -13,6 +13,6 @@
   },
   "scripts": {
     "start": "haw serve --port 6414",
-    "stage": "haw build ./build && publisssh --config ./publisssh/staging && rm -rf ./build"
+    "stage": "haw build --force ./build && publisssh --config ./publisssh/staging && rm -rf ./build"
   }
 }

@@ -292,7 +292,7 @@ module.exports =
         image: '//placehold.it/100.png'
         name: 'Charles Kerton'
         description: '''
-          Researcher at Iowa State University, who loves protostars and star formation. A lot.
+          Associate Professor in the Department of Physics and Astronomy at Iowa State University.
         '''
 
       rachael:

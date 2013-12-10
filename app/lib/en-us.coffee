@@ -167,7 +167,7 @@ module.exports =
         image: '//placehold.it/100.png'
         github: 'https://github.com/brian-c'
         description: '''
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Zooniverse developer at the Adler Planetarium in Chicago.
         '''
 
       michael:

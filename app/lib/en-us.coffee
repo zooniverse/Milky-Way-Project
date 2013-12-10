@@ -306,6 +306,7 @@ module.exports =
       roberth:
         image: '//placehold.it/100.png'
         name: 'Robert Hurt'
+        twitter: 'https://twitter.com/AstroRob'
         description: '''Spitzer Visualization Scientist working for NASA's Spitzer mission'''
 
   data:

@@ -399,7 +399,7 @@ module.exports =
       answer: '''Light is a wave, specifically a wave of electromagnetic energy, and it comes in a wide range of wavelengths. Light that we see, or visible light, are electromagnetic waves that oscillate back and forth every 0.4-0.7 micrometers (there are a thousand micrometers in a millimeter, or a million micrometers in a meter). Infrared is light that has longer wavelengths, from 0.7 micrometers all the way up to about 300 micrometers.  The shorter-wavelength end of that range is called near infrared because it is near to visible light, and the longer-wavelength range is called far infrared.'''
       question: '''What is infrared?'''
     q11:
-      answer: '''These images come from two instruments, both aboard the Spitzer Space Telescope.  One of the instruments took images at wavelengths in the 3-8 micron range (and that light is colored green in these images) and the other took images at a wavelength of 24 micrometers, which is colored red.'''
+      answer: '''These images come from the Spitzer Space Telescope, from an instrument called IRAC, which took images at wavelengths in the 3-8 micron range.'''
       question: '''What wavelength are these images?'''
     q00:
       answer: '''All the stars you see in the night sky are part of a very large group of stars (a few hundred billion) that we call the Milky Way Galaxy. If you've ever looked at the night sky from a dark location, you've probably seen the band of light that we also call the 'Milky Way'. This band of light contains most of the stars in the Milky Way Galaxy, and the images you're inspecting all come from a narrow band only a few full moons wide along the Milky Way.'''

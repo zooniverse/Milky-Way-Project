@@ -185,6 +185,7 @@ module.exports =
         name: 'Robert Simpson'
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/orbitingfrog'
+        github: 'https://github.com/ttfnrob'
         description: '''
           Zooniverse Researcher and Developer at Oxford University. Fearless leader of the Milky Way Project.
         '''
@@ -200,6 +201,7 @@ module.exports =
         name: 'Sarah Kendrew'
         image: '//placehold.it/100.png'
         twitter: 'https://twitter.com/sarahkendrew'
+        github: 'https://github.com/skendrew'
         description: '''
           Postdoctoral researcher at the University of Oxford. Cross-correlater extraordinaire.
         '''
@@ -214,7 +216,7 @@ module.exports =
 
       bob:
         image: '//placehold.it/100.png'
-        name: 'Robert Benjamin'
+        name: 'Bob Benjamin'
         description: '''
           GLIMPSE team member and Professor of Physics, University of Wisconsin-Whitewater.
         '''
@@ -229,6 +231,7 @@ module.exports =
       chrisn:
         image: '//placehold.it/100.png'
         name: 'Chris North'
+        twitter: 'https://twitter.com/chrisenorth'
         description: '''
           Chris is the UK Herschel Outreach Officer and is based at Cardiff University in Wales.
         '''
@@ -239,6 +242,71 @@ module.exports =
         description: '''
           Associate Professor of Astrophysics at Swinburne University, Australia.
         '''
+
+      grace:
+        image: '//placehold.it/100.png'
+        name: 'Grace Wolf-Chase'
+        description: '''
+          Astronomer at the Adler Planetarium and Associate in the
+          Department of Astronomy & Astrophysics at the University of Chicago.
+        '''
+
+      barbara: 
+        image: '//placehold.it/100.png'
+        name: 'Barbara Whitney'
+        description: '''Senior Scientist at University of Wisconsin and Space Science Institute.'''
+
+      kevin: 
+        image: '//placehold.it/100.png'
+        twitter: 'https://twitter.com/kevinschawinski'
+        name: 'Kevin Schawinski'
+        description: '''Einstein Fellow at Yale University.'''
+
+      kim: 
+        image: '//placehold.it/100.png'
+        name: 'Kim Arvidsson'
+        description: 'Postdoctoral researcher at the Adler Planetarium.'
+    
+      reid: 
+        image: '//placehold.it/100.png'
+        name: 'Reid Sherman'
+        description: 'Millimeter-wave observational astronomer, graduate student at University of Chicago.'
+    
+      ed: 
+        image: '//placehold.it/100.png'
+        name: 'Ed Churchwell'
+        description: '''
+          Professor Emeritus at the University of Wisconsin-Madison.
+          Principal Investigator of the GLIMPSE I&II surveys and team member on all other GLIMPSE Surveys.
+        '''
+
+      claudia:
+        image: '//placehold.it/100.png'
+        name: 'Claudia Cyganowski'
+        description: '''
+          Astronomer and Lecturer at the University of St Andrews.
+          EGO fanatic.
+        '''
+
+      charles:
+        image: '//placehold.it/100.png'
+        name: 'Charles Kerton'
+        description: '''
+          Researcher at Iowa State University, who loves protostars and star formation. A lot.
+        '''
+
+      rachael:
+        image: '//placehold.it/100.png'
+        name: 'Rachael Beaton'
+        description: '''
+            Graduate student in astronomy at the University of Virginia.
+            Loves telescopes and helps the public love them too.
+          '''
+
+      roberth:
+        image: '//placehold.it/100.png'
+        name: 'Robert Hurt'
+        description: '''Spitzer Visualization Scientist working for NASA's Spitzer mission'''
 
   data:
     title: 'Data and Results'

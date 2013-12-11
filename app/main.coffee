@@ -53,4 +53,10 @@ footer.el.appendTo footerContainer
 User = require 'zooniverse/models/user'
 User.fetch()
 
+attachFastClick = require 'fastclick'
+try
+  attachFastClick document.body
+catch e
+  # Oh well.
+
 window.app = module.exports = {siteHeader, api, topBar, stack}

@@ -9,7 +9,7 @@
   <div class="content">
     <%- translate 'h2', 'data.dr1.title' %>
     <%- translate 'p', 'data.dr1.description' %>
-    <p><%- translate 'a', 'data.dr1.get_data', href: '#TODO' %></p>
+    <p><%- translate 'a', 'data.dr1.get_data', href: 'http://vizier.u-strasbg.fr/viz-bin/VizieR?-source=J/MNRAS/424/2442' %></p>
 
     <hr />
 

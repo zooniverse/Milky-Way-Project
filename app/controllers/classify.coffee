@@ -126,7 +126,7 @@ class Classify extends Controller
     @signInButton.toggle not user?
     @favoriteButton.toggle user?
 
-    if user?.finished_tutorial_or_whatever
+    if user?.project?.tutorial_done
       Subject.next() if @surface.marks.length is 0
     else
       selectTutorialSubject()

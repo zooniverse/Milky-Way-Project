@@ -14,6 +14,12 @@
   },
   "scripts": {
     "start": "haw serve --port 6414",
-    "stage": "haw build --force ./build && publisssh --config ./publisssh/staging && rm -rf ./build"
+
+    "stage": "npm run build && npm run publish-staging && npm run cleanup",
+    "deploy": "npm run build && npm run publish-production && npm run cleanup",
+    "build": "haw build --force ./build",
+    "publish-staging": "publisssh ./build demo.zooniverse.org/milky-way-project",
+    "publish-production": "publisssh ./build www.milkywayproject.org",
+    "cleanup": "rm -rf ./build"
   }
 }

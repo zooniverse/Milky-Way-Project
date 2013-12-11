@@ -2,6 +2,9 @@ translate = require 't7e'
 GhostMouse = require 'ghost-mouse'
 User = require 'zooniverse/models/user'
 
+isAbout = ([x, y], [idealX, idealY], give = 50) ->
+  idealX - give < x < idealX + give and idealY - give < y < idealY + give
+
 guideStyle =
   fill: 'transparent'
   stroke: 'white'
@@ -42,14 +45,24 @@ tutorialSteps =
         transform: 'translate(210, 290), rotate(40)'
       @guide.attr guideStyle
 
+      @extantMarks = (mark for mark in @classifier.surface.marks)
+
     demo: ->
       ghostMouse.run ->
         @move '.marking-surface', (210 / 800), (290 / 400)
         @drag '.marking-surface', ((210 + 90) / 800), ((290 - 50) / 400)
 
     next:
-      'mouseup .marking-surface': 'adjustBubbleMarking'
-      'touchend .marking-surface': 'adjustBubbleMarking'
+      'mouseup .marking-surface': ->
+        newMarks = (mark for mark in @classifier.surface.marks when mark not in @extantMarks)
+
+        if newMarks.some((mark) -> isAbout mark.center, [210, 290])
+          'adjustBubbleMarking'
+        else
+          false
+
+      'touchend .marking-surface': ->
+        @._current.next['mouseup .marking-surface'].apply @, arguments
 
   adjustBubbleMarking:
     content: translate 'span', 'tutorial.adjustBubbleMarking.content'
@@ -90,12 +103,22 @@ tutorialSteps =
         transform: 'translate(550, 120)'
       @guide.attr guideStyle
 
+      @extantMarks = (mark for mark in @classifier.surface.marks)
+
     onUnload: ->
       @guide.remove()
 
     next:
-      'mouseup .marking-surface': 'selectEgoTool'
-      'touchend .marking-surface': 'selectEgoTool'
+      'mouseup .marking-surface': ->
+        newMarks = (mark for mark in @classifier.surface.marks when mark not in @extantMarks)
+
+        if newMarks.some((mark) -> isAbout mark.center, [560, 120])
+          'selectEgoTool'
+        else
+          false
+
+      'touchend .marking-surface': ->
+        @._current.next['mouseup .marking-surface'].apply @, arguments
 
   selectEgoTool:
     content: translate 'span', 'tutorial.selectEgoTool.content'
@@ -123,12 +146,22 @@ tutorialSteps =
         transform: 'translate(275, 30)'
       @guide.attr guideStyle
 
+      @extantMarks = (mark for mark in @classifier.surface.marks)
+
     onUnload: ->
       @guide.remove()
 
     next:
-      'mouseup .marking-surface': 'callOutTalk'
-      'touchend .marking-surface': 'callOutTalk'
+      'mouseup .marking-surface': ->
+        newMarks = (mark for mark in @classifier.surface.marks when mark not in @extantMarks)
+
+        if newMarks.some((mark) -> isAbout mark.center, [275, 30], 25)
+          'callOutTalk'
+        else
+          false
+
+      'touchend .marking-surface': ->
+        @._current.next['mouseup .marking-surface'].apply @, arguments
 
   callOutTalk:
     content: translate 'span', 'tutorial.callOutTalk.content'

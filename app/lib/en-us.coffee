@@ -72,7 +72,7 @@ module.exports =
       '''
 
       g_03: '''
-        As well as bubbles and stars clusters there are other objects hidden throughout these images
+        As well as bubbles and star clusters there are other objects hidden throughout these images
         such as strange green objects seen near young stars (called EGOs)
         and never-before-seen galaxies that lie far beyond our own galaxy, hidden behind the stars and dust.
         If you see anything unusual in the images, make sure to mark it and give your best guess as to what it is.
@@ -534,7 +534,7 @@ module.exports =
 
     selectClusterTool:
       content: '''
-        Great! We also want to find stars clusters.
+        Great! We also want to find star clusters.
         Let's mark the cluster of bright stars off to the right.
       '''
 

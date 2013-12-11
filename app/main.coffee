@@ -54,9 +54,6 @@ User = require 'zooniverse/models/user'
 User.fetch()
 
 attachFastClick = require 'fastclick'
-try
-  attachFastClick document.body
-catch e
-  # Oh well.
+try attachFastClick document.body
 
 window.app = module.exports = {siteHeader, api, topBar, stack}

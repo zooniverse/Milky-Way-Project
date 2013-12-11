@@ -47,7 +47,7 @@ class Classify extends Controller
     'click button[name="sign-in"]': 'onClickSignIn'
     'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="help"]': 'onClickHelp'
-    'change input[name="tool"]': 'onChangeTool'
+    'click button[name="tool"]': 'onClickTool'
     'click button[name="finish"]': 'onClickFinish'
 
   elements:
@@ -56,6 +56,7 @@ class Classify extends Controller
     'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
+    'button[name="tool"]': 'toolButtons'
     'button[name="finish"]': 'finishButton'
 
   constructor: ->
@@ -117,8 +118,13 @@ class Classify extends Controller
   onClickHelp: ->
     @helpOverlay.toggle()
 
-  onChangeTool: (e) ->
-    @surface.tool = tools[e.currentTarget.value]
+  onClickTool: (e) ->
+    @toolButtons.removeClass 'selected'
+
+    button = $(e.currentTarget)
+
+    button.addClass 'selected'
+    @surface.tool = tools[button.val()]
 
   onUserChange: (e, user) =>
     @el.toggleClass 'signed-in', user?

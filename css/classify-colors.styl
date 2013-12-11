@@ -25,45 +25,44 @@ MODIFIED_PURPLE = hsl(BLUE_HUE + 72, BLUE_SATURATION, BLUE_LIGHTNESS)
     [data-name="object"]
       color: lighten(MODIFIED_PURPLE, 50%)
 
-
-  .tools input[name="tool"]
-    &[value="bubble"] + .outer-label
+  .tools button[name="tool"]
+    &[value="bubble"]
       color: MODIFIED_BLUE
 
-    &[value="cluster"] + .outer-label
+    &[value="cluster"]
       color: MODIFIED_OLIVE
 
-    &[value="ego"] + .outer-label
+    &[value="ego"]
       color: MODIFIED_GREEN
 
-    &[value="galaxy"] + .outer-label
+    &[value="galaxy"]
       color: MODIFIED_RED
 
-    &[value="object"] + .outer-label
+    &[value="object"]
       color: MODIFIED_PURPLE
 
-    &:checked
-      &[value="bubble"] + .outer-label
+    &.selected
+      &[value="bubble"]
         background: MODIFIED_BLUE
         border-color: MODIFIED_BLUE
         color: white
 
-      &[value="cluster"] + .outer-label
+      &[value="cluster"]
         background: MODIFIED_OLIVE
         border-color: MODIFIED_OLIVE
         color: white
 
-      &[value="ego"] + .outer-label
+      &[value="ego"]
         background: MODIFIED_GREEN
         border-color: MODIFIED_GREEN
         color: white
 
-      &[value="galaxy"] + .outer-label
+      &[value="galaxy"]
         background: MODIFIED_RED
         border-color: MODIFIED_RED
         color: white
 
-      &[value="object"] + .outer-label
+      &[value="object"]
         background: MODIFIED_PURPLE
         border-color: MODIFIED_PURPLE
         color: white

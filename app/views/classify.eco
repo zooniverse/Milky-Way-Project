@@ -21,7 +21,8 @@
   <div class="tools">
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="bubble" checked="checked" />
+        <!--<input type="radio" name="tool" value="bubble" checked="checked" />-->
+        <button name="tool" value="bubble" class="selected">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -45,12 +46,14 @@
             <%- translate 'div.actual-label', 'classify.tools.bubble' %>
           </div>
         </div>
+      </button>
       </label>
     </div>
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="cluster" />
+        <!--<input type="radio" name="tool" value="cluster" />-->
+        <button name="tool" value="cluster">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -77,12 +80,14 @@
             <%- translate 'div.actual-label', 'classify.tools.cluster' %>
           </div>
         </div>
+      </button>
       </label>
     </div>
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="ego" />
+        <!--<input type="radio" name="tool" value="ego" />-->
+        <button name="tool" value="ego">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -97,12 +102,14 @@
             <%- translate 'div.actual-label', 'classify.tools.ego' %>
           </div>
         </div>
+      </button>
       </label>
     </div>
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="galaxy" />
+        <!--<input type="radio" name="tool" value="galaxy" />-->
+        <button name="tool" value="galaxy">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -118,12 +125,14 @@
             <%- translate 'div.actual-label', 'classify.tools.galaxy' %>
           </div>
         </div>
+      </button>
       </label>
     </div>
 
     <div class="tool">
       <label>
-        <input type="radio" name="tool" value="object" />
+        <!--<input type="radio" name="tool" value="object" />-->
+        <button name="tool" value="object">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -142,6 +151,7 @@
             <%- translate 'div.actual-label', 'classify.tools.object' %>
           </div>
         </div>
+      </button>
       </label>
     </div>
 

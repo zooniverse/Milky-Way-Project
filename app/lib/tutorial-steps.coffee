@@ -27,10 +27,10 @@ tutorialSteps =
   selectBubbleTool:
     content: translate 'span', 'tutorial.selectBubbleTool.content'
     instruction: translate 'span', 'tutorial.selectBubbleTool.instruction'
-    attachment: [0.5, 1, 'input[name="tool"][value="bubble"] + *', 0.5, 0]
+    attachment: [0.5, 1, '[name="tool"][value="bubble"]', 0.5, 0]
     arrow: 'bottom'
-    actionable: 'input[name="tool"][value="bubble"] + *'
-    next: 'change input[name="tool"][value="bubble"]': 'markBubble'
+    actionable: '[name="tool"][value="bubble"]'
+    next: 'click [name="tool"][value="bubble"]': 'markBubble'
 
   markBubble:
     content: translate 'span', 'tutorial.markBubble.content'
@@ -80,11 +80,11 @@ tutorialSteps =
   selectClusterTool:
     content: translate 'span', 'tutorial.selectClusterTool.content'
     instruction: translate 'span', 'tutorial.selectClusterTool.instruction'
-    attachment: [0.5, 1, 'input[name="tool"][value="cluster"] + *', 0.5, 0]
+    attachment: [0.5, 1, '[name="tool"][value="cluster"]', 0.5, 0]
     arrow: 'bottom'
-    actionable: 'input[name="tool"][value="cluster"] + *'
+    actionable: '[name="tool"][value="cluster"]'
 
-    next: 'change input[name="tool"][value="cluster"]': 'markCluster'
+    next: 'click [name="tool"][value="cluster"]': 'markCluster'
 
   markCluster:
     content: translate 'span', 'tutorial.markCluster.content'
@@ -123,11 +123,11 @@ tutorialSteps =
   selectEgoTool:
     content: translate 'span', 'tutorial.selectEgoTool.content'
     instruction: translate 'span', 'tutorial.selectEgoTool.instruction'
-    attachment: [0.5, 1, 'input[name="tool"][value="ego"] + *', 0.5, 0]
+    attachment: [0.5, 1, '[name="tool"][value="ego"]', 0.5, 0]
     arrow: 'bottom'
-    actionable: 'input[name="tool"][value="ego"] + *'
+    actionable: '[name="tool"][value="ego"]'
 
-    next: 'change input[name="tool"][value="ego"]': 'markEgo'
+    next: 'click [name="tool"][value="ego"]': 'markEgo'
 
   markEgo:
     content: translate 'span', 'tutorial.markEgo.content'

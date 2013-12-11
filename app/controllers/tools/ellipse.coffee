@@ -1,9 +1,10 @@
 OriginalEllipseTool = require 'marking-surface/lib/tools/ellipse'
 DefaultControls = require 'marking-surface/lib/tools/default-controls'
 
+PROBABLY_IOS = require '../../lib/probably-ios'
+
 {PI, max, min, sqrt, pow, sin, cos} = Math
 
-PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iP'
 
 toRad = (t) -> t * (PI / 180)
 

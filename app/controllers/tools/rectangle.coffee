@@ -1,6 +1,6 @@
 OriginalRectangleTool = require 'marking-surface/lib/tools/rectangle'
 
-PROBABLY_IOS = !!~navigator.userAgent.indexOf 'iP'
+PROBABLY_IOS = require '../../lib/probably-ios'
 
 class RectangleTool extends OriginalRectangleTool
   controlsOffset: 10

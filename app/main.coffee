@@ -1,6 +1,9 @@
 $ = window.jQuery
 $.noConflict()
 
+PROBABLY_IOS = require './lib/probably-ios'
+$(document.body).toggleClass 'probably-ios', PROBABLY_IOS
+
 GoogleAnalytics = require 'zooniverse/lib/google-analytics'
 new GoogleAnalytics
   account: 'UA-1224199-24'

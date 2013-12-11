@@ -34,6 +34,10 @@
   border-radius: 5px
   color: white
   padding: 10px 40px
+  transition: background 0.2s
+
+  &:hover
+    background: lighten(@background, 7.5%)
 
 .zootorial-demo
   background: rgba(black, 0.5)
@@ -42,9 +46,13 @@
   font-size: 12px
   font-weight: bold
   padding: 0 10px
+  transition: background 0.2s
 
   &:after
     content: "!"
+
+  &:hover
+    background: lighten(@background, 7.5%)
 
 .zootorial-arrow
   border: 10px solid transparent

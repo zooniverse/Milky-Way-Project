@@ -28,7 +28,7 @@
       color: inherit
       font-size: 20px
       height: 40px
-      line-height: 36px
+      line-height: 34px
       margin: 5px 10px
       position: relative
       text-align: center
@@ -36,6 +36,9 @@
 
       &[name="favorite"]
         font-size: 18px
+
+      &[name="help"]
+        padding-right: 1px
 
       &.active
         background: DARK_BLUEISH
@@ -147,6 +150,10 @@
       background: GREEN
       border-width: 0
       color: white
+      transition: background 0.2s
+
+      &:hover
+        background: lighten(@background, 7.5%)
 
       .finish-label
         display: none

@@ -413,6 +413,7 @@ module.exports =
   classify:
     options:
       discuss: 'Discuss'
+      signIn: 'Sign in'
       favourite: 'Favorite'
       help: 'Help'
 
@@ -571,6 +572,12 @@ module.exports =
     callOutTalk:
       content: '''
         You can use this button to discuss images with scientists and other volunteers in our discussion site, 'Talk'.
+      '''
+
+    callOutSignIn:
+      content: '''
+        Please sign in to help us process our data more efficiently.
+        You'll receive credit for your work, and be able to mark images as favorites for later.
       '''
 
     callOutFavorite:

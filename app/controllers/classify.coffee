@@ -10,9 +10,9 @@ Throbber = require './throbber'
 $ = window.jQuery
 User = require 'zooniverse/models/user'
 Subject = require 'zooniverse/models/subject'
+loginDialog = require 'zooniverse/controllers/login-dialog'
 selectTutorialSubject = require '../lib/select-tutorial-subject'
 Classification = require 'zooniverse/models/classification'
-Footer = require 'zooniverse/controllers/footer'
 
 tools =
   bubble: class extends EllipseTool then name: 'bubble'
@@ -44,6 +44,7 @@ class Classify extends Controller
   template: require '../views/classify'
 
   events:
+    'click button[name="sign-in"]': 'onClickSignIn'
     'click button[name="favorite"]': 'onClickFavorite'
     'click button[name="help"]': 'onClickHelp'
     'change input[name="tool"]': 'onChangeTool'
@@ -51,6 +52,7 @@ class Classify extends Controller
 
   elements:
     '.discuss': 'talkLink'
+    'button[name="sign-in"]': 'signInButton'
     'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
@@ -105,6 +107,9 @@ class Classify extends Controller
   activate: ->
     setTimeout (=> @tutorial.attach() if @tutorial._current?), 500
 
+  onClickSignIn: ->
+    loginDialog.show()
+
   onClickFavorite: ->
     @classification.favorite = !@classification.favorite
     @favoriteButton.toggleClass 'active', @classification.favorite
@@ -117,6 +122,9 @@ class Classify extends Controller
 
   onUserChange: (e, user) =>
     @el.toggleClass 'signed-in', user?
+
+    @signInButton.toggle not user?
+    @favoriteButton.toggle user?
 
     if user?.finished_tutorial_or_whatever
       Subject.next() if @surface.marks.length is 0

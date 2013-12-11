@@ -1,5 +1,6 @@
 translate = require 't7e'
 GhostMouse = require 'ghost-mouse'
+User = require 'zooniverse/models/user'
 
 guideStyle =
   fill: 'transparent'
@@ -133,17 +134,27 @@ tutorialSteps =
     content: translate 'span', 'tutorial.callOutTalk.content'
     attachment: [0, 0.5, 'a.discuss', 1, 0.5]
     arrow: 'left'
-    next: 'callOutFavorite'
+    next: ->
+      if User.current?
+        'callOutFavorite'
+      else
+        'callOutSignIn'
+
+  callOutSignIn:
+    content: translate 'span', 'tutorial.callOutSignIn.content'
+    attachment: [0, 0.5, '.classify button[name="sign-in"]', 1, 0.5]
+    arrow: 'left'
+    next: 'callOutHelp'
 
   callOutFavorite:
     content: translate 'span', 'tutorial.callOutFavorite.content'
-    attachment: [0, 0.5, 'button[name="favorite"]', 1, 0.5]
+    attachment: [0, 0.5, '.classify button[name="favorite"]', 1, 0.5]
     arrow: 'left'
     next: 'callOutHelp'
 
   callOutHelp:
     content: translate 'span', 'tutorial.callOutHelp.content'
-    attachment: [0, 0.5, 'button[name="help"]', 1, 0.5]
+    attachment: [0, 0.5, '.classify button[name="help"]', 1, 0.5]
     arrow: 'left'
     next: 'markStuff'
 

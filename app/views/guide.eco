@@ -30,7 +30,6 @@
     <img src="./images/guide/ego2.jpg" />
     <img src="./images/guide/ego3.jpg" />
     <img src="./images/guide/ego4.jpg" />
-    <img src="./images/guide/ego5.jpg" />
 
     <%- translate 'h3', 'guide.galaxies.title' %>
     <%- translate 'p', 'guide.galaxies.description' %>

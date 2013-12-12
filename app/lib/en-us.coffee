@@ -196,7 +196,8 @@ module.exports =
         image: '//placehold.it/100.png'
         name: 'Matthew Povich'
         description: '''
-          Assistant Professor in the Department of Physics and Astronomy at California Poly Pomona.
+          Assistant Professor in the Department of Physics and Astronomy at Cal Poly Pomona.
+          Milky Way Project science guru.
         '''
 
       sarah:

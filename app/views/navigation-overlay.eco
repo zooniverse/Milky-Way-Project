@@ -11,6 +11,8 @@
     <%- translate 'a', 'navigation.science', href: '#/science' %><br />
     <%- translate 'a', 'navigation.team', href: '#/team' %><br />
     <%- translate 'a', 'navigation.data', href: '#/data' %><br />
+    <%- translate 'a', 'navigation.talk', href: 'http://talk.milkywayproject.org/' %><br />
+    <%- translate 'a', 'navigation.blog', href: 'http://blog.milkywayproject.org/' %><br />
   </div>
 
   <div class="social">

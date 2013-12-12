@@ -10,6 +10,8 @@ module.exports =
     team: 'Team'
     data: 'Data'
     faq: 'F.A.Q.'
+    talk: 'Discuss'
+    blog: 'Blog'
 
   home:
     heading: 'Measure and Map Our Galaxy'

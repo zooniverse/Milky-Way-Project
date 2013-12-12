@@ -8,9 +8,11 @@
       <%- translate 'a.aux', 'navigation.guide', href: '#/guide' %>
     </span><br />
     <%- translate 'a', 'navigation.faq', href: '#/faq' %><br />
-    <%- translate 'a', 'navigation.science', href: '#/science' %><br />
+    <span class="has-aux">
+      <%- translate 'a', 'navigation.science', href: '#/science' %>
+      <%- translate 'a.aux', 'navigation.data', href: '#/data' %>
+    </span><br />
     <%- translate 'a', 'navigation.team', href: '#/team' %><br />
-    <%- translate 'a', 'navigation.data', href: '#/data' %><br />
     <%- translate 'a', 'navigation.talk', href: 'http://talk.milkywayproject.org/' %><br />
     <%- translate 'a', 'navigation.blog', href: 'http://blog.milkywayproject.org/' %><br />
   </div>

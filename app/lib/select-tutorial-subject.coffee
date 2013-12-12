@@ -1,6 +1,8 @@
 Subject = require 'zooniverse/models/subject'
 
 selectTutorialSubject = ->
+  Subject.instances.shift() if Subject.instances?[0]?.tutorial
+
   subject = new Subject
     id: '529e522e4d696359f4f09d00'
     coords: [-0.0468, 286.0532]

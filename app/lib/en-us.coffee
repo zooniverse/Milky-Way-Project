@@ -242,7 +242,7 @@ module.exports =
         image: '//placehold.it/100.png'
         name: 'Sarah Maddison'
         description: '''
-          Associate Professor of Astrophysics at Swinburne University, Australia.
+          Professor of Astrophysics at Swinburne University, Australia.
         '''
 
       grace:

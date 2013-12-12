@@ -1,6 +1,10 @@
 Controller = require 'zooniverse/controllers/base-controller'
 Api = require 'zooniverse/lib/api'
 
+formatNumber = (n) ->
+  # TODO: Localize this.
+  n.toString().replace /(\d)(?=(\d{3})+(?!\d))/g, '$1,'
+
 class Home extends Controller
   className: 'home-page'
   template: require '../views/home'
@@ -14,6 +18,6 @@ class Home extends Controller
 
   onProjectLoad: (project) =>
     for name in ['classification', 'bubble', 'cluster', 'ego', 'galaxy']
-      @counterValues.filter(".#{name}").html project["#{name}_count"] || '0'
+      @counterValues.filter(".#{name}").html formatNumber project["#{name}_count"] || '0'
 
 module.exports = Home

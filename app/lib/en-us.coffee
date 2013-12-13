@@ -436,6 +436,8 @@ module.exports =
     skip: 'Nothing<br />to mark'
     finish: 'I\'m done!'
 
+    restartTutorial: 'Restart tutorial'
+
     help: '''
       <h3>Objects to Look For:</h3>
 

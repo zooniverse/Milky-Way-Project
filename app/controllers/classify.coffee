@@ -49,6 +49,7 @@ class Classify extends Controller
     'click button[name="help"]': 'onClickHelp'
     'click button[name="tool"]': 'onClickTool'
     'click button[name="finish"]': 'onClickFinish'
+    'click button[name="restart-tutorial"]': 'onClickRestartTutorial'
 
   elements:
     '.discuss': 'talkLink'
@@ -185,5 +186,8 @@ class Classify extends Controller
 
     @finishButton.attr 'disabled', true
     Subject.next()
+
+  onClickRestartTutorial: ->
+    selectTutorialSubject()
 
 module.exports = Classify

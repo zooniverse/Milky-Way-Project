@@ -22,7 +22,7 @@
     <div class="tool">
       <label>
         <!--<input type="radio" name="tool" value="bubble" checked="checked" />-->
-        <button name="tool" value="bubble" class="selected">
+        <button name="tool" value="bubble" class="selected" title="[Z]">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -53,7 +53,7 @@
     <div class="tool">
       <label>
         <!--<input type="radio" name="tool" value="cluster" />-->
-        <button name="tool" value="cluster">
+        <button name="tool" value="cluster" title="[X]">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -87,7 +87,7 @@
     <div class="tool">
       <label>
         <!--<input type="radio" name="tool" value="ego" />-->
-        <button name="tool" value="ego">
+        <button name="tool" value="ego" title="[C]">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -109,7 +109,7 @@
     <div class="tool">
       <label>
         <!--<input type="radio" name="tool" value="galaxy" />-->
-        <button name="tool" value="galaxy">
+        <button name="tool" value="galaxy" title="[V]">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -132,7 +132,7 @@
     <div class="tool">
       <label>
         <!--<input type="radio" name="tool" value="object" />-->
-        <button name="tool" value="object">
+        <button name="tool" value="object" title="[B]">
         <div class="outer-label">
           <div class="inner-label">
             <div class="icon">
@@ -156,7 +156,7 @@
     </div>
 
     <div class="tool">
-      <button name="finish">
+      <button name="finish" title="[SHIFT-ENTER]">
         <%- translate 'span.skip-label', 'classify.skip' %>
         <%- translate 'span.finish-label', 'classify.finish' %>
       </button>

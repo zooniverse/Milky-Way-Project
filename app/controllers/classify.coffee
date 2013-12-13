@@ -24,6 +24,14 @@ tools =
 SUBJECT_WIDTH = 800
 SUBJECT_HEIGHT = 400
 
+SHORTCUT_KEYS =
+  90: 'Z'
+  88: 'X'
+  67: 'C'
+  86: 'V'
+  66: 'B'
+  13: 'ENTER'
+
 loadImage = (src, callback) ->
   img = new Image
   img.onload = -> callback img
@@ -50,6 +58,7 @@ class Classify extends Controller
     'click button[name="tool"]': 'onClickTool'
     'click button[name="finish"]': 'onClickFinish'
     'click button[name="restart-tutorial"]': 'onClickRestartTutorial'
+    'keydown': 'onKeyDown'
 
   elements:
     '.discuss': 'talkLink'
@@ -189,5 +198,24 @@ class Classify extends Controller
 
   onClickRestartTutorial: ->
     selectTutorialSubject()
+
+  onKeyDown: (e) ->
+    return if e.target.nodeName.toUpperCase() in ['INPUT', 'TEXTAREA']
+    return unless e.which of SHORTCUT_KEYS
+
+    key = SHORTCUT_KEYS[e.which]
+    target = @el.find "[title*='#{key}]']"
+
+    e.preventDefault()
+
+    target.focus()
+
+    if target.get(0).nodeName.toUpperCase() in ['A', 'BUTTON']
+      if target.attr('title').toUpperCase().indexOf('SHIFT') is -1
+        willClick = true
+      else if e.shiftKey
+        willClick = true
+
+    target.click() if willClick
 
 module.exports = Classify

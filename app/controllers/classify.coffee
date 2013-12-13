@@ -145,7 +145,7 @@ class Classify extends Controller
     $(@throbber.canvas).fadeIn 'fast'
 
   onSubjectSelect: (e, subject) =>
-    @surface.marks[0].destroy() until @surface.marks.length is 0
+    @surface.reset()
 
     @classification?.destroy()
     @classification = new Classification {subject}

@@ -2,14 +2,14 @@
 
 <div class="interface">
   <div class="subject-options">
-    <div><%- translate 'a.discuss', '<i class="fa fa-comments"></i>', title: 'classify.options.discuss' %></div>
+    <div><%- translate 'a.discuss', '<i class="fa fa-comments"></i>', title: 'classify.options.discuss', $key: 'T' %></div>
     <div>
-      <%- translate 'button', '<i class="fa fa-key"></i>', name: 'sign-in', title: 'classify.options.signIn' %>
-      <%- translate 'button', '&#9733;', name: 'favorite', title: 'classify.options.favourite', disabled: true, style: 'display: none;' %>
+      <%- translate 'button', '<i class="fa fa-key"></i>', name: 'sign-in', title: 'classify.options.signIn', $key: 'S' %>
+      <%- translate 'button', '&#9733;', name: 'favorite', title: 'classify.options.favourite', disabled: true, style: 'display: none;', $key: 'F' %>
     </div>
     <% helpButtonContent = '<i class="fa fa-question hide-with-overlay"></i>' %>
     <% helpButtonContent += '<span class="show-inline-with-overlay">&times;</span>' %>
-    <div><%- translate 'button', helpButtonContent, name: 'help', title: 'classify.options.help' %></div>
+    <div><%- translate 'button', helpButtonContent, name: 'help', title: 'classify.options.help', $key: 'H' %></div>
   </div>
 
   <div class="subject">

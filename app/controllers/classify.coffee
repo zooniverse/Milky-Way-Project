@@ -25,6 +25,10 @@ SUBJECT_WIDTH = 800
 SUBJECT_HEIGHT = 400
 
 SHORTCUT_KEYS =
+  84: 'T'
+  83: 'S'
+  70: 'F'
+  72: 'H'
   90: 'Z'
   88: 'X'
   67: 'C'

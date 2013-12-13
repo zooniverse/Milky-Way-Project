@@ -415,10 +415,10 @@ module.exports =
 
   classify:
     options:
-      discuss: 'Discuss'
-      signIn: 'Sign in'
-      favourite: 'Favorite'
-      help: 'Help'
+      discuss: 'Discuss [$key]'
+      signIn: 'Sign in [$key]'
+      favourite: 'Favorite [$key]'
+      help: 'Help [$key]'
 
     question: 'What do you see in this image?'
     tools:

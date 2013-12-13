@@ -204,18 +204,23 @@ class Classify extends Controller
     return unless e.which of SHORTCUT_KEYS
 
     key = SHORTCUT_KEYS[e.which]
-    target = @el.find "[title*='#{key}]']"
+    target = @el.find "[title*='#{key}]']:visible"
+    return if target.length is 0
 
     e.preventDefault()
 
     target.focus()
 
-    if target.get(0).nodeName.toUpperCase() in ['A', 'BUTTON']
-      if target.attr('title').toUpperCase().indexOf('SHIFT') is -1
-        willClick = true
-      else if e.shiftKey
-        willClick = true
+    if target.attr('title').toUpperCase().indexOf('SHIFT') is -1
+      willClick = true
+    else if e.shiftKey
+      willClick = true
 
-    target.click() if willClick
+    nodeName = target.get(0).nodeName.toUpperCase()
+
+    if nodeName in ['BUTTON']
+      target.click() if willClick
+    else if nodeName is 'A'
+      location.href = target.attr 'href'
 
 module.exports = Classify

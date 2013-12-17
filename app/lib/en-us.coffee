@@ -217,6 +217,16 @@ module.exports =
           Astronomer at the University of Oxford. PI of the Zooniverse (it's his fault).
         '''
 
+      eli:
+        image: '//placehold.it/100.png'
+        name: 'Eli Bressert'
+        twitter: 'https://twitter.com/astrobiased'
+        github: 'https://github.com/ebressert'
+        description: '''
+          Astronomically biased data scientist at Jawbone.
+          Loves big ideas and putting them into action by connecting the impossible.
+        '''
+
       bob:
         image: '//placehold.it/100.png'
         name: 'Bob Benjamin'

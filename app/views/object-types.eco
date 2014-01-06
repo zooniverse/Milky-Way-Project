@@ -1,8 +1,11 @@
 <% translate = require 't7e' %>
 
-<div>
-  <label><input type="radio" class="object-radio" name="object-type" value="bowshock"><%- translate 'span', 'classify.objectTypes.bowshock' %></label><br />
-  <label><input type="radio" class="object-radio" name="object-type" value="pillars"><%- translate 'span', 'classify.objectTypes.pillars' %></label><br />
-  <label><input type="radio" class="object-radio" name="object-type" value="arefact"><%- translate 'span', 'classify.objectTypes.artefact' %></label><br />
-  <label><input type="radio" class="object-radio" name="object-type" value="other"><%- translate 'span', 'classify.objectTypes.other' %></label>
-</div>
+<!--This form is just to isolate radio button groups.-->
+<form>
+  <div>
+    <label><input type="radio" class="object-radio" name="object-type" value="bowshock"><%- translate 'span', 'classify.objectTypes.bowshock' %></label><br />
+    <label><input type="radio" class="object-radio" name="object-type" value="pillars"><%- translate 'span', 'classify.objectTypes.pillars' %></label><br />
+    <label><input type="radio" class="object-radio" name="object-type" value="arefact"><%- translate 'span', 'classify.objectTypes.artefact' %></label><br />
+    <label><input type="radio" class="object-radio" name="object-type" value="other"><%- translate 'span', 'classify.objectTypes.other' %></label>
+  </div>
+</form>

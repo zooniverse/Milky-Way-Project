@@ -51,6 +51,27 @@
     color: white
     position: relative
 
+  .no-more-subjects
+    font-size: 24px
+    font-weight: 100
+    left: 50%
+    position: absolute
+    text-align: center
+    text-shadow:
+      0 1px 3px black,
+      0 3px 6px black,
+      0 5px 9px black
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    z-index: 1
+
+    &:not(.active)
+      display: none
+
+    a
+      color: white
+
   .throbber
     font-size: 20px
     position: absolute

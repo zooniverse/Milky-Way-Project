@@ -70,6 +70,7 @@ class Classify extends Controller
     'button[name="favorite"]': 'favoriteButton'
     'button[name="help"]': 'helpButton'
     '.subject': 'subjectContainer'
+    '.no-more-subjects': 'noMoreSubjectsMessage'
     'button[name="tool"]': 'toolButtons'
     'button[name="finish"]': 'finishButton'
 
@@ -118,6 +119,7 @@ class Classify extends Controller
     User.on 'change', @onUserChange
     Subject.on 'get-next', @onSubjectGettingNext
     Subject.on 'select', @onSubjectSelect
+    Subject.on 'no-more', @onNoMoreSubjects
 
   activate: ->
     setTimeout (=> @tutorial.attach() if @tutorial._current?), 500
@@ -158,6 +160,7 @@ class Classify extends Controller
     $(@throbber.canvas).fadeIn 'fast'
 
   onSubjectSelect: (e, subject) =>
+    @noMoreSubjectsMessage.removeClass 'active'
     @surface.reset()
 
     @classification?.destroy()
@@ -191,6 +194,9 @@ class Classify extends Controller
           @throbber.stop()
 
           setTimeout (=> @finishButton.attr 'disabled', false), 1000
+
+  onNoMoreSubjects: =>
+    @noMoreSubjectsMessage.addClass 'active'
 
   onClickFinish: ->
     @classification.annotate mark for mark in @surface.marks

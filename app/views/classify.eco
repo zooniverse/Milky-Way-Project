@@ -14,6 +14,7 @@
 
   <div class="subject">
     <!--Marking surface goes here-->
+    <%- translate 'div.no-more-subjects', 'classify.noMoreSubjects' %>
   </div>
 
   <div class="question"><%- translate 'span', 'classify.question' %></div>

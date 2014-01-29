@@ -430,6 +430,13 @@ module.exports =
       favourite: 'Favorite [$key]'
       help: 'Help [$key]'
 
+    noMoreSubjects: '''
+      Great job everyone!<br />
+      We're out of data to classify right now.<br />
+      Sit tight while we load up some more.<br />
+      In the meantime, check out <a href="https://www.zooniverse.org/">our other projects</a>!
+    '''
+
     question: 'What do you see in this image?'
     tools:
       bubble: 'Bubble'

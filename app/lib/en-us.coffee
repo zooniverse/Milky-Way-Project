@@ -27,7 +27,7 @@ module.exports =
       <p>Here are two other Zooniverse projects you can help with:</p>
       <p>
         <a href="http://radio.galaxyzoo.org/" class="other-project">Radio Galaxy Zoo</a>
-        <a href="http://www.diskdetective.org/" class="other-project">Disk Detective</a>
+        <a href="http://www.planetfour.org/" class="other-project">Planet Four</a>
       </p>
     '''
 

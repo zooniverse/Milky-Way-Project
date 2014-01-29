@@ -40,6 +40,11 @@
       <%- translate 'div.counter-label', 'home.counters.galaxies' %>
     </div>
   </div>
+
+  <div class="other-projects">
+    <%- translate 'div', 'home.otherProjects' %>
+    <hr />
+  </div>
 </div>
 
 <div class="what project-summary content">

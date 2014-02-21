@@ -7,6 +7,7 @@ module.exports =
     classify: 'Classify'
     guide: 'Guide'
     science: 'Science'
+    profile: 'Profile'
     team: 'Team'
     data: 'Data'
     faq: 'F.A.Q.'

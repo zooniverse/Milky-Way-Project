@@ -45,12 +45,15 @@ stack = new StackOfPages
   DEFAULT: '#/'
   '#/': require './controllers/home'
   '#/classify': require './controllers/classify'
+  '#/profile': require 'zooniverse/controllers/profile'
   '#/science': require './controllers/science'
   '#/team': require './controllers/team'
   '#/data': require './controllers/data'
   '#/guide': require './controllers/guide'
   '#/faq': require './controllers/faq'
   NOT_FOUND: require './controllers/not-found'
+
+$(stack.hashes['#/profile'].el).addClass 'content' # TODO: Clean this up.
 
 document.body.appendChild stack.el
 

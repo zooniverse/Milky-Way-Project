@@ -45,7 +45,6 @@ stack = new StackOfPages
   DEFAULT: '#/'
   '#/': require './controllers/home'
   '#/classify': require './controllers/classify'
-  '#/subject/:id': require './controllers/subject'
   '#/science': require './controllers/science'
   '#/team': require './controllers/team'
   '#/data': require './controllers/data'

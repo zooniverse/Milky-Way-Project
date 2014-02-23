@@ -382,7 +382,7 @@ module.exports =
       description: '''Around some bubbles and complex regions you will see pillars or columns of dust. These may have stars at their tips or not, but they are often quite striking. These can be selected as an option in the 'other' category.'''
     artifacts:
       title: 'Other Objects: Artifacts'
-      description: '''There are several different kinds of image artifacts in the data. Knowing where these are can be useful for the research team. These can be selected as an option in the 'other' category. <strong>However</strong>, we don't you to mark the large, blocky artifacts at the edge of many of the images (see below).'''
+      description: '''There are several different kinds of image artifacts in the data. Knowing where these are can be useful for the research team. These can be selected as an option in the 'other' category. <strong>However</strong>, we don't want you to mark the large, blocky artifacts at the edge of many of the images (see below).'''
     stars:
       title: '''Don't Mark: Single, Bright Stars'''
       description: '''Bright stars are very common in the data and they sometimes produce long cross-hairs in the images, or strange shapes nearby. This is normal and we don't need you to mark these.'''

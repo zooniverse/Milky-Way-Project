@@ -14,16 +14,14 @@ enUs = require './lib/en-us'
 
 t7e.load enUs
 
-# LanguageManager = require 'zooniverse/lib/language-manager'
-# languageManager = new LanguageManager
-#   translations:
-#     en: label: 'English', strings: enUs
-#     fr: label: 'Français', strings: './translations/fr.json'
-#     pl: label: 'Polski', strings: './translations/pl.json'
+LanguageManager = require 'zooniverse/lib/language-manager'
+languageManager = new LanguageManager
+  translations:
+    en: label: 'English', strings: enUs
 
-# languageManager.on 'change-language', (e, code, languageStrings) ->
-#   t7e.load languageStrings
-#   t7e.refresh()
+languageManager.on 'change-language', (e, code, languageStrings) ->
+  t7e.load languageStrings
+  t7e.refresh()
 
 SiteHeader = require './controllers/site-header'
 siteHeader = new SiteHeader

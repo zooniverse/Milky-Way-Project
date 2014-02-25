@@ -113,6 +113,9 @@ class Classify extends Controller
       parent: @el.get 0
       attachment: [0.5, 0.5, @el.get(0), 0.5, 0.5]
       steps: require '../lib/tutorial-steps'
+      demoLabel: translate 'span', 'tutorial.demoLabel'
+      nextLabel: translate 'span', 'tutorial.nextLabel'
+      doneLabel: translate 'span', 'tutorial.doneLabel'
       onLoadStep: -> translate.refresh @el
       onEnd: -> @guide?.remove()
       classifier: @

@@ -531,6 +531,10 @@ module.exports =
     '''
 
   tutorial:
+    demoLabel: 'Show me'
+    nextLabel: 'Continue'
+    doneLabel: 'Done'
+
     first:
       header: 'Welcome!'
       content: '''

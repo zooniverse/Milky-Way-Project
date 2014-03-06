@@ -92,6 +92,9 @@ module.exports =
         You might even discover something we didn't expect, something truly extraordinary!
       '''
 
+      caption_01: '''A prominent bubble and neighbouring star cluster. Several bright stars are seen nearby.'''
+      caption_02: '''A large star cluster sits in a cavity in the dust, with the tips of pillars at top and bottom.'''
+
     bubbles:
       title: 'Interstellar Dust'
 
@@ -124,6 +127,9 @@ module.exports =
         Hot stars also don't live long enough to move far from the clouds where they formed.
         All this means that each bubble represents several hundred to several thousand very young stars.
       '''
+
+      caption_01: '''A possible bubble embedded in dust. Swirls of dust at different temperatures (colors) appear to surround it.'''
+      caption_02: '''A beautiful spiral galaxy seen in the distance, through the material in the Milky Way. It's dust glows red too.'''
 
   team:
     introduction: 'There are so many people involved. These are some of them.'

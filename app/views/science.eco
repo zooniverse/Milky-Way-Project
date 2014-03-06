@@ -12,12 +12,12 @@
     <div class="columns">
       <div class="half minor">
         <img src="./images/science/bubble_cluster_ego.jpg" alt="Bubble, cluster and EGO" />
-        <p>A prominent bubble and neighbouring star cluster. Several bright stars are seen nearby.</p>
+        <%- translate 'p', 'science.general.caption_01' %>
       </div>
 
       <div class="half minor">
         <img src="./images/science/big_cluster_example.jpg" alt="Nice, big star cluster" />
-        <p>A large star cluster sits in a cavity in the dust, with the tips of pillars at top and bottom.</p>
+        <%- translate 'p', 'science.general.caption_02' %>
       </div>
     </div>
 
@@ -31,12 +31,13 @@
     <div class="columns">
       <div class="half minor">
         <img src="./images/science/faded_cavity.jpg" alt="Possible bubble embeeded in the dust" />
-        <p>A possible bubble embedded in dust. Swirls of dust at different temperatures (colors) appear to surround it.</p>
+        <%- translate 'p', 'science.bubbles.caption_01' %>
+
       </div>
 
       <div class="half minor">
         <img src="./images/science/dusty_galaxy.jpg" alt="Galaxy seen through the dust" />
-        <p>A beautiful spiral galaxy seen in the distance, through the material in the Milky Way. It's dust glows red too.</p>
+        <%- translate 'p', 'science.bubbles.caption_02' %>
       </div>
     </div>
 

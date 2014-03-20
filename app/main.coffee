@@ -20,6 +20,7 @@ languageManager = new LanguageManager
     en: label: 'English', strings: enUs
     de: label: "Deutsch", strings: "./translations/de.json"
     es: label: "Español", strings: "./translations/es.json"
+    id: label: "Bahasa Indonesia", strings: "./translations/id.json"
 
 languageManager.on 'change-language', (e, code, languageStrings) ->
   t7e.load languageStrings

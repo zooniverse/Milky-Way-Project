@@ -22,6 +22,7 @@ languageManager = new LanguageManager
     de: label: "Deutsch"
     fr: label: 'Français'
     id: label: "Bahasa Indonesia"
+    pl: label: "Polski"
     da: label: "Dansk"
 
 languageManager.on 'change-language', (e, code, languageStrings) ->

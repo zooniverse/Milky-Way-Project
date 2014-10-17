@@ -11,7 +11,7 @@ module.exports =
     team: 'Team'
     data: 'Data'
     faq: 'F.A.Q.'
-    talk: 'Discuss'
+    talk: 'Talk'
     blog: 'Blog'
 
   home:

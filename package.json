@@ -22,7 +22,7 @@
 
     "build": "haw build --force ./build",
     "publish-staging": "publisssh ./build demo.zooniverse.org/milky-way-project",
-    "publish-production": "publisssh ./build www.milkywayproject.org",
+    "publish-production": "publisssh ./build zooniverse-static/www.milkywayproject.org",
     "deploy-locale": "seed-translation --project milky_way --env production",
     "cleanup": "rm -rf ./build"
   }

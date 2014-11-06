@@ -10,7 +10,7 @@
     "stack-of-pages": "~0.0.5",
     "t7e": "~0.2.3",
     "translator-seed": "~0.1.1",
-    "zooniverse": "~0.6.10",
+    "zooniverse": "^0.7.2",
     "zootorial": "~0.4.1"
   },
   "scripts": {

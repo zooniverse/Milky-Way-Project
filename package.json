@@ -9,17 +9,15 @@
     "publisssh": "~0.2.1",
     "stack-of-pages": "~0.0.5",
     "t7e": "~0.2.3",
+    "translator-seed": "~0.1.1",
     "zooniverse": "~0.6.10",
-    "zootorial": "~0.4.1",
-    "translator-seed": "~0.1.1"
+    "zootorial": "~0.4.1"
   },
   "scripts": {
     "start": "haw serve --port 6414",
-
     "stage": "npm run build && npm run publish-staging && npm run cleanup",
     "deploy": "npm run build && npm run publish-production && npm run cleanup",
     "stage-and-deploy": "npm run build && npm run publish-staging && npm run publish-production && npm run cleanup",
-
     "build": "haw build --force ./build",
     "publish-staging": "publisssh ./build demo.zooniverse.org/milky-way-project",
     "publish-production": "publisssh ./build zooniverse-static/www.milkywayproject.org",

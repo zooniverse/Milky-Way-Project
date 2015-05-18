@@ -18,7 +18,7 @@ LanguageManager = require 'zooniverse/lib/language-manager'
 languageManager = new LanguageManager
   translations:
     en: label: 'English', strings: enUs
-    'zh-tw': label: "繁體中文"
+    zh_tw: label: "繁體中文", strings: './translations/zh-tw.json'
     es: label: "Español"
     de: label: "Deutsch"
     fr: label: 'Français'

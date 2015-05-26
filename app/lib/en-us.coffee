@@ -24,7 +24,10 @@ module.exports =
     start: 'Start Classifying'
 
     otherProjects: '''
-      <p>Thanks to your hard work, we've actually run out of data for the moment.</p>
+      <p>
+        Thanks to your hard work, we've actually run out of data<br>
+        and are displaying archive data.
+      </p>
       <p>Here are two other Zooniverse projects you can help with:</p>
       <p>
         <a href="http://radio.galaxyzoo.org/" class="other-project">Radio Galaxy Zoo</a>

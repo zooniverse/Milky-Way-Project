@@ -26,7 +26,7 @@ module.exports =
     otherProjects: '''
       <p>
         Thanks to your hard work, we've actually run out of data<br>
-        and are displaying archive data.
+        and are displaying archived images.
       </p>
       <p>Here are two other Zooniverse projects you can help with:</p>
       <p>

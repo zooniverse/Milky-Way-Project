@@ -35,7 +35,10 @@ siteHeader = new SiteHeader
 siteHeader.el.appendTo document.body
 
 Api = require 'zooniverse/lib/api'
-api = new Api project: 'milky_way'
+api = if window.location.hostname is 'www.milkywayproject.org'
+  new Api project: 'milky_way', host: 'http://www.milkywayproject.org', path: '/_ouroboros_api/proxy'
+else
+  new Api project: 'milky_way'
 
 TopBar = require 'zooniverse/controllers/top-bar'
 topBar = new TopBar

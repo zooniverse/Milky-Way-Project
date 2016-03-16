@@ -36,7 +36,7 @@ siteHeader.el.appendTo document.body
 
 Api = require 'zooniverse/lib/api'
 api = if window.location.hostname is 'www.milkywayproject.org'
-  new Api project: 'milky_way', host: 'http://www.milkywayproject.org', path: '/_ouroboros_api/proxy'
+  new Api project: 'milky_way', host: 'https://www.milkywayproject.org', path: '/_ouroboros_api/proxy'
 else
   new Api project: 'milky_way'
 

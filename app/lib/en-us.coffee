@@ -30,8 +30,8 @@ module.exports =
       </p>
       <p>Here are two other Zooniverse projects you can help with:</p>
       <p>
-        <a href="http://radio.galaxyzoo.org/" class="other-project">Radio Galaxy Zoo</a>
-        <a href="http://www.planetfour.org/" class="other-project">Planet Four</a>
+        <a href="https://radio.galaxyzoo.org/" class="other-project">Radio Galaxy Zoo</a>
+        <a href="https://www.planetfour.org/" class="other-project">Planet Four</a>
       </p>
     '''
 

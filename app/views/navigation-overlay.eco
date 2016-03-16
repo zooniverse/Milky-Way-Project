@@ -14,7 +14,7 @@
     </span><br />
     <%- translate 'a', 'navigation.profile', href: '#/profile' %><br />
     <%- translate 'a', 'navigation.team', href: '#/team' %><br />
-    <%- translate 'a', 'navigation.talk', href: 'http://talk.milkywayproject.org/' %><br />
+    <%- translate 'a', 'navigation.talk', href: 'https://talk.milkywayproject.org/' %><br />
     <%- translate 'a', 'navigation.blog', href: 'http://blog.milkywayproject.org/' %><br />
   </div>
 
